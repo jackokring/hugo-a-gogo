@@ -10,7 +10,7 @@ menu = ['main']
 # tag list
 tags = ['untagged']
 # param block
-[params]
+[param]
 # use maths
 maths = true
 +++

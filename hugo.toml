@@ -2,3 +2,19 @@ baseURL = 'https://kring.co.uk/'
 languageCode = 'en-GB'
 title = 'K Ring Technologies Ltd'
 theme = 'hugo-a-gogo'
+[taxonomies]
+  tag = 'tags'
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.parser]
+      [markup.goldmark.parser.attribute]
+        block = true
+        title = true
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['\[', '\]'], ['$$', '$$']]
+          inline = [['\(', '\)']]
+[params]
+  math = false

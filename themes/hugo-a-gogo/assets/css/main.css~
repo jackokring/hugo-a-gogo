@@ -3,7 +3,7 @@ body {
   font-family: sans-serif;
   line-height: 1.5;
   margin: 1rem;
-  /* max-width: 768px;*/
+  max-width: 768px;
 }
 
 header {
@@ -17,6 +17,6 @@ footer {
 }
 
 a {
-  color: #04e;
+  color: #00e;
   text-decoration: none;
 }
