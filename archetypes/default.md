@@ -6,7 +6,7 @@ date = {{ .Date }}
 # is draft to not build
 draft = true
 # place in main menu
-menu = ['main']
+menus = ['main']
 # tag list
 tags = ['untagged']
 # param block
