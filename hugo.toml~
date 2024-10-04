@@ -16,5 +16,11 @@ theme = 'hugo-a-gogo'
         [markup.goldmark.extensions.passthrough.delimiters]
           block = [['\[', '\]'], ['$$', '$$']]
           inline = [['\(', '\)']]
+  [markup.highlight]
+# override with syntax.css
+    noClasses = false
+#    style = 'monokai'
+    lineNos = table
+#    lineNos = false
 [params]
-  math = true
+  math = false
