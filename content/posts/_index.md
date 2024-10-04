@@ -1,7 +1,17 @@
 +++
+# title for page
 title = 'Posts'
-date = 2023-01-01T08:30:00-07:00
+# date created
+date = 2024-10-04T14:43:37Z
+# is draft to not build
 draft = false
+# place in main menu
+menus = []
+# tag list
+tags = ['index', 'director']
+# param block
+[params]
+# use maths
+maths = true
 +++
-
-Tempor est exercitation ad qui pariatur quis adipisicing aliquip nisi ea consequat ipsum occaecat. Nostrud consequat ullamco laboris fugiat esse esse adipisicing velit laborum ipsum incididunt ut enim. Dolor pariatur nulla quis fugiat dolore excepteur. Aliquip ad quis aliqua enim do consequat.
+This is the director's blog. I could write some more here, but it's just an introduction paragraph.
