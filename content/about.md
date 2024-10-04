@@ -14,16 +14,25 @@ tags = ['about']
 # use maths
 maths = true
 +++
+
 ## Circa 2024
 
-K Ring Technologies became a Ltd company after a number of years being a "trading as" name for the founder's contracting internet and software work. Work became infrequent and declined
-over the COVID 19 years, and is just an R and D shell circa 2024. It has no financial liabilities to creditors, and so it was decided to continue the company for the future.
-The founder Simon Jackson has an interest in computer technology and programming, and maintains a deep interest in physics, chemistry and mathematics. It is not uncommon for him
-to watch highly technical presentations on many science subjects, and he even has his own theoretical physics theories which really started with **Uncertain Geometry**. That theory being
-about consequences of theories of motion independant of mass, using velocity as a phase space dimension along with position. The 13 D (26 degrees of freedom) have possibilities.
-He also has a composite gluon theory where 2 half gluon particles combine in pairs to replace the approximant 8 gluon varieties. He maintains an interest in data compression algorithms,
-AI, and some methods of mathematical integration.
+K Ring Technologies became a Ltd company after a number of years being a
+"trading as" name for the founder's contracting internet and software work.
+Work became infrequent and declined over the COVID 19 years, and is just an
+R and D shell circa 2024. It has no financial liabilities to creditors, and so
+it was decided to continue the company for the future. The founder Simon Jackson
+has an interest in computer technology and programming, and maintains a
+deep interest in physics, chemistry and mathematics. It is not uncommon for him
+to watch highly technical presentations on many science subjects, and he even
+has his own theoretical physics theories which really started with
+**Uncertain Geometry**. That theory being about consequences of theories of
+motion independent of mass, using velocity as a phase space dimension along
+with position. The 13 D (26 degrees of freedom) have possibilities.
+He also has a composite gluon theory where 2 half gluon particles combine in
+pairs to replace the "approximate" 8 gluon varieties. He maintains an interest
+in data compression algorithms, AI and some methods of mathematical integration.
 
-###### Simon Jackson
+### Simon Jackson {.signature}
 
 Director

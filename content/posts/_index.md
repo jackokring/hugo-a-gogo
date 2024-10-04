@@ -14,4 +14,6 @@ tags = ['index', 'director']
 # use maths
 maths = true
 +++
-This is the director's blog. I could write some more here, but it's just an introduction paragraph.
+
+This is the director's blog. I could write some more here, but it's just an
+introduction paragraph.
