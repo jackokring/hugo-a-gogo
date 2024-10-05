@@ -31,6 +31,6 @@ not bad for a development system for blog style sites. I use other tools too so
 if you need work doing, or things seeing, you can contact K Ring Technologies
 via `jackokring@gmail.com` and someone possibly important might get back to you.
 
-###### Simon Jackson
+### Simon Jackson{.signature}
 
 Director

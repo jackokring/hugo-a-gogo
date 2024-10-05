@@ -16,4 +16,5 @@ maths = true
 +++
 
 A collection of open source tools used by K Ring Technologies. I had to call
-the page something. I hope you agree. Kind of reviews and status on "free".
+the page something. I hope you agree. Kind of reviews and status on the state
+and availability of "free" open source-ami.
