@@ -1,10 +1,10 @@
 {{ define "main" }}
 <h1>{{ .Title }}</h1>
 {{ .Content }} {{ range .Data.Terms.Alphabetical }}
-<h2>
+<h2 data-pagefind-ignore="all">
   <a href="{{ .Page.RelPermalink }}">{{ .Page.LinkTitle }}</a>
 </h2>
-<ul class="tags">
+<ul class="tags" data-pagefind-ignore="all">
   {{ range .WeightedPages }}
   <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a> |</li>
   {{ end }}

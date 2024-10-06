@@ -1,20 +1,15 @@
-<!DOCTYPE html>
-<html lang="{{ site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
-<head>
-  {{ partial "head.html" . }}
-  {{ if .Param "math" }}
-    {{ partialCached "math.html" . }}
-  {{ end }}
-</head>
-<body>
-  <header>
-    {{ partial "header.html" . }}
-  </header>
-  <main>
-    {{ block "main" . }}{{ end }}
-  </main>
-  <footer>
-    {{ partial "footer.html" . }}
-  </footer>
-</body>
+<!doctype html>
+<html
+  lang="{{ site.Language.LanguageCode }}"
+  dir="{{ or site.Language.LanguageDirection `ltr` }}"
+>
+  <head>
+    {{ partial "head.html" . }} {{ if .Param "math" }} {{ partialCached
+    "math.html" . }} {{ end }}
+  </head>
+  <body>
+    <header data-pagefind-ignore="all">{{ partial "header.html" . }}</header>
+    <main>{{ block "main" . }}{{ end }}</main>
+    <footer data-pagefind-ignore="all">{{ partial "footer.html" . }}</footer>
+  </body>
 </html>
