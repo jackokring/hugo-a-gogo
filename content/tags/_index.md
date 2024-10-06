@@ -8,7 +8,7 @@ draft = false
 # place in main menu
 menus = ['main']
 # tag list
-tags = ['tags']
+tags = ['tags', 'index']
 # param block
 [params]
 # use maths
