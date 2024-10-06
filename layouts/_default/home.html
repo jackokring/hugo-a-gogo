@@ -1,4 +1,5 @@
 {{ define "main" }} {{ .Content }} {{ $paginator := .Paginate
 site.RegularPages.ByPublishDate }} {{ range .Paginator.Pages }}
 <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-{{ .Summary }} {{ end }} {{ template "_internal/pagination.html" . }} {{ end }}
+<div data-pagefind-ignore="all">{{ .Summary }}</div>
+{{ end }} {{ template "_internal/pagination.html" . }} {{ end }}
