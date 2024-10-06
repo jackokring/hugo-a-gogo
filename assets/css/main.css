@@ -3,7 +3,7 @@ body {
   font-family: sans-serif;
   line-height: 1.5;
   margin: 1rem;
-  background-color: #222;
+  background-color: #224;
   /* max-width: 768px;*/
 }
 
@@ -34,10 +34,16 @@ nav > ul {
 
 /* slightly bigger */
 h1 {
+  color: #dad;
   font-size: 2.3em;
 }
 
 /* inline code */
 p > code {
-  color: #80f;
+  color: #a0f;
+}
+
+/* signature */
+.signature {
+  color: #007;
 }
