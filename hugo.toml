@@ -1,7 +1,7 @@
 baseURL = 'https://kring.co.uk/'
 languageCode = 'en-GB'
 title = 'K Ring Technologies Ltd'
-#theme = 'hugo-a-gogo'
+theme = ['hugo-a-gogo']
 
 # default menu contents
 # add extras through page front matter

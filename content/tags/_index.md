@@ -6,7 +6,7 @@ date = 2024-10-06T12:23:54Z
 # is draft to not build
 draft = false
 # place in main menu
-menus = ['main']
+menus = []
 # tag list
 tags = ['tags', 'index']
 # param block
