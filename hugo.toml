@@ -25,10 +25,11 @@ weight = 30
 
 [taxonomies]
 tag = 'tags'
-[markup]
+
 [markup.goldmark.parser.attribute]
 block = true
 title = true
+# apparently the linter doesn't like extensions
 [markup.goldmark.extensions.passthrough]
 enable = true
 [markup.goldmark.extensions.passthrough.delimiters]
@@ -36,9 +37,10 @@ block = [['\[', '\]'], ['$$', '$$']]
 inline = [['\(', '\)']]
 [markup.highlight]
 # override with syntax.css
+# somehow hugo config does not show the following
 noClasses = false
-#    style = 'monokai'
+# style = 'tokyonight-moon'
 lineNos = true
-#    lineNos = false
+# lineNos = false
 [params]
 math = false
