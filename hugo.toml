@@ -26,6 +26,9 @@ weight = 30
 [taxonomies]
 tag = 'tags'
 
+[pagination]
+pagerSize = 25
+
 [markup.goldmark.parser.attribute]
 block = true
 title = true
