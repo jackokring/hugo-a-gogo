@@ -6,7 +6,8 @@
 </h2>
 <ul class="tags">
   {{ range .WeightedPages }}
-  <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a> |</li>
+  <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>|</li>
   {{ end }}
+  <li>[{{ .Count }}]</li>
 </ul>
-[{{ .Count }}] {{ end }} {{ end }}
+{{ end }} {{ end }}
