@@ -18,9 +18,11 @@ header {
 }
 
 .scaled {
-  max-width: 10%;
+  /* 200px by 200px @ 60% => 100 px */
+  max-width: 100px;
   width: auto;
   height: auto;
+  float: right;
 }
 
 footer {
