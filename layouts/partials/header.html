@@ -9,3 +9,11 @@
 </div>
 <h1>{{ site.Title }}</h1>
 {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+<link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
+<script src="/pagefind/pagefind-ui.js"></script>
+<div id="search"></div>
+<script>
+  window.addEventListener("DOMContentLoaded", (event) => {
+    new PagefindUI({ element: "#search", showSubResults: true });
+  });
+</script>

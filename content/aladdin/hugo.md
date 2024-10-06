@@ -19,7 +19,7 @@ maths = true
 It works well. It seems similar to how github pages works, but is written in go
 instead of ruby. It does take a little while to scan the documentation and
 setup, as some of the more complex themes don't work with some integration
-solutions such as CloudFlare. Simple truths such as a theme being a fallback
+solutions such as **CloudFlare**. Simple truths such as a theme being a fallback
 site make sense, as after some time migrating the templating to the theme
 and just using the site layouts for overrides just makes sense.
 
@@ -34,3 +34,7 @@ As soon as you find the place to inject the `.js` it's just easy to make
 client side apps, and something like HTMX could be used for this too, as I'm  
 sure with some aggregating servers and a backend shard database, complex sites
 can be made.
+
+It's even possible to make content for each tag for a kind of context theming.
+I wish I'd had this in 1995. It would have made somethings much easier. It still
+doesn't get passed the odd CSS order for float rights before the regular lefts.

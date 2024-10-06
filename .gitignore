@@ -1,3 +1,4 @@
 # nano chaff
 /**/*~
-public/**/*
+public/
+!public/pagefind
