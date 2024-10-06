@@ -3,8 +3,8 @@
 @example: {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }} */}} {{-
 $page := .page }} {{- $taxonomy := .taxonomy }} {{- with $page.GetTerms
 $taxonomy }} {{- $label := (index . 0).Parent.LinkTitle }}
-<div>
-  <div>{{ $label }}:</div>
+<div class="tags">
+  <h3>{{ $label }}:</h3>
   <ul>
     {{- range . }}
     <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>

@@ -10,6 +10,7 @@ body {
 header {
   border-bottom: 1px solid #ddd;
   margin-bottom: 1rem;
+  background-color: #115;
 }
 
 /* header.jpg */
@@ -19,9 +20,10 @@ header {
 
 .scaled {
   /* 200px by 200px @ 60% => 100 px */
-  max-width: 100px;
+  max-width: 50%;
   width: auto;
   height: auto;
+  /* makes space for afters to left */
   float: right;
 }
 
