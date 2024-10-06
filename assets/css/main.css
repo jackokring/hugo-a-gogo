@@ -47,3 +47,7 @@ p > code {
 .signature {
   color: #009;
 }
+
+.tags > li {
+  display: inline-block;
+}
