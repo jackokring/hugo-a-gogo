@@ -12,6 +12,17 @@ header {
   margin-bottom: 1rem;
 }
 
+/* header.jpg */
+.float {
+  float: right;
+}
+
+.scaled {
+  max-width: 10%;
+  width: auto;
+  height: auto;
+}
+
 footer {
   border-top: 1px solid #ddd;
   margin-top: 1rem;
@@ -50,4 +61,33 @@ p > code {
 
 .tags > li {
   display: inline-block;
+}
+
+/* blockquote alerts */
+.alert {
+}
+
+.alert-heading {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.alert-caution {
+  background-color: #770;
+}
+
+.alert-important {
+  background-color: #007;
+}
+
+.alert-note {
+  background-color: #444;
+}
+
+.alert-tip {
+  background-color: #070;
+}
+
+.alert-warning {
+  background-color: #700;
 }

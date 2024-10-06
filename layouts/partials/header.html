@@ -1,2 +1,11 @@
+<div class="float">
+  {{ $image := resources.Get "images/header.jpg" }}
+  <img
+    class="scaled"
+    src="{{ $image.RelPermalink }}"
+    width="{{ $image.Width }}"
+    height="{{ $image.Height }}"
+  />
+</div>
 <h1>{{ site.Title }}</h1>
 {{ partial "menu.html" (dict "menuID" "main" "page" .) }}

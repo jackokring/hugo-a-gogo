@@ -23,6 +23,11 @@ Added in alert `<blockquote/>` by
 
 Pagination is in 25 posts at a time. The tags list is not paginated.
 
+Tags can have `content/tags/<tag>/_index.md` files to get header text for the
+tagged with tag list page.
+
+Includes MathJax mathematics TeX format `\[`, `\]` or `$$`. Inline `\(`, `\)`.
+
 ## Installation
 
 It's kept as part of a repo to have the example in context. Occasionally files
@@ -34,3 +39,7 @@ temporary override of the theme by parts.
 ## Notes on `layouts/`
 
 ### `home.html` overrides `section.html` in root `content/`
+
+## Notes on `assers`
+
+### Global so `resources.Get <path>` not page local `.Resources.Get <path>`
