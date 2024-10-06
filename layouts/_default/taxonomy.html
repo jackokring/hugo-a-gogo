@@ -2,11 +2,11 @@
 <h1>{{ .Title }}</h1>
 {{ .Content }} {{ range .Data.Terms.Alphabetical }}
 <h2>
-  <a href="{{ .Page.RelPermalink }}">{{ .Page.LinkTitle }}</a> ({{ .Count }})
+  <a href="{{ .Page.RelPermalink }}">{{ .Page.LinkTitle }}</a>
 </h2>
 <ul class="tags">
   {{ range .WeightedPages }}
-  <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+  <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a> |</li>
   {{ end }}
 </ul>
-{{ end }} {{ end }}
+[{{ .Count }}] {{ end }} {{ end }}
