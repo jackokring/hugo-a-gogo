@@ -22,6 +22,7 @@ header {
   box-sizing: border-box;
   border: 3px solid #015;
   padding: 6px;
+  color: #ddd;
   background-color: #113;
 }
 
@@ -85,6 +86,7 @@ p > code {
 /* signature */
 .signature {
   color: #009;
+  font-style: italic;
 }
 
 /* tags horizontal */
