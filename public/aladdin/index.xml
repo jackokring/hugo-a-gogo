@@ -6,14 +6,21 @@
     <description>Recent content in Aladdin on K Ring Technologies Ltd</description>
     <generator>Hugo</generator>
     <language>en-GB</language>
-    <lastBuildDate>Sat, 05 Oct 2024 23:43:45 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 07 Oct 2024 20:40:40 +0000</lastBuildDate>
     <atom:link href="https://kring.co.uk/aladdin/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gimp and Inkscape</title>
+      <link>https://kring.co.uk/aladdin/gimp/</link>
+      <pubDate>Mon, 07 Oct 2024 20:40:40 +0000</pubDate>
+      <guid>https://kring.co.uk/aladdin/gimp/</guid>
+      <description>&lt;p&gt;It&amp;rsquo;s a classic free replacement to PhotoShop and does what I need from such a&#xA;tool, along with a nice vector drawing program to make &lt;code&gt;.svg&lt;/code&gt; files. I&amp;rsquo;m&#xA;not into doing a full manual here, but these applications are so good.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Suckless and Rofi</title>
       <link>https://kring.co.uk/aladdin/suckless/</link>
       <pubDate>Sat, 05 Oct 2024 23:43:45 +0000</pubDate>
       <guid>https://kring.co.uk/aladdin/suckless/</guid>
-      <description>&lt;h2 id=&#34;st&#34;&gt;st&lt;/h2&gt;&#xA;&lt;p&gt;The suckless terminal. It&amp;rsquo;s ideally small to bake in a nerd font, and remove&#xA;non UTF-8 mode, and the alt code Latin code page. On a Chromebook this is&#xA;important as the Crostini terminal doesn&amp;rsquo;t have nerd font abilities. I then&#xA;launch &lt;code&gt;nvim&lt;/code&gt; inside &lt;code&gt;st&lt;/code&gt; to obtain a local and an &lt;code&gt;ssh -X&lt;/code&gt; remote fonted&#xA;edit experience. Nice.&lt;/p&gt;&#xA;&lt;h2 id=&#34;rofi&#34;&gt;rofi&lt;/h2&gt;&#xA;&lt;p&gt;A nice hot keyed quick launch selector. After a bit of setup lots can be&#xA;placed for access by &lt;code&gt;rofi -show combi&lt;/code&gt;, the mix together mode.&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;st&#34;&gt;st&lt;/h2&gt;&#xA;&lt;p&gt;The suckless terminal. It&amp;rsquo;s ideally small to bake in a nerd font, and remove&#xA;non UTF-8 mode, and the alt code Latin code page. On a Chromebook this is&#xA;important as the Crostini terminal doesn&amp;rsquo;t have nerd font abilities. I then&#xA;launch &lt;code&gt;nvim&lt;/code&gt; inside &lt;code&gt;st&lt;/code&gt; to obtain a local and an &lt;code&gt;ssh -X&lt;/code&gt; remote fonted&#xA;edit experience. Nice.&lt;/p&gt;&#xA;&lt;h2 id=&#34;rofi&#34;&gt;rofi&lt;/h2&gt;&#xA;&lt;p&gt;A nice hot keyed quick launch selector. After a bit of setup lots can be&#xA;placed for access by &lt;code&gt;rofi -show combi&lt;/code&gt;, the mix together mode. I also added&#xA;a plugin template called &lt;code&gt;a&lt;/code&gt; as C makes &lt;code&gt;a.out&lt;/code&gt; for adding in more modes.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Hugo</title>

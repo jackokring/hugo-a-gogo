@@ -75,22 +75,21 @@ a {
 }
 
 /* menus horizontal */
-nav > ul > li {
+nav > ul > li,
+.tags > li,
+.i {
   display: inline-block;
 }
 
 /* no space on left of menu */
-nav > ul {
+nav > ul,
+.l {
   padding-inline-start: 0px;
 }
 
-/* tags horizontal */
-.tags > li {
-  display: inline-block;
-}
-
 /* inline code */
-p > code {
+p > code,
+.a {
   /* jighest contrast to black */
   color: var(--link-ink);
 }
@@ -116,26 +115,32 @@ p > code {
   margin: 0px;
 }
 
-.alert-caution {
+.alert-caution,
+.y {
   background-color: var(--yellow);
 }
 
-.alert-important {
+.alert-important,
+.m {
   background-color: var(--magenta);
 }
 
-.alert-note {
+.alert-note,
+.b {
   background-color: var(--blue);
 }
 
-.alert-tip {
+.alert-tip,
+.g {
   background-color: var(--green);
 }
 
-.alert-warning {
+.alert-warning,
+.r {
   background-color: var(--red);
 }
 
-.blockquote {
+.blockquote,
+.c {
   background-color: var(--cyan);
 }

@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width">
 <title>Suckless and Rofi | K Ring Technologies Ltd</title>
 
-      <link rel="stylesheet" href="/css/main.min.2e6d6876d3778dae262bb99df0c37af5e38ee70334c395f7cbb4a8a94b08c33c.css" integrity="sha256-Lm1odtN3ja4mK7md8MN69eOO5wM0w5X3y7SoqUsIwzw=" crossorigin="anonymous">
+      <link rel="stylesheet" href="/css/main.min.c4e1bcfb78d6f9e3dc1d2890c5359d0980579415480f5f706b8f860b808d07d6.css" integrity="sha256-xOG8&#43;3jW&#43;ePcHSiQxTWdCYBXlBVID19wa4&#43;GC4CNB9Y=" crossorigin="anonymous">
       <link rel="stylesheet" href="/css/syntax.min.64bdb51e7fdc90771f811ca111adb352b42a9c08f983a3c951fa044afc99955f.css" integrity="sha256-ZL21Hn/ckHcfgRyhEa2zUrQqnAj5g6PJUfoESvyZlV8=" crossorigin="anonymous">
 
 
@@ -91,15 +91,19 @@ launch <code>nvim</code> inside <code>st</code> to obtain a local and an <code>s
 edit experience. Nice.</p>
 <h2 id="rofi">rofi</h2>
 <p>A nice hot keyed quick launch selector. After a bit of setup lots can be
-placed for access by <code>rofi -show combi</code>, the mix together mode.</p>
+placed for access by <code>rofi -show combi</code>, the mix together mode. I also added
+a plugin template called <code>a</code> as C makes <code>a.out</code> for adding in more modes.</p>
+<p>There is a <code>dmenu</code> compatibility mode for using in scripts if you prefer
+it over <code>dmenu</code>. I have it set up on <code>\r</code> in <code>nvim</code> as I usually have the
+editor open. It works over an <code>ssh -X</code> connection too.</p>
 <h2 id="dwm-slstatus-and-dmenu">dwm, slstatus and dmenu</h2>
 <p>A simple efficient desktop window manager and it&rsquo;s status bar. Faster on
-simpler hardware. Has it&rsquo;s uses. So <code>dmenu</code> is like a mini <code>rofi</code> custom for
-<code>dwm</code>.</p>
+simpler hardware. Has it&rsquo;s uses. So <code>dmenu</code> is like a mini <code>rofi</code> custom in
+<code>dwm</code>. They do require a little knowledge of C to customize.</p>
 <p>Checkout <a href="https://suckless.org/" target="_blank" rel="noopener">suckless</a>
  and
 <a href="https://github.com/davatorium/rofi" target="_blank" rel="noopener">rofi</a>
- if you like it so.</p>
+ if you like.</p>
  
 <div>
   <h3>Tags</h3>

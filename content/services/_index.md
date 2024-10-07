@@ -15,4 +15,5 @@ tags = ['service', 'work', 'knowledge']
 maths = true
 +++
 
-Services available from K Ring Technologies. Email `jackokring@gmail.com`.
+Services available from K Ring Technologies. Email `jackokring@gmail.com` for
+more details.

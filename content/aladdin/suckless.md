@@ -26,13 +26,18 @@ edit experience. Nice.
 ## rofi
 
 A nice hot keyed quick launch selector. After a bit of setup lots can be
-placed for access by `rofi -show combi`, the mix together mode.
+placed for access by `rofi -show combi`, the mix together mode. I also added
+a plugin template called `a` as C makes `a.out` for adding in more modes.
+
+There is a `dmenu` compatibility mode for using in scripts if you prefer
+it over `dmenu`. I have it set up on `\r` in `nvim` as I usually have the
+editor open. It works over an `ssh -X` connection too.
 
 ## dwm, slstatus and dmenu
 
 A simple efficient desktop window manager and it's status bar. Faster on
-simpler hardware. Has it's uses. So `dmenu` is like a mini `rofi` custom for
-`dwm`.
+simpler hardware. Has it's uses. So `dmenu` is like a mini `rofi` custom in
+`dwm`. They do require a little knowledge of C to customize.
 
 Checkout [suckless](https://suckless.org/) and
-[rofi](https://github.com/davatorium/rofi) if you like it so.
+[rofi](https://github.com/davatorium/rofi) if you like.
