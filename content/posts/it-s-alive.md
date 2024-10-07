@@ -8,7 +8,7 @@ draft = false
 # place in main menu
 menus = []
 # tag list
-tags = ['theme', 'site', 'markdown']
+tags = ['theme', 'site', 'markdown', 'test']
 # param block
 [params]
 # use maths
@@ -34,3 +34,16 @@ post is to check out some of the features.
 > Breakfast is the most important meal of the day. Eat.
 
 Cool.
+
+```python
+def funk(ong):
+  return None
+
+funk(None)
+```
+
+So that should be syntax highlights.
+
+\[ x^n + y^n = z^n \]
+
+And some mathematical TeX.

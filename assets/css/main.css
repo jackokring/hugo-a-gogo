@@ -5,10 +5,10 @@
   --yellow: #770;
   --cyan: #077;
   --magenta: #707;
-  --white: #ddd;
-  --black: #222;
-  --blue-ink: #049;
-  --link-ink: #069;
+  --white: #fff;
+  --black: #000;
+  /* link colour */
+  --link-ink: #00f;
 }
 
 body {
@@ -46,8 +46,6 @@ header {
   padding: 4px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
-  margin: 1rem;
   cursor: pointer;
 }
 
@@ -58,7 +56,7 @@ header {
 
 .scaled {
   /* 200px by 200px @ 60% => 100 px */
-  max-width: 75%;
+  max-width: 81%;
   width: auto;
   height: auto;
   /* makes space for afters to left */
@@ -91,25 +89,15 @@ nav > ul {
   display: inline-block;
 }
 
-/* slightly bigger */
-h1 {
-  font-size: 2.3em;
-}
-
-h2 {
-}
-
-h3 {
-}
-
 /* inline code */
 p > code {
-  color: var(--magenta);
+  /* jighest contrast to black */
+  color: var(--link-ink);
 }
 
 /* signature */
 .signature {
-  color: var(--blue-ink);
+  color: var(--link-ink);
   font-style: italic;
 }
 
@@ -121,6 +109,11 @@ p > code {
 .alert {
   border-left: 4px solid var(--white);
   margin: 1rem;
+  padding: 1rem;
+}
+
+.alert > p {
+  margin: 0px;
 }
 
 .alert-caution {
