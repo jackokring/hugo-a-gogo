@@ -5,7 +5,7 @@
   <a href="{{ .Page.RelPermalink }}">{{ .Page.LinkTitle }}</a>
 </h2>
 <ul class="tags" data-pagefind-ignore="all">
-  {{ range .WeightedPages }}
+  {{ range .WeightedPages.Pages.ByPublishDate.Reverse }}
   <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a> |</li>
   {{ end }}
   <li>[{{ .Count }}]</li>
