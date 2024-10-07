@@ -45,6 +45,6 @@ None so far.
 
 ### `home.html` overrides `section.html` in root `content/`
 
-## Notes on `assers`
+## Notes on `assets`
 
 ### Global so `resources.Get <path>` not page local `.Resources.Get <path>`
