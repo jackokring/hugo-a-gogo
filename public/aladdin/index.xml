@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Aladdin on K Ring Technologies Ltd</title>
+    <link>https://kring.co.uk/aladdin/</link>
+    <description>Recent content in Aladdin on K Ring Technologies Ltd</description>
+    <generator>Hugo</generator>
+    <language>en-GB</language>
+    <lastBuildDate>Sat, 05 Oct 2024 23:43:45 +0000</lastBuildDate>
+    <atom:link href="https://kring.co.uk/aladdin/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Suckless and Rofi</title>
+      <link>https://kring.co.uk/aladdin/suckless/</link>
+      <pubDate>Sat, 05 Oct 2024 23:43:45 +0000</pubDate>
+      <guid>https://kring.co.uk/aladdin/suckless/</guid>
+      <description>&lt;h2 id=&#34;st&#34;&gt;st&lt;/h2&gt;&#xA;&lt;p&gt;The suckless terminal. It&amp;rsquo;s ideally small to bake in a nerd font, and remove&#xA;non UTF-8 mode, and the alt code Latin code page. On a Chromebook this is&#xA;important as the Crostini terminal doesn&amp;rsquo;t have nerd font abilities. I then&#xA;launch &lt;code&gt;nvim&lt;/code&gt; inside &lt;code&gt;st&lt;/code&gt; to obtain a local and an &lt;code&gt;ssh -X&lt;/code&gt; remote fonted&#xA;edit experience. Nice.&lt;/p&gt;&#xA;&lt;h2 id=&#34;rofi&#34;&gt;rofi&lt;/h2&gt;&#xA;&lt;p&gt;A nice hot keyed quick launch selector. After a bit of setup lots can be&#xA;placed for access by &lt;code&gt;rofi -show combi&lt;/code&gt;, the mix together mode.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Hugo</title>
+      <link>https://kring.co.uk/aladdin/hugo/</link>
+      <pubDate>Sat, 05 Oct 2024 14:37:38 +0000</pubDate>
+      <guid>https://kring.co.uk/aladdin/hugo/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://gohugo.io&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo&lt;/a&gt;&#xA; is a static site templating builder used here.&#xA;It works well. It seems similar to how github pages works, but is written in go&#xA;instead of ruby. It does take a little while to scan the documentation and&#xA;setup, as some of the more complex themes don&amp;rsquo;t work with some integration&#xA;solutions such as &lt;strong&gt;CloudFlare&lt;/strong&gt;. Simple truths such as a theme being a fallback&#xA;site make sense, as after some time migrating the templating to the theme&#xA;and just using the site layouts for overrides just makes sense.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Neovim</title>
+      <link>https://kring.co.uk/aladdin/nvim/</link>
+      <pubDate>Sat, 05 Oct 2024 11:10:32 +0000</pubDate>
+      <guid>https://kring.co.uk/aladdin/nvim/</guid>
+      <description>&lt;p&gt;The excellent &lt;a href=&#34;https://neovim.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Neovim&lt;/a&gt;&#xA; has improved a lot since the older&#xA;&lt;code&gt;vim&lt;/code&gt; and even the original &lt;code&gt;vi&lt;/code&gt;. It now includes Lua scripting as well as&#xA;the more obscure Vim Script. It is best using some extra configuration of which&#xA;&lt;a href=&#34;https://www.lazyvim.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;LazyVim&lt;/a&gt;&#xA; I have found to be very useful.&lt;/p&gt;&#xA;&lt;p&gt;As a fast loading editor with treesitter and various LSP servers, it&amp;rsquo;s nice,&#xA;although the way &amp;ldquo;modes&amp;rdquo; work is not your usual editor way. It has the speed&#xA;advantage over &lt;code&gt;VSCode&lt;/code&gt; and also will load files over an &lt;code&gt;SSH&lt;/code&gt; connection&#xA;whereas &lt;code&gt;VSCode&lt;/code&gt; just freezes. I tried &lt;code&gt;Emacs&lt;/code&gt; for a while and have used it&#xA;back in the 90s. I found the LISP configuration more annoying than using&#xA;Lua for configuration. Also &lt;code&gt;LazyVim&lt;/code&gt; really solves the initial setup problems.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

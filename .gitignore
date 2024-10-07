@@ -1,4 +1,5 @@
 # nano chaff
 /**/*~
-public/*
-!public/pagefind/
+# build version on clouflare too low
+#public/*
+#!public/pagefind/

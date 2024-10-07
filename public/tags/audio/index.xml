@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Audio on K Ring Technologies Ltd</title>
+    <link>https://kring.co.uk/tags/audio/</link>
+    <description>Recent content in Audio on K Ring Technologies Ltd</description>
+    <generator>Hugo</generator>
+    <language>en-GB</language>
+    <lastBuildDate>Sat, 05 Oct 2024 10:51:01 +0000</lastBuildDate>
+    <atom:link href="https://kring.co.uk/tags/audio/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VCV Rack Plugin [Free]</title>
+      <link>https://kring.co.uk/products/vcv-plugin/</link>
+      <pubDate>Sat, 05 Oct 2024 10:51:01 +0000</pubDate>
+      <guid>https://kring.co.uk/products/vcv-plugin/</guid>
+      <description>&lt;p&gt;An audio plugin of virtual Eurorack modules. A free download for &lt;strong&gt;VCV Rack&lt;/strong&gt;&#xA;written in C++ under an MIT licence. Downloads are in the tens of thousands&#xA;and as such it&amp;rsquo;s KRT&amp;rsquo;s most popular software.&lt;/p&gt;&#xA;&lt;p&gt;Download &lt;a href=&#34;https://library.vcvrack.com/KRTPluginA&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;&#xA; by subscribing and&#xA;then updating the library from within the VCV application. There is a free&#xA;version of VCV available from the &lt;a href=&#34;https://vcvrack.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;VCV homepage&lt;/a&gt;&#xA; as&#xA;well as a pro version with a VST adapter for integration with your music&#xA;DAW. It&amp;rsquo;s a very nice experimental audio platform with many third party&#xA;plugins.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

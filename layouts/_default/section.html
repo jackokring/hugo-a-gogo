@@ -1,8 +1,11 @@
 {{ define "main" }}
 <h1>{{ .Title }}</h1>
-{{ .Content }} {{ range .Paginator.Pages }}
+{{ .Content }} {{ range (.Paginate .Pages.ByPublishDate.Reverse 25).Pages }}
 <h2 data-pagefind-ignore="all">
-  <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+  <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a> ... {{ $dateMachine :=
+  .Date | time.Format "2006-01-02T15:04:05-07:00" }} {{ $dateHuman := .Date |
+  time.Format ":date_long" }}
+  <time datetime="{{ $dateMachine }}">[{{ $dateHuman }}]</time>
 </h2>
 <div data-pagefind-ignore="all">{{ .Summary }}</div>
 {{ end }} {{ template "_internal/pagination.html" . }} {{ end }}

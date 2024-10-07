@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nvim on K Ring Technologies Ltd</title>
+    <link>https://kring.co.uk/tags/nvim/</link>
+    <description>Recent content in Nvim on K Ring Technologies Ltd</description>
+    <generator>Hugo</generator>
+    <language>en-GB</language>
+    <lastBuildDate>Sat, 05 Oct 2024 11:10:32 +0000</lastBuildDate>
+    <atom:link href="https://kring.co.uk/tags/nvim/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Neovim</title>
+      <link>https://kring.co.uk/aladdin/nvim/</link>
+      <pubDate>Sat, 05 Oct 2024 11:10:32 +0000</pubDate>
+      <guid>https://kring.co.uk/aladdin/nvim/</guid>
+      <description>&lt;p&gt;The excellent &lt;a href=&#34;https://neovim.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Neovim&lt;/a&gt;&#xA; has improved a lot since the older&#xA;&lt;code&gt;vim&lt;/code&gt; and even the original &lt;code&gt;vi&lt;/code&gt;. It now includes Lua scripting as well as&#xA;the more obscure Vim Script. It is best using some extra configuration of which&#xA;&lt;a href=&#34;https://www.lazyvim.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;LazyVim&lt;/a&gt;&#xA; I have found to be very useful.&lt;/p&gt;&#xA;&lt;p&gt;As a fast loading editor with treesitter and various LSP servers, it&amp;rsquo;s nice,&#xA;although the way &amp;ldquo;modes&amp;rdquo; work is not your usual editor way. It has the speed&#xA;advantage over &lt;code&gt;VSCode&lt;/code&gt; and also will load files over an &lt;code&gt;SSH&lt;/code&gt; connection&#xA;whereas &lt;code&gt;VSCode&lt;/code&gt; just freezes. I tried &lt;code&gt;Emacs&lt;/code&gt; for a while and have used it&#xA;back in the 90s. I found the LISP configuration more annoying than using&#xA;Lua for configuration. Also &lt;code&gt;LazyVim&lt;/code&gt; really solves the initial setup problems.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,40 +1,53 @@
+:root {
+  --red: #700;
+  --green: #070;
+  --blue: #007;
+  --yellow: #770;
+  --cyan: #077;
+  --magenta: #707;
+  --white: #ddd;
+  --black: #222;
+  --blue-ink: #049;
+  --link-ink: #069;
+}
+
 body {
-  color: #ddd;
+  color: var(--white);
   font-family: sans-serif;
+  /* slightly easier viewing */
   line-height: 1.5;
   margin: 1rem;
-  background-color: #113;
-  /* max-width: 768px;*/
+  background-color: var(--black);
 }
 
 header {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid var(--white);
   margin-bottom: 1rem;
-  /* background-color: #115; */
 }
 
 /* search */
 #search {
-  margin: 13px;
+  margin: 1rem;
 }
 
 #search > div > form > input {
   box-sizing: border-box;
-  border: 3px solid #015;
-  padding: 6px;
-  color: #ddd;
-  background-color: #113;
+  border: 1px solid var(--cyan);
+  padding: 4px;
+  margin: 1rem;
+  color: var(--white);
+  background-color: var(--black);
 }
 
 #search > div > form > button {
-  background-color: #077;
+  background-color: var(--cyan);
   border: none;
-  color: #ddd;
-  padding: 8px;
+  color: var(--white);
+  padding: 4px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  margin: 4px;
+  margin: 1rem;
   cursor: pointer;
 }
 
@@ -53,13 +66,14 @@ header {
 }
 
 footer {
-  border-top: 1px solid #ddd;
+  border-top: 1px solid var(--white);
   margin-top: 1rem;
 }
 
 a {
-  color: #08e;
-  text-decoration: none;
+  color: var(--link-ink);
+  /* confusion 
+  text-decoration: none; */
 }
 
 /* menus horizontal */
@@ -72,57 +86,63 @@ nav > ul {
   padding-inline-start: 0px;
 }
 
-/* slightly bigger */
-h1 {
-  color: #dad;
-  font-size: 2.3em;
-}
-
-/* inline code */
-p > code {
-  color: #a0f;
-}
-
-/* signature */
-.signature {
-  color: #009;
-  font-style: italic;
-}
-
 /* tags horizontal */
 .tags > li {
   display: inline-block;
 }
 
-/* blockquote alerts */
-.alert {
+/* slightly bigger */
+h1 {
+  font-size: 2.3em;
 }
 
+h2 {
+}
+
+h3 {
+}
+
+/* inline code */
+p > code {
+  color: var(--magenta);
+}
+
+/* signature */
+.signature {
+  color: var(--blue-ink);
+  font-style: italic;
+}
+
+/* blockquote alerts */
 .alert-heading {
-  font-size: 1.2em;
   font-weight: bold;
 }
 
+.alert {
+  border-left: 4px solid var(--white);
+  margin: 1rem;
+}
+
 .alert-caution {
-  background-color: #770;
+  background-color: var(--yellow);
 }
 
 .alert-important {
-  background-color: #707;
+  background-color: var(--magenta);
 }
 
 .alert-note {
-  background-color: #007;
+  background-color: var(--blue);
 }
 
 .alert-tip {
-  background-color: #070;
+  background-color: var(--green);
 }
 
 .alert-warning {
-  background-color: #700;
+  background-color: var(--red);
 }
 
 .blockquote {
-  background-color: #077;
+  background-color: var(--cyan);
 }

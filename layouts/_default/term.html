@@ -1,5 +1,5 @@
 {{ define "main" }}
 <h1>{{ .Title }}</h1>
-{{ .Content }} {{ range .Paginator.Pages }}
+{{ .Content }} {{ range (.Paginate .Pages.ByPublishDate.Reverse 25).Pages }}
 <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-{{ .Summary }} {{ end }} {{ end }}{{ template "_internal/pagination.html" . }}
+{{ .Summary }} {{ end }} {{ template "_internal/pagination.html" . }} {{ end }}
