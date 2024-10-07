@@ -14,13 +14,14 @@ header {
 }
 
 /* search */
-#serch {
-  margin: 12px;
+#search {
+  margin: 13px;
 }
 
 #search > div > form > input {
   box-sizing: border-box;
   border: 3px solid #015;
+  padding: 6px;
   background-color: #113;
 }
 
@@ -86,6 +87,7 @@ p > code {
   color: #009;
 }
 
+/* tags horizontal */
 .tags > li {
   display: inline-block;
 }
