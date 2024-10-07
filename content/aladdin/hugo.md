@@ -8,7 +8,7 @@ draft = false
 # place in main menu
 menus = []
 # tag list
-tags = ['hugo', 'build']
+tags = ['hugo', 'build', 'pagefind']
 # param block
 [params]
 # use maths
@@ -38,3 +38,11 @@ can be made.
 It's even possible to make content for each tag for a kind of context theming.
 I wish I'd had this in 1995. It would have made somethings much easier. It still
 doesn't get passed the odd CSS order for float rights before the regular lefts.
+
+## Pagefind
+
+An excellent static site client side site search provider. It needs `cargo`
+and `rust` to build the build time indexer. It's quite nice but I just
+removed its stylesheet and plugged it in with some ignore properties to avoid
+some bad links, duplicates and bad anchors. Just use your own CSS to style the
+input form field. [Pagefind](https://pagefind.app/) is nice.

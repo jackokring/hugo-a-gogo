@@ -8,7 +8,7 @@ draft = false
 # place in main menu
 menus = []
 # tag list
-tags = ['nvim']
+tags = ['nvim', 'lua']
 # param block
 [params]
 # use maths
@@ -31,3 +31,11 @@ I'm still learning commands and I'm finding `o` to be a useful instead of
 `A<cr>`. Multi-cursor is not really needed with `:%s/ ... / ... /g` as a
 classic regular expression find and replace. While `q` allows recording
 key macros, for easy replay. It's a steep learning curve, but powerful.
+
+### Lua
+
+The built in Lua scripting is an improvement on VimScript but that's still
+a keeper. The `LazyVim` plugin system is very extensible and I've started
+a plugin called [Doris](https://github.com/jackokring/doris.nvim) to keep it
+all in one place. So far I've just added a modified multi-class OOP from
+the docs. It's a 1-indexed language with a few peculiarities.

@@ -28,6 +28,9 @@ tagged with tag list page.
 
 Includes MathJax mathematics TeX format `\[`, `\]` or `$$`. Inline `\(`, `\)`.
 
+Included search by `pagefind` so `cargo install pagefind` and run it after
+`hugo` to build the indexes with `pagefind --site public`.
+
 ## Installation
 
 It's kept as part of a repo to have the example in context. Occasionally files
