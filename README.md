@@ -39,6 +39,8 @@ temporary override of the theme by parts.
 
 ## Configuration
 
+None so far.
+
 ## Notes on `layouts/`
 
 ### `home.html` overrides `section.html` in root `content/`

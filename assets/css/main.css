@@ -17,9 +17,7 @@ header {
 #search > div > form > input {
   box-sizing: border-box;
   border: 2px solid #015;
-  border-radius: 4px;
   background-color: #113;
-  padding: 8px 8px;
 }
 
 #search > div > form > button {
@@ -41,7 +39,7 @@ header {
 
 .scaled {
   /* 200px by 200px @ 60% => 100 px */
-  max-width: 50%;
+  max-width: 70%;
   width: auto;
   height: auto;
   /* makes space for afters to left */
