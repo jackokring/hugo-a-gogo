@@ -1,5 +1,5 @@
 {{ define "main" }} {{ .Content }} {{ range
-Site.RegularPages.ByPublishDate.Reverse.Limit 25 }}
+.Site.RegularPages.ByPublishDate.Reverse.Limit 25 }}
 <h2>
   <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a> ... {{ $dateMachine :=
   .Date | time.Format "2006-01-02T15:04:05-07:00" }} {{ $dateHuman := .Date |
