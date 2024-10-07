@@ -4,7 +4,7 @@
   dir="{{ or site.Language.LanguageDirection `ltr` }}"
 >
   <head>
-    {{ partial "head.html" . }} {{ if .Param "math" }} {{ partialCached
+    {{ partial "head.html" . }} {{ if .Param "maths" }} {{ partialCached
     "maths.html" . }} {{ end }}
   </head>
   <body>
