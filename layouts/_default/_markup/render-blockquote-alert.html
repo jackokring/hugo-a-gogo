@@ -1,9 +1,9 @@
-{{ $emojis := dict "caution" ":exclamation:" "important" ":information_source:"
-"note" ":memo:" "tip" ":bulb:" "warning" ":warning:" }}
+{{ $svgs := dict "caution" "stop" "important" "report" "note" "info" "tip"
+"light-bulb" "warning" "alert" }} {{ $svg := resources.GetMatch (printf
+"svg/octicons/%s-16.svg" (index $svgs .AlertType)) }}
 <blockquote class="alert alert-{{ .AlertType }}">
   <div class="alert-heading">
-    {{ transform.Emojify (index $emojis .AlertType) }} {{ with .AlertTitle }} {{
-    . }} {{ else }} {{ or (i18n .AlertType) (title .AlertType) }} {{ end }}
+    {{ $svg.Content | safeHTML }} {{ title .AlertType }}
   </div>
-  {{ .Text }}
+  {{ .Text | safeHTML }}
 </blockquote>

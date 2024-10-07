@@ -122,3 +122,7 @@ p > code {
 .alert-warning {
   background-color: #700;
 }
+
+.blockquote {
+  background-color: #077;
+}
