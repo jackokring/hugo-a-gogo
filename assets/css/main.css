@@ -108,11 +108,11 @@ p > code {
 }
 
 .alert-important {
-  background-color: #007;
+  background-color: #707;
 }
 
 .alert-note {
-  background-color: #444;
+  background-color: #007;
 }
 
 .alert-tip {
