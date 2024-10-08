@@ -25,10 +25,13 @@ header {
   margin-bottom: 1rem;
 }
 
+.g_id_signin {
+  float: right;
+}
+
 /* search */
 #search {
   margin: 1rem;
-  display: inline-block;
 }
 
 #search > div > form > input {
