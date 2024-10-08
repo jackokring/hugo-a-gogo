@@ -3,9 +3,9 @@
   function googleLogin(cred) {
     console.log(cred);
     setCookie("cred", cred.credential, 1);
-    doSiteLogin();
+    doSiteLogin(c);
   }
-  function doSiteLogin() {
+  function doSiteLogin(cred) {
     return false;
   }
   function replaceMain(url, callback) {
@@ -35,8 +35,8 @@
     xhttp.send();
   }
   function getCred() {
-    const c = getCookie("cred");
-    const p = JSON.parse(atob(c.split(".")[1]));
+    const c2 = getCookie("cred");
+    const p = JSON.parse(atob(c2.split(".")[1]));
     return p;
   }
   function isTokenExpired(token) {
@@ -49,24 +49,26 @@
     delCookie("cred");
     window.google.accounts.id.prompt();
   }
-  function onRequest(url, callback) {
-    const c = getCred();
-    if (c == "") {
+  function onRequest(url, json, callback) {
+    const c2 = getCred();
+    if (c2 == "") {
       alert("You are not logged in.");
       reprompt();
       return;
     }
-    if (isTokenExpired(c)) {
+    if (isTokenExpired(c2)) {
       alert("You were logged out.");
       reprompt();
       return;
     }
-    if (isGoogle(c)) {
-      if (!doSiteLogin()) {
-        alert("We could not log in to do that, try later.");
+    if (isGoogle(c2)) {
+      if (!doSiteLogin(c2)) {
+        alert("No authentication to do that, try later.");
         return;
       }
     }
+    const j = JSON.stringify(json);
+    url += "?" + encodeURIComponent(j);
     replaceMain(url, callback);
   }
   function setCookie(cname, cvalue, exdays) {
@@ -80,12 +82,12 @@
     let name = cname + "=";
     let ca = document.cookie.split(";");
     for (let i = 0; i < ca.length; i++) {
-      let c = ca[i];
-      while (c.charAt(0) == " ") {
-        c = c.substring(1);
+      let c2 = ca[i];
+      while (c2.charAt(0) == " ") {
+        c2 = c2.substring(1);
       }
-      if (c.indexOf(name) == 0) {
-        return decodeURIComponent(c.substring(name.length, c.length));
+      if (c2.indexOf(name) == 0) {
+        return decodeURIComponent(c2.substring(name.length, c2.length));
       }
     }
     return "";

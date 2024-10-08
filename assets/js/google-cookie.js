@@ -3,10 +3,11 @@ function googleLogin(cred) {
   console.log(cred);
   /* this is sent by cookie sending to verification server */
   setCookie("cred", cred.credential, 1);
-  doSiteLogin(); /* in event of no other page in an hour? */
+  doSiteLogin(c); /* in event of no other page in an hour? */
 }
 
-function doSiteLogin() {
+/* optimize one less cookie decode */
+function doSiteLogin(cred) {
   /* replace cred cookie on sucess with site cookie */
   return false; /* failed to login, server down? */
 }
@@ -63,7 +64,9 @@ function reprompt() {
   window.google.accounts.id.prompt();
 }
 
-function onRequest(url, callback) {
+/* replaces <main> sends json as query string GET
+ * then calls callback(responeXML, siteCredential) */
+function onRequest(url, json, callback) {
   const c = getCred();
   if (c == "") {
     alert("You are not logged in.");
@@ -78,11 +81,15 @@ function onRequest(url, callback) {
     return;
   }
   if (isGoogle(c)) {
-    if (!doSiteLogin()) {
-      alert("We could not log in to do that, try later.");
+    if (!doSiteLogin(c)) {
+      alert("No authentication to do that, try later.");
       return;
     }
+    // cookie type changed!!
   }
+  const j = JSON.stringify(json);
+  url += "?" + encodeURIComponent(j);
+  /* so as singular component, as ?=& encoded */
   replaceMain(url, callback);
 }
 
