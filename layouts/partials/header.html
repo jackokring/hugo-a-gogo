@@ -11,6 +11,28 @@
 <script>
   function googleLogin(cred) {
     console.log(cred);
+    setCookie("cred", cred.credential, 1);
+  }
+  function setCookie(cname, cvalue, exdays) {
+    const d = new Date();
+    d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
+    let expires = "expires=" + d.toUTCString();
+    document.cookie =
+      cname + "=" + cvalue + ";" + expires + ";path=/;" + document.cookie;
+  }
+  function getCookie(cname) {
+    let name = cname + "=";
+    let ca = document.cookie.split(";");
+    for (let i = 0; i < ca.length; i++) {
+      let c = ca[i];
+      while (c.charAt(0) == " ") {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+        return c.substring(name.length, c.length);
+      }
+    }
+    return "";
   }
 </script>
 <div
@@ -23,6 +45,7 @@
   data-auto_select="true"
   data-itp_support="true"
   data-use_fedcm_for_prompt="true"
+  data-skip_prompt_cookie="cred"
 ></div>
 <!-- <div
   class="g_id_signin"

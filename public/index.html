@@ -43,6 +43,28 @@
 <script>
   function googleLogin(cred) {
     console.log(cred);
+    setCookie("cred", cred.credential, 1);
+  }
+  function setCookie(cname, cvalue, exdays) {
+    const d = new Date();
+    d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
+    let expires = "expires=" + d.toUTCString();
+    document.cookie =
+      cname + "=" + cvalue + ";" + expires + ";path=/;" + document.cookie;
+  }
+  function getCookie(cname) {
+    let name = cname + "=";
+    let ca = document.cookie.split(";");
+    for (let i = 0; i < ca.length; i++) {
+      let c = ca[i];
+      while (c.charAt(0) == " ") {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+        return c.substring(name.length, c.length);
+      }
+    }
+    return "";
   }
 </script>
 <div
@@ -55,6 +77,7 @@
   data-auto_select="true"
   data-itp_support="true"
   data-use_fedcm_for_prompt="true"
+  data-skip_prompt_cookie="cred"
 ></div>
 
 <h1><a href="/">K Ring Technologies Ltd</a></h1>
@@ -104,8 +127,8 @@ you are not happy about cookies or data protection makes you wince and run to
 the moon, please leave. Big brother knew you were going to visit here so the
 opt out button is the same one that closes the browser. Fabulous. So now that&rsquo;s
 done with, we can begin. Don&rsquo;t be naughty now, save it up for later as you might
-need it. I can&rsquo;t enforce my service provider on opt in although this page packs
-no cookies from KRT.</p>
+need it. I can&rsquo;t enforce my service provider on opt in, although this page packs
+Google login cookies from KRT.</p>
 <p>This site is mainly built with <a href="https://gohugo.io" target="_blank" rel="noopener">hugo</a>
  the static site
 builder, with a theme from scratch as it develops. It takes a few days of
