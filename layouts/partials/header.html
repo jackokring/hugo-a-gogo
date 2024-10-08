@@ -7,8 +7,6 @@
     height="{{ $image.Height }}"
   />
 </div>
-<h1><a href="/">{{ site.Title }}</a></h1>
-{{ partial "menu.html" (dict "menuID" "main" "page" .) }}
 <script src="https://accounts.google.com/gsi/client" async></script>
 <div
   id="g_id_onload"
@@ -29,6 +27,8 @@
   data-size="large"
   data-logo_alignment="left"
 ></div>
+<h1><a href="/">{{ site.Title }}</a></h1>
+{{ partial "menu.html" (dict "menuID" "main" "page" .) }}
 <!-- <link href="/pagefind/pagefind-ui.css" rel="stylesheet" /> -->
 <script src="/pagefind/pagefind-ui.js"></script>
 <div id="search"></div>
