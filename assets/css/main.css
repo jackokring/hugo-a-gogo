@@ -28,6 +28,7 @@ header {
 /* search */
 #search {
   margin: 1rem;
+  display: inline-block;
 }
 
 #search > div > form > input {

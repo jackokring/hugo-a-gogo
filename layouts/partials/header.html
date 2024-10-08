@@ -9,6 +9,26 @@
 </div>
 <h1><a href="/">{{ site.Title }}</a></h1>
 {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+<script src="https://accounts.google.com/gsi/client" async></script>
+<div
+  id="g_id_onload"
+  data-client_id="1074137615893-80kru3vjd82mars43fjh8vm20sgbadso.apps.googleusercontent.com"
+  data-context="use"
+  data-ux_mode="popup"
+  data-callback="googleLogin"
+  data-nonce=""
+  data-auto_select="true"
+  data-itp_support="true"
+></div>
+<div
+  class="g_id_signin"
+  data-type="standard"
+  data-shape="rectangular"
+  data-theme="outline"
+  data-text="continue_with"
+  data-size="large"
+  data-logo_alignment="left"
+></div>
 <!-- <link href="/pagefind/pagefind-ui.css" rel="stylesheet" /> -->
 <script src="/pagefind/pagefind-ui.js"></script>
 <div id="search"></div>
