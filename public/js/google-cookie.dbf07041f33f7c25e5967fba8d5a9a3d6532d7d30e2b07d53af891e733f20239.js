@@ -28,4 +28,8 @@
   function delCookie(cname) {
     setCookie(cname, "", -1);
   }
+  window.googleLogin = googleLogin;
+  window.setCookie = setCookie;
+  window.getCookie = getCookie;
+  window.delCookie = delCookie;
 })();

@@ -1,12 +1,12 @@
 /* called on google login from upper right dialog */
-export function googleLogin(cred) {
+function googleLogin(cred) {
   console.log(cred);
   /* this is sent by cookie sending to verification server */
   setCookie("cred", cred.credential, 1);
 }
 
 /* simple cookie management */
-export function setCookie(cname, cvalue, exdays) {
+function setCookie(cname, cvalue, exdays) {
   const d = new Date();
   d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
   let expires = "expires=" + d.toUTCString();
@@ -15,7 +15,7 @@ export function setCookie(cname, cvalue, exdays) {
   // N.B. NOT a literal equality setting.
   document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
-export function getCookie(cname) {
+function getCookie(cname) {
   let name = cname + "=";
   let ca = document.cookie.split(";");
   for (let i = 0; i < ca.length; i++) {
@@ -29,6 +29,12 @@ export function getCookie(cname) {
   }
   return "";
 }
-export function delCookie(cname) {
+function delCookie(cname) {
   setCookie(cname, "", -1);
 }
+
+/* exporting context */
+window.googleLogin = googleLogin;
+window.setCookie = setCookie;
+window.getCookie = getCookie;
+window.delCookie = delCookie;
