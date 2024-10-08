@@ -8,9 +8,31 @@
   function doSiteLogin() {
     return false;
   }
-  function replaceMain(url) {
-    if (url != null | url != "") {
-    }
+  function replaceMain(url, callback) {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4) {
+        if (this.status == 200) {
+          const r = this.responseXML;
+          const m = r.getElementsByTagName("main");
+          if (m.length != 1) {
+            alert("Unexpected service response. Logging out.");
+            reprompt();
+            return;
+          }
+          const h = m[0].innerHTML;
+          document.getElementsByTagName("main")[0].innerHTML = h;
+          callback(r, getCred());
+        } else if (this.status == 403) {
+          alert("Access denied.");
+          reprompt();
+        } else {
+          alert("Service not available, try later.");
+        }
+      }
+    };
+    xhttp.open("GET", url, true);
+    xhttp.send();
   }
   function getCred() {
     const c = getCookie("cred");
@@ -24,9 +46,10 @@
     return token?.sub != null;
   }
   function reprompt() {
+    delCookie("cred");
     window.google.accounts.id.prompt();
   }
-  function onRequest(url) {
+  function onRequest(url, callback) {
     const c = getCred();
     if (c == "") {
       alert("You are not logged in.");
@@ -34,7 +57,6 @@
       return;
     }
     if (isTokenExpired(c)) {
-      delCookie("cred");
       alert("You were logged out.");
       reprompt();
       return;
@@ -45,7 +67,7 @@
         return;
       }
     }
-    replaceMain(url);
+    replaceMain(url, callback);
   }
   function setCookie(cname, cvalue, exdays) {
     const d = /* @__PURE__ */ new Date();
@@ -72,9 +94,5 @@
     setCookie(cname, "", -1);
   }
   window.googleLogin = googleLogin;
-  window.setCookie = setCookie;
-  window.getCookie = getCookie;
-  window.delCookie = delCookie;
   window.onRequest = onRequest;
-  window.getCred = getCred;
 })();

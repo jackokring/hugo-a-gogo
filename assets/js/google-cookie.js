@@ -11,11 +11,35 @@ function doSiteLogin() {
   return false; /* failed to login, server down? */
 }
 
-function replaceMain(url) {
-  /* then if not null load url into main */
-  if ((url != null) | (url != "")) {
-    /* do ajax style main template action */
-  }
+function replaceMain(url, callback) {
+  /* do ajax style main template action */
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function () {
+    if (this.readyState == 4) {
+      if (this.status == 200) {
+        const r = this.responseXML;
+        /* so almost any kind of page to just replace main */
+        const m = r.getElementsByTagName("main");
+        if (m.length != 1) {
+          /* prevent loading bad under privilige conditions */
+          alert("Unexpected service response. Logging out.");
+          reprompt();
+          return;
+        }
+        const h = m[0].innerHTML;
+        document.getElementsByTagName("main")[0].innerHTML = h;
+        /* supply XML and credential */
+        callback(r, getCred());
+      } else if (this.status == 403) {
+        alert("Access denied.");
+        reprompt();
+      } else {
+        alert("Service not available, try later.");
+      }
+    }
+  };
+  xhttp.open("GET", url, true);
+  xhttp.send();
 }
 
 function getCred() {
@@ -35,10 +59,11 @@ function isGoogle(token) {
 }
 
 function reprompt() {
+  delCookie("cred");
   window.google.accounts.id.prompt();
 }
 
-function onRequest(url) {
+function onRequest(url, callback) {
   const c = getCred();
   if (c == "") {
     alert("You are not logged in.");
@@ -47,7 +72,6 @@ function onRequest(url) {
   }
   if (isTokenExpired(c)) {
     /* handle redo of google login */
-    delCookie("cred");
     alert("You were logged out.");
     /* then prompt by API */
     reprompt();
@@ -59,7 +83,7 @@ function onRequest(url) {
       return;
     }
   }
-  replaceMain(url);
+  replaceMain(url, callback);
 }
 
 /* simple cookie management */
@@ -92,8 +116,4 @@ function delCookie(cname) {
 
 /* exporting context */
 window.googleLogin = googleLogin;
-window.setCookie = setCookie;
-window.getCookie = getCookie;
-window.delCookie = delCookie;
 window.onRequest = onRequest;
-window.getCred = getCred;
