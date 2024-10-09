@@ -57,8 +57,9 @@ function replaceMain(url, callback) {
         reprompt();
         return;
       }
-      const h = m[0].innerHTML;
-      document.getElementsByTagName("main")[0].innerHTML = h;
+      /* direct XML save stringify and parse */
+      const h = m[0];
+      document.getElementsByTagName("main")[0] = h;
       /* supply XML and credential */
       callback(r, getCred());
     } else if (this.status == 403) {

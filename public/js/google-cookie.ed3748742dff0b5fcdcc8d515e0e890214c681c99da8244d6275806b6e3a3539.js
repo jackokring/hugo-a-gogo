@@ -44,8 +44,8 @@
           reprompt();
           return;
         }
-        const h = m[0].innerHTML;
-        document.getElementsByTagName("main")[0].innerHTML = h;
+        const h = m[0];
+        document.getElementsByTagName("main")[0] = h;
         callback(r, getCred());
       } else if (this.status == 403) {
         alert("Access denied. Logging out.");
