@@ -1,14 +1,38 @@
 (() => {
   // <stdin>
+  var loginUrl = "";
   function googleLogin(cred) {
     console.log(cred);
     setCookie("cred", cred.credential, 1);
-    doSiteLogin(c);
+    doSiteLogin(null);
   }
-  function doSiteLogin(cred) {
-    return false;
+  function doSiteLogin(callback) {
+    if (loginUrl == "") {
+      alert("Set login URL.");
+      return;
+    }
+    const uuid = crypto.randomUUID();
+    setCookie("csrf", uuid, 1);
+    const f = new FormData();
+    f.append("csrf", uuid);
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4) {
+        if (this.status == 200) {
+          if (callback != null) callback();
+        } else {
+          alert("Authentication busy, try later.");
+        }
+      }
+    };
+    xhttp.open("POST", url, true);
+    xhttp.send(f);
   }
-  function replaceMain(url, callback) {
+  function replaceMain(url2, callback) {
+    if (url2 == "" || url2 == null || url2.charAt(0) == "?") {
+      alert("Set endpoint URL.");
+      return;
+    }
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
       if (this.readyState == 4) {
@@ -31,12 +55,12 @@
         }
       }
     };
-    xhttp.open("GET", url, true);
+    xhttp.open("GET", url2, true);
     xhttp.send();
   }
   function getCred() {
-    const c2 = getCookie("cred");
-    const p = JSON.parse(atob(c2.split(".")[1]));
+    const c = getCookie("cred");
+    const p = JSON.parse(atob(c.split(".")[1]));
     return p;
   }
   function isTokenExpired(token) {
@@ -47,29 +71,28 @@
   }
   function reprompt() {
     delCookie("cred");
-    window.google.accounts.id.prompt();
+    google.accounts.id.prompt();
   }
-  function onRequest(url, json, callback) {
-    const c2 = getCred();
-    if (c2 == "") {
+  function onRequest(url2, json, callback) {
+    const cb = function() {
+      const j = JSON.stringify(json);
+      url2 += "?" + encodeURIComponent(j);
+      replaceMain(url2, callback);
+    };
+    const c = getCred();
+    if (c == "") {
       alert("You are not logged in.");
       reprompt();
       return;
     }
-    if (isTokenExpired(c2)) {
+    if (isTokenExpired(c)) {
       alert("You were logged out.");
       reprompt();
       return;
     }
-    if (isGoogle(c2)) {
-      if (!doSiteLogin(c2)) {
-        alert("No authentication to do that, try later.");
-        return;
-      }
-    }
-    const j = JSON.stringify(json);
-    url += "?" + encodeURIComponent(j);
-    replaceMain(url, callback);
+    if (isGoogle(c)) {
+      doSiteLogin(cb);
+    } else cb();
   }
   function setCookie(cname, cvalue, exdays) {
     const d = /* @__PURE__ */ new Date();
@@ -82,12 +105,12 @@
     let name = cname + "=";
     let ca = document.cookie.split(";");
     for (let i = 0; i < ca.length; i++) {
-      let c2 = ca[i];
-      while (c2.charAt(0) == " ") {
-        c2 = c2.substring(1);
+      let c = ca[i];
+      while (c.charAt(0) == " ") {
+        c = c.substring(1);
       }
-      if (c2.indexOf(name) == 0) {
-        return decodeURIComponent(c2.substring(name.length, c2.length));
+      if (c.indexOf(name) == 0) {
+        return decodeURIComponent(c.substring(name.length, c.length));
       }
     }
     return "";

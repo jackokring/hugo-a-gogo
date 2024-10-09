@@ -1,18 +1,48 @@
+/* set to activate */
+const loginUrl = "";
+
 /* called on google login from upper right dialog */
 function googleLogin(cred) {
   console.log(cred);
   /* this is sent by cookie sending to verification server */
   setCookie("cred", cred.credential, 1);
-  doSiteLogin(c); /* in event of no other page in an hour? */
+  doSiteLogin(null); /* in event of no other page in an hour? */
 }
 
 /* optimize one less cookie decode */
-function doSiteLogin(cred) {
-  /* replace cred cookie on sucess with site cookie */
-  return false; /* failed to login, server down? */
+function doSiteLogin(callback) {
+  if (loginUrl == "") {
+    alert("Set login URL.");
+    return;
+  }
+  const uuid = crypto.randomUUID();
+  /* cross site request forgery prevention */
+  setCookie("csrf", uuid, 1);
+  const f = new FormData();
+  f.append("csrf", uuid);
+  /* the credential is in the cookie sent as header ? */
+  /* more form data */
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function () {
+    if (this.readyState == 4) {
+      if (this.status == 200) {
+        /* replace cred cookie on sucess with site cookie */
+        if (callback != null) callback();
+      } else {
+        alert("Authentication busy, try later.");
+      }
+    }
+  };
+  xhttp.open("POST", url, true);
+  xhttp.send(f);
 }
 
 function replaceMain(url, callback) {
+  if (url == "" || url == null || url.charAt(0) == "?") {
+    /* not configured */
+    alert("Set endpoint URL.");
+    return;
+  }
   /* do ajax style main template action */
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function () {
@@ -61,12 +91,18 @@ function isGoogle(token) {
 
 function reprompt() {
   delCookie("cred");
-  window.google.accounts.id.prompt();
+  google.accounts.id.prompt();
 }
 
 /* replaces <main> sends json as query string GET
  * then calls callback(responeXML, siteCredential) */
 function onRequest(url, json, callback) {
+  const cb = function () {
+    const j = JSON.stringify(json);
+    url += "?" + encodeURIComponent(j);
+    /* so as singular component, as ?=& encoded */
+    replaceMain(url, callback);
+  };
   const c = getCred();
   if (c == "") {
     alert("You are not logged in.");
@@ -81,16 +117,9 @@ function onRequest(url, json, callback) {
     return;
   }
   if (isGoogle(c)) {
-    if (!doSiteLogin(c)) {
-      alert("No authentication to do that, try later.");
-      return;
-    }
-    // cookie type changed!!
-  }
-  const j = JSON.stringify(json);
-  url += "?" + encodeURIComponent(j);
-  /* so as singular component, as ?=& encoded */
-  replaceMain(url, callback);
+    /* delay via closure of callback */
+    doSiteLogin(cb);
+  } else cb();
 }
 
 /* simple cookie management */
@@ -121,6 +150,10 @@ function delCookie(cname) {
   setCookie(cname, "", -1);
 }
 
-/* exporting context */
+/* exporting context
+ * due to the compiler optimizer the global
+ * window object has to be assigned to
+ * to side effect the lambda generated
+ * (() -> {})(); */
 window.googleLogin = googleLogin;
 window.onRequest = onRequest;
