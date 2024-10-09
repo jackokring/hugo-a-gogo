@@ -16,58 +16,66 @@
     const f = new FormData();
     f.append("csrf", uuid);
     var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
-      if (this.readyState == 4) {
-        if (this.status == 200) {
-          if (callback != null) callback();
-        } else {
-          alert("Authentication busy, try later.");
-        }
+    xhttp.onload = function(ev) {
+      if (this.status == 200) {
+        if (callback != null) callback();
+      } else {
+        alert("Authentication busy, try later.");
       }
+    };
+    xhttp.onerror = function(ev) {
+      alert("Network authentication error, try later.");
     };
     xhttp.open("POST", url, true);
     xhttp.send(f);
   }
   function replaceMain(url2, callback) {
-    if (url2 == "" || url2 == null || url2.charAt(0) == "?") {
-      alert("Set endpoint URL.");
+    if (url2 == "" || url2.charAt(0) == "?") {
+      alert("Set service URL.");
       return;
     }
     var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
-      if (this.readyState == 4) {
-        if (this.status == 200) {
-          const r = this.responseXML;
-          const m = r.getElementsByTagName("main");
-          if (m.length != 1) {
-            alert("Unexpected service response. Logging out.");
-            reprompt();
-            return;
-          }
-          const h = m[0].innerHTML;
-          document.getElementsByTagName("main")[0].innerHTML = h;
-          callback(r, getCred());
-        } else if (this.status == 403) {
-          alert("Access denied.");
+    xhttp.onload = function(ev) {
+      if (this.status == 200) {
+        const r = this.responseXML;
+        const m = r.getElementsByTagName("main");
+        if (m.length != 1) {
+          alert("Unexpected service response. Logging out.");
           reprompt();
-        } else {
-          alert("Service not available, try later.");
+          return;
         }
+        const h = m[0].innerHTML;
+        document.getElementsByTagName("main")[0].innerHTML = h;
+        callback(r, getCred());
+      } else if (this.status == 403) {
+        alert("Access denied. Logging out.");
+        reprompt();
+      } else {
+        alert("Service not available, try later.");
       }
+    };
+    xhttp.onerror = function(ev) {
+      alert("Network service error, try later.");
     };
     xhttp.open("GET", url2, true);
     xhttp.send();
   }
   function getCred() {
     const c = getCookie("cred");
-    const p = JSON.parse(atob(c.split(".")[1]));
-    return p;
+    const a = c.split(".");
+    if (a.length != 2) return {};
+    try {
+      return JSON.parse(atob(a[1]));
+    } catch (e) {
+      return {};
+    }
   }
   function isTokenExpired(token) {
-    return Math.floor((/* @__PURE__ */ new Date()).getTime() / 1e3) >= token?.exp;
+    if (token.exp == void 0) return true;
+    return Math.floor((/* @__PURE__ */ new Date()).getTime() / 1e3) >= token.exp;
   }
   function isGoogle(token) {
-    return token?.sub != null;
+    return token.sub != void 0;
   }
   function reprompt() {
     delCookie("cred");
@@ -76,15 +84,11 @@
   function onRequest(url2, json, callback) {
     const cb = function() {
       const j = JSON.stringify(json);
+      if (url2 == null) url2 = "";
       url2 += "?" + encodeURIComponent(j);
       replaceMain(url2, callback);
     };
     const c = getCred();
-    if (c == "") {
-      alert("You are not logged in.");
-      reprompt();
-      return;
-    }
     if (isTokenExpired(c)) {
       alert("You were logged out.");
       reprompt();

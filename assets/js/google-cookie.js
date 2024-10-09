@@ -23,51 +23,53 @@ function doSiteLogin(callback) {
   /* the credential is in the cookie sent as header ? */
   /* more form data */
   var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function () {
-    if (this.readyState == 4) {
-      if (this.status == 200) {
-        /* replace cred cookie on sucess with site cookie */
-        if (callback != null) callback();
-      } else {
-        alert("Authentication busy, try later.");
-      }
+  xhttp.onload = function (ev) {
+    if (this.status == 200) {
+      /* replace cred cookie on sucess with site cookie */
+      if (callback != null) callback();
+    } else {
+      alert("Authentication busy, try later.");
     }
+  };
+  xhttp.onerror = function (ev) {
+    alert("Network authentication error, try later.");
   };
   xhttp.open("POST", url, true);
   xhttp.send(f);
 }
 
 function replaceMain(url, callback) {
-  if (url == "" || url == null || url.charAt(0) == "?") {
+  if (url == "" || url.charAt(0) == "?") {
     /* not configured */
-    alert("Set endpoint URL.");
+    alert("Set service URL.");
     return;
   }
   /* do ajax style main template action */
   var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function () {
-    if (this.readyState == 4) {
-      if (this.status == 200) {
-        const r = this.responseXML;
-        /* so almost any kind of page to just replace main */
-        const m = r.getElementsByTagName("main");
-        if (m.length != 1) {
-          /* prevent loading bad under privilige conditions */
-          alert("Unexpected service response. Logging out.");
-          reprompt();
-          return;
-        }
-        const h = m[0].innerHTML;
-        document.getElementsByTagName("main")[0].innerHTML = h;
-        /* supply XML and credential */
-        callback(r, getCred());
-      } else if (this.status == 403) {
-        alert("Access denied.");
+  xhttp.onload = function (ev) {
+    if (this.status == 200) {
+      const r = this.responseXML;
+      /* so almost any kind of page to just replace main */
+      const m = r.getElementsByTagName("main");
+      if (m.length != 1) {
+        /* prevent loading bad under privilige conditions */
+        alert("Unexpected service response. Logging out.");
         reprompt();
-      } else {
-        alert("Service not available, try later.");
+        return;
       }
+      const h = m[0].innerHTML;
+      document.getElementsByTagName("main")[0].innerHTML = h;
+      /* supply XML and credential */
+      callback(r, getCred());
+    } else if (this.status == 403) {
+      alert("Access denied. Logging out.");
+      reprompt();
+    } else {
+      alert("Service not available, try later.");
     }
+  };
+  xhttp.onerror = function (ev) {
+    alert("Network service error, try later.");
   };
   xhttp.open("GET", url, true);
   xhttp.send();
@@ -75,18 +77,24 @@ function replaceMain(url, callback) {
 
 function getCred() {
   const c = getCookie("cred");
-  const p = JSON.parse(atob(c.split(".")[1]));
-  return p;
+  const a = c.split(".");
+  if (a.length != 2) return {};
+  try {
+    return JSON.parse(atob(a[1]));
+  } catch (e) {
+    return {};
+  }
 }
 
 /* checks google's expired field */
 function isTokenExpired(token) {
-  return Math.floor(new Date().getTime() / 1000) >= token?.exp;
+  if (token.exp == undefined) return true;
+  return Math.floor(new Date().getTime() / 1000) >= token.exp;
 }
 
 /* checks if a google unique subscriber id is present */
 function isGoogle(token) {
-  return token?.sub != null;
+  return token.sub != undefined;
 }
 
 function reprompt() {
@@ -99,16 +107,12 @@ function reprompt() {
 function onRequest(url, json, callback) {
   const cb = function () {
     const j = JSON.stringify(json);
+    if (url == null) url = "";
     url += "?" + encodeURIComponent(j);
     /* so as singular component, as ?=& encoded */
     replaceMain(url, callback);
   };
   const c = getCred();
-  if (c == "") {
-    alert("You are not logged in.");
-    reprompt();
-    return;
-  }
   if (isTokenExpired(c)) {
     /* handle redo of google login */
     alert("You were logged out.");
