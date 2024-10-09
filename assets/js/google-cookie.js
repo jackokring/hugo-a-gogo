@@ -32,9 +32,9 @@ function doSiteLogin(callback) {
     }
   };
   xhttp.onerror = function (ev) {
-    alert("Network authentication error, try later.");
+    alert("Authentication network error, try later.");
   };
-  xhttp.open("POST", url, true);
+  xhttp.open("POST", loginUrl, true);
   xhttp.send(f);
 }
 
@@ -69,7 +69,7 @@ function replaceMain(url, callback) {
     }
   };
   xhttp.onerror = function (ev) {
-    alert("Network service error, try later.");
+    alert("Service network error, try later.");
   };
   xhttp.open("GET", url, true);
   xhttp.send();

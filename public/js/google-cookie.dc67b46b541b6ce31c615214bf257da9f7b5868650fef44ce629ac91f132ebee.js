@@ -24,13 +24,13 @@
       }
     };
     xhttp.onerror = function(ev) {
-      alert("Network authentication error, try later.");
+      alert("Authentication network error, try later.");
     };
-    xhttp.open("POST", url, true);
+    xhttp.open("POST", loginUrl, true);
     xhttp.send(f);
   }
-  function replaceMain(url2, callback) {
-    if (url2 == "" || url2.charAt(0) == "?") {
+  function replaceMain(url, callback) {
+    if (url == "" || url.charAt(0) == "?") {
       alert("Set service URL.");
       return;
     }
@@ -55,9 +55,9 @@
       }
     };
     xhttp.onerror = function(ev) {
-      alert("Network service error, try later.");
+      alert("Service network error, try later.");
     };
-    xhttp.open("GET", url2, true);
+    xhttp.open("GET", url, true);
     xhttp.send();
   }
   function getCred() {
@@ -81,12 +81,12 @@
     delCookie("cred");
     google.accounts.id.prompt();
   }
-  function onRequest(url2, json, callback) {
+  function onRequest(url, json, callback) {
     const cb = function() {
       const j = JSON.stringify(json);
-      if (url2 == null) url2 = "";
-      url2 += "?" + encodeURIComponent(j);
-      replaceMain(url2, callback);
+      if (url == null) url = "";
+      url += "?" + encodeURIComponent(j);
+      replaceMain(url, callback);
     };
     const c = getCred();
     if (isTokenExpired(c)) {
