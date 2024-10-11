@@ -10,7 +10,7 @@ function googleLogin(cred) {
 }
 
 /* optimize one less cookie decode */
-function doSiteLogin(callback) {
+async function doSiteLogin(callback) {
   if (loginUrl == "") {
     alert("Set login URL.");
     return;
@@ -21,67 +21,60 @@ function doSiteLogin(callback) {
   const url = loginUrl + "?" + encodeURIComponent(uuid);
   /* the credential is in the cookie sent as header ? */
   /* more form data */
-  var xhttp = new XMLHttpRequest();
-  xhttp.onload = function (ev) {
-    if (this.status == 200) {
-      /* replace cred cookie on sucess with site cookie */
-      /* server side https://oauth2.googleapis.com/tokeninfo?id_token=$cred
-       * check no .error returned else returns credential
-       * undefine .sub (maybe others) add in site login key */
-      const e = getCred().error;
-      if (e != undefined) {
-        alert("Authentication token error. Logging out.\n" + e);
-        reprompt();
-        return;
-      }
-      if (callback != null) callback();
-    } else {
-      alert("Authentication busy, try later.");
+  const request = await fetch(url, { method: "GET" });
+  if (request.ok) {
+    /* replace cred cookie on sucess with site cookie */
+    /* server side https://oauth2.googleapis.com/tokeninfo?id_token=$cred
+     * check no .error returned else returns credential
+     * undefine add in "kid" key */
+    const e = getCred().error;
+    if (e != undefined) {
+      alert("Authentication error. Logging out. Remote: " + e);
+      reprompt();
+      return;
     }
-  };
-  xhttp.onerror = function (ev) {
-    alert("Authentication network error, try later.");
-  };
-  xhttp.open("GET", url, true);
-  xhttp.send(f);
+    if (callback != null) callback();
+  } else if (response.status == 403) {
+    alert("Access denied. Logging out.");
+    reprompt();
+  } else {
+    alert("Authentication busy, try later.");
+  }
 }
 
-function replaceMain(url, callback) {
+async function replaceMain(url, callback) {
   if (url == "" || url.charAt(0) == "?") {
     /* not configured */
     alert("Set service URL.");
     return;
   }
   /* do ajax style main template action */
-  var xhttp = new XMLHttpRequest();
-  xhttp.onload = function (ev) {
-    if (this.status == 200) {
-      const r = this.responseXML;
-      /* so almost any kind of page to just replace main */
-      const m = r.getElementsByTagName("main");
-      if (m.length != 1) {
-        /* prevent loading bad under privilige conditions */
-        alert("Unexpected service response. Logging out.");
-        reprompt();
-        return;
-      }
-      /* direct XML save stringify and parse */
-      const h = m[0];
-      document.getElementsByTagName("main")[0] = h;
-      /* supply XML and credential */
-      callback(r, getCred());
-    } else if (this.status == 403) {
-      alert("Access denied. Logging out.");
-      reprompt();
-    } else {
-      alert("Service not available, try later.");
+  const response = await fetch(url, { method: "GET" });
+  if (response.ok) {
+    const r = DOMParser.parseFromString(response.text(), "text/html");
+    /* so almost any kind of page to just replace main */
+    const error = r.getElementsByTagName("parsererror");
+    if (error) {
+      alert("Malformed service response.");
     }
-  };
-  xhttp.onerror = function (ev) {
-    alert("Service network error, try later.");
-  };
-  xhttp.open("GET", url, true);
-  xhttp.send();
+    const m = r.getElementsByTagName("main");
+    if (m.length != 1) {
+      /* prevent loading bad under privilige conditions */
+      alert("Unexpected service response. Logging out.");
+      reprompt();
+      return;
+    }
+    /* direct XML save stringify and parse */
+    const h = m[0];
+    document.getElementsByTagName("main")[0] = h;
+    /* supply XML and credential */
+    callback(r, getCred());
+  } else if (response.status == 403) {
+    alert("Access denied. Logging out.");
+    reprompt();
+  } else {
+    alert("Service not available, try later.");
+  }
 }
 
 function getCred() {
@@ -141,7 +134,7 @@ function onRequest(url, json, callback) {
 function setCookie(cname, cvalue, exdays) {
   const d = new Date();
   d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
-  let expires = "expires=" + d.toUTCString();
+  const expires = "expires=" + d.toUTCString();
   cvalue = encodeURIComponent(cvalue);
   // cookie adds onto inner cookie set
   // N.B. NOT a literal equality setting.

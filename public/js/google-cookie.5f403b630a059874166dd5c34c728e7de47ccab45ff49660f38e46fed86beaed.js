@@ -6,7 +6,7 @@
     setCookie("cred", cred.credential, 1);
     doSiteLogin(null);
   }
-  function doSiteLogin(callback) {
+  async function doSiteLogin(callback) {
     if (loginUrl == "") {
       alert("Set login URL.");
       return;
@@ -14,56 +14,49 @@
     const uuid = crypto.randomUUID();
     setCookie("csrf", uuid, 1);
     const url = loginUrl + "?" + encodeURIComponent(uuid);
-    var xhttp = new XMLHttpRequest();
-    xhttp.onload = function(ev) {
-      if (this.status == 200) {
-        const e = getCred().error;
-        if (e != void 0) {
-          alert("Authentication token error. Logging out.\n" + e);
-          reprompt();
-          return;
-        }
-        if (callback != null) callback();
-      } else {
-        alert("Authentication busy, try later.");
+    const request = await fetch(url, { method: "GET" });
+    if (request.ok) {
+      const e = getCred().error;
+      if (e != void 0) {
+        alert("Authentication error. Logging out. Remote: " + e);
+        reprompt();
+        return;
       }
-    };
-    xhttp.onerror = function(ev) {
-      alert("Authentication network error, try later.");
-    };
-    xhttp.open("GET", url, true);
-    xhttp.send(f);
+      if (callback != null) callback();
+    } else if (response.status == 403) {
+      alert("Access denied. Logging out.");
+      reprompt();
+    } else {
+      alert("Authentication busy, try later.");
+    }
   }
-  function replaceMain(url, callback) {
+  async function replaceMain(url, callback) {
     if (url == "" || url.charAt(0) == "?") {
       alert("Set service URL.");
       return;
     }
-    var xhttp = new XMLHttpRequest();
-    xhttp.onload = function(ev) {
-      if (this.status == 200) {
-        const r = this.responseXML;
-        const m = r.getElementsByTagName("main");
-        if (m.length != 1) {
-          alert("Unexpected service response. Logging out.");
-          reprompt();
-          return;
-        }
-        const h = m[0];
-        document.getElementsByTagName("main")[0] = h;
-        callback(r, getCred());
-      } else if (this.status == 403) {
-        alert("Access denied. Logging out.");
-        reprompt();
-      } else {
-        alert("Service not available, try later.");
+    const response2 = await fetch(url, { method: "GET" });
+    if (response2.ok) {
+      const r = DOMParser.parseFromString(response2.text(), "text/html");
+      const error = r.getElementsByTagName("parsererror");
+      if (error) {
+        alert("Malformed service response.");
       }
-    };
-    xhttp.onerror = function(ev) {
-      alert("Service network error, try later.");
-    };
-    xhttp.open("GET", url, true);
-    xhttp.send();
+      const m = r.getElementsByTagName("main");
+      if (m.length != 1) {
+        alert("Unexpected service response. Logging out.");
+        reprompt();
+        return;
+      }
+      const h = m[0];
+      document.getElementsByTagName("main")[0] = h;
+      callback(r, getCred());
+    } else if (response2.status == 403) {
+      alert("Access denied. Logging out.");
+      reprompt();
+    } else {
+      alert("Service not available, try later.");
+    }
   }
   function getCred() {
     const c2 = getCookie("cred");
@@ -106,7 +99,7 @@
   function setCookie(cname, cvalue, exdays) {
     const d = /* @__PURE__ */ new Date();
     d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1e3);
-    let expires = "expires=" + d.toUTCString();
+    const expires = "expires=" + d.toUTCString();
     cvalue = encodeURIComponent(cvalue);
     document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
   }
