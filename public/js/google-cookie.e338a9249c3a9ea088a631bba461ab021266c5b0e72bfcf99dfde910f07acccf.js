@@ -1,8 +1,8 @@
 (() => {
   // <stdin>
-  var loginUrl = "";
+  var loginUrl = "/cookie-cutter";
   function googleLogin(cred) {
-    console.log(cred);
+    console.log(cred.credential);
     setCookie("cred", cred.credential, 1);
     doSiteLogin(null);
   }
@@ -13,11 +13,16 @@
     }
     const uuid = crypto.randomUUID();
     setCookie("csrf", uuid, 1);
-    const f = new FormData();
-    f.append("csrf", uuid);
+    const url = loginUrl + "?" + encodeURIComponent(uuid);
     var xhttp = new XMLHttpRequest();
     xhttp.onload = function(ev) {
       if (this.status == 200) {
+        const e = getCred().error;
+        if (e != void 0) {
+          alert("Authentication token error. Logging out.\n" + e);
+          reprompt();
+          return;
+        }
         if (callback != null) callback();
       } else {
         alert("Authentication busy, try later.");
@@ -26,7 +31,7 @@
     xhttp.onerror = function(ev) {
       alert("Authentication network error, try later.");
     };
-    xhttp.open("POST", loginUrl, true);
+    xhttp.open("GET", url, true);
     xhttp.send(f);
   }
   function replaceMain(url, callback) {
@@ -61,9 +66,9 @@
     xhttp.send();
   }
   function getCred() {
-    const c = getCookie("cred");
-    const a = c.split(".");
-    if (a.length != 2) return {};
+    const c2 = getCookie("cred");
+    const a = c2.split(".");
+    if (a.length != 3) return {};
     try {
       return JSON.parse(atob(a[1]));
     } catch (e) {
@@ -75,7 +80,7 @@
     return Math.floor((/* @__PURE__ */ new Date()).getTime() / 1e3) >= token.exp;
   }
   function isGoogle(token) {
-    return token.sub != void 0;
+    return token.kid == void 0;
   }
   function reprompt() {
     delCookie("cred");
@@ -88,13 +93,13 @@
       url += "?" + encodeURIComponent(j);
       replaceMain(url, callback);
     };
-    const c = getCred();
-    if (isTokenExpired(c)) {
+    const c2 = getCred();
+    if (isTokenExpired(c2)) {
       alert("You were logged out.");
       reprompt();
       return;
     }
-    if (isGoogle(c)) {
+    if (isGoogle(c2)) {
       doSiteLogin(cb);
     } else cb();
   }
@@ -107,12 +112,9 @@
   }
   function getCookie(cname) {
     let name = cname + "=";
-    let ca = document.cookie.split(";");
+    let ca = document.cookie.split("; ");
     for (let i = 0; i < ca.length; i++) {
-      let c = ca[i];
-      while (c.charAt(0) == " ") {
-        c = c.substring(1);
-      }
+      c = ca[i];
       if (c.indexOf(name) == 0) {
         return decodeURIComponent(c.substring(name.length, c.length));
       }

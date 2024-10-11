@@ -40,6 +40,14 @@ Style classes and ids can be added to markdown by `{.class #id}` after
 the thing to be styled. Sometimes inline, sometimes on the line after
 depending on the DOM element made.
 
+You must change the google API info in `google-cookie.js` or remove the `<div>`
+from the `layouts/partials/header.html` file. Your domain will not be
+authenticated with the wrong `data-client_id`.
+
+The `functions` directory contains scripts for use with CloudFlare. No API
+keys are provided, as they are stored as secrets with the provider. These
+scripts may need adapting to use other providers along with new API keys.
+
 ## Installation
 
 It's kept as part of a repo to have the example in context. Occasionally files

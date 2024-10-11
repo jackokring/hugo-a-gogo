@@ -1,9 +1,9 @@
 /* set to activate */
-const loginUrl = "";
+const loginUrl = "/cookie-cutter";
 
 /* called on google login from upper right dialog */
 function googleLogin(cred) {
-  console.log(cred);
+  console.log(cred.credential);
   /* this is sent by cookie sending to verification server */
   setCookie("cred", cred.credential, 1);
   doSiteLogin(null); /* in event of no other page in an hour? */
@@ -18,14 +18,22 @@ function doSiteLogin(callback) {
   const uuid = crypto.randomUUID();
   /* cross site request forgery prevention */
   setCookie("csrf", uuid, 1);
-  const f = new FormData();
-  f.append("csrf", uuid);
+  const url = loginUrl + "?" + encodeURIComponent(uuid);
   /* the credential is in the cookie sent as header ? */
   /* more form data */
   var xhttp = new XMLHttpRequest();
   xhttp.onload = function (ev) {
     if (this.status == 200) {
       /* replace cred cookie on sucess with site cookie */
+      /* server side https://oauth2.googleapis.com/tokeninfo?id_token=$cred
+       * check no .error returned else returns credential
+       * undefine .sub (maybe others) add in site login key */
+      const e = getCred().error;
+      if (e != undefined) {
+        alert("Authentication token error. Logging out.\n" + e);
+        reprompt();
+        return;
+      }
       if (callback != null) callback();
     } else {
       alert("Authentication busy, try later.");
@@ -34,7 +42,7 @@ function doSiteLogin(callback) {
   xhttp.onerror = function (ev) {
     alert("Authentication network error, try later.");
   };
-  xhttp.open("POST", loginUrl, true);
+  xhttp.open("GET", url, true);
   xhttp.send(f);
 }
 
@@ -79,7 +87,7 @@ function replaceMain(url, callback) {
 function getCred() {
   const c = getCookie("cred");
   const a = c.split(".");
-  if (a.length != 2) return {};
+  if (a.length != 3) return {};
   try {
     return JSON.parse(atob(a[1]));
   } catch (e) {
@@ -95,7 +103,9 @@ function isTokenExpired(token) {
 
 /* checks if a google unique subscriber id is present */
 function isGoogle(token) {
-  return token.sub != undefined;
+  /* raw google token has kid field in header not in payload */
+  /* sub/jti can be session unique value */
+  return token.kid == undefined;
 }
 
 function reprompt() {
@@ -137,20 +147,19 @@ function setCookie(cname, cvalue, exdays) {
   // N.B. NOT a literal equality setting.
   document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
+
 function getCookie(cname) {
   let name = cname + "=";
-  let ca = document.cookie.split(";");
+  let ca = document.cookie.split("; ");
   for (let i = 0; i < ca.length; i++) {
-    let c = ca[i];
-    while (c.charAt(0) == " ") {
-      c = c.substring(1);
-    }
+    c = ca[i];
     if (c.indexOf(name) == 0) {
       return decodeURIComponent(c.substring(name.length, c.length));
     }
   }
   return "";
 }
+
 function delCookie(cname) {
   setCookie(cname, "", -1);
 }
