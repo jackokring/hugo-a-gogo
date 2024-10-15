@@ -51,7 +51,7 @@ function getCookie(cookies, cname) {
 
 // get request handler
 export async function onRequestGet(context) {
-  const v = await getVerify(cred); // start early async
+  const v = getVerify(cred); // start early async
   const request = context.request;
   const cookies = request.headers.get("Cookie");
   const csrf = getCookie(cookies, "csrf");
@@ -66,8 +66,9 @@ export async function onRequestGet(context) {
     d.setTime(d.getTime() + days * 24 * 60 * 60 * 1000);
     const cred = getCookie(cookies, "cred");
     /* add credentials and other required login here */
-    v.exp = date / 1000; // set expires
-    c = putCred(cred, v);
+    const vv = await v;
+    vv.exp = date / 1000; // set expires
+    c = putCred(cred, vv);
   }
   // produce response
   const response = new Response();

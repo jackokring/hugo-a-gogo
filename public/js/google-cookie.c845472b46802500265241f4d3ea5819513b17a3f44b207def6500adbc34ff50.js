@@ -14,8 +14,8 @@
     const uuid = crypto.randomUUID();
     setCookie("csrf", uuid, 1);
     const url = loginUrl + "?" + encodeURIComponent(uuid);
-    const request = await fetch(url, { method: "GET" });
-    if (request.ok) {
+    const response = await fetch(url, { method: "GET" });
+    if (response.ok) {
       const e = getCred().error;
       if (e != void 0) {
         alert("Authentication error. Logging out. Remote: " + e);
@@ -35,9 +35,9 @@
       alert("Set service URL.");
       return;
     }
-    const response2 = await fetch(url, { method: "GET" });
-    if (response2.ok) {
-      const r = DOMParser.parseFromString(response2.text(), "text/html");
+    const response = await fetch(url, { method: "GET" });
+    if (response.ok) {
+      const r = DOMParser.parseFromString(response.text(), "text/html");
       const error = r.getElementsByTagName("parsererror");
       if (error) {
         alert("Malformed service response.");
@@ -51,7 +51,7 @@
       const h = m[0];
       document.getElementsByTagName("main")[0] = h;
       callback(r, getCred());
-    } else if (response2.status == 403) {
+    } else if (response.status == 403) {
       alert("Access denied. Logging out.");
       reprompt();
     } else {

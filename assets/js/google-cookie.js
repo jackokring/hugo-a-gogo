@@ -21,8 +21,8 @@ async function doSiteLogin(callback) {
   const url = loginUrl + "?" + encodeURIComponent(uuid);
   /* the credential is in the cookie sent as header ? */
   /* more form data */
-  const request = await fetch(url, { method: "GET" });
-  if (request.ok) {
+  const response = await fetch(url, { method: "GET" });
+  if (response.ok) {
     /* replace cred cookie on sucess with site cookie */
     /* server side https://oauth2.googleapis.com/tokeninfo?id_token=$cred
      * check no .error returned else returns credential
