@@ -4,11 +4,9 @@
 const days = 1;
 
 function jsonError(err) {
-  return btoa(
-    JSON.stringify({
-      error: err,
-    }),
-  );
+  return {
+    error: err,
+  };
 }
 
 function putCred(cred, json) {
@@ -21,17 +19,40 @@ function putCred(cred, json) {
   return a.join(".");
 }
 
-async function getVerify(token) {
-  const j = await fetch(
-    "https://oauth2.googleapis.com/tokeninfo?id_token=" + token,
-    {
-      method: "GET",
-    },
-  );
-  if (!j.ok) return jsonError("Verification network error. " + j.status);
-  return await j.json().catch((reason) => {
-    return jsonError("Verification server parse error. " + reason);
-  });
+function getVerify(token) {
+  let x = jsonError("Default error.");
+  // apparently the only way of not making getVerify async
+  // So basically return an awaited promise from an async anon function
+  // which is resolved by res(value) and so awaited
+  (async () => {
+    await new Promise((res, rej) => {
+      fetch("https://oauth2.googleapis.com/tokeninfo?id_token=" + token, {
+        method: "GET",
+      })
+        .then(async (result) => {
+          return result
+            .json()
+            .then((result) => {
+              // resolve promise in anon function
+              res((x = result));
+            })
+            .catch((reason) => {
+              res(
+                (x = jsonError(
+                  "Verification server parse error. " + reason.toString(),
+                )),
+              );
+            });
+        })
+        // not a server but a net error
+        .catch((reason) => {
+          res(
+            (x = jsonError("Verification network error. " + reason.toString())),
+          );
+        });
+    });
+  })();
+  return x;
 }
 
 // cookies in decoded form
@@ -50,8 +71,7 @@ function getCookie(cookies, cname) {
 }
 
 // get request handler
-export async function onRequestGet(context) {
-  const v = getVerify(cred); // start early async
+export function onRequestGet(context) {
   const request = context.request;
   const cookies = request.headers.get("Cookie");
   const csrf = getCookie(cookies, "csrf");
@@ -66,9 +86,10 @@ export async function onRequestGet(context) {
     d.setTime(d.getTime() + days * 24 * 60 * 60 * 1000);
     const cred = getCookie(cookies, "cred");
     /* add credentials and other required login here */
-    const vv = await v;
-    vv.exp = date / 1000; // set expires
-    c = putCred(cred, vv);
+    // const vv = await v;
+    const v = getVerify(cred); // start early async
+    v.exp = date / 1000; // set expires
+    c = putCred(cred, v);
   }
   // produce response
   const response = new Response();
