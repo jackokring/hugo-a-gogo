@@ -1,16 +1,16 @@
 /* set to activate */
-const loginUrl = "/cookie-cutter";
+let loginUrl = "/cookie-cutter";
 
 /* called on google login from upper right dialog */
 function googleLogin(cred) {
   console.log(cred.credential);
   /* this is sent by cookie sending to verification server */
   setCookie("cred", cred.credential, 1);
-  doSiteLogin(null); /* in event of no other page in an hour? */
+  doSiteLogin(() => {}); /* in event of no other page in an hour? */
 }
 
 /* optimize one less cookie decode */
-async function doSiteLogin(callback) {
+async function doSiteLogin(callback: Function) {
   if (loginUrl == "") {
     alert("Set login URL.");
     return;
@@ -42,7 +42,7 @@ async function doSiteLogin(callback) {
   }
 }
 
-async function replaceMain(url, callback) {
+async function replaceMain(url: string, callback: Function) {
   if (url == "" || url.charAt(0) == "?") {
     /* not configured */
     alert("Set service URL.");
@@ -77,7 +77,7 @@ async function replaceMain(url, callback) {
   }
 }
 
-function getCred() {
+function getCred(): object {
   const c = getCookie("cred");
   const a = c.split(".");
   if (a.length != 3) return {};
@@ -89,13 +89,13 @@ function getCred() {
 }
 
 /* checks google's expired field */
-function isTokenExpired(token) {
+function isTokenExpired(token: object) {
   if (token.exp == undefined) return true;
   return Math.floor(new Date().getTime() / 1000) >= token.exp;
 }
 
 /* checks if a google unique subscriber id is present */
-function isGoogle(token) {
+function isGoogle(token: object) {
   /* raw google token has kid field in header not in payload */
   /* sub/jti can be session unique value */
   return token.kid == undefined;
@@ -108,7 +108,7 @@ function reprompt() {
 
 /* replaces <main> sends json as query string GET
  * then calls callback(responeXML, siteCredential) */
-function onRequest(url, json, callback) {
+function onRequest(url: string, json: object, callback: Function) {
   const cb = function () {
     const j = JSON.stringify(json);
     if (url == null) url = "";
@@ -131,7 +131,7 @@ function onRequest(url, json, callback) {
 }
 
 /* simple cookie management */
-function setCookie(cname, cvalue, exdays) {
+function setCookie(cname: string, cvalue: string, exdays: number) {
   const d = new Date();
   d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
   const expires = "expires=" + d.toUTCString();
@@ -141,11 +141,11 @@ function setCookie(cname, cvalue, exdays) {
   document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
 
-function getCookie(cname) {
+function getCookie(cname: string) {
   let name = cname + "=";
   let ca = document.cookie.split("; ");
   for (let i = 0; i < ca.length; i++) {
-    c = ca[i];
+    let c = ca[i];
     if (c.indexOf(name) == 0) {
       return decodeURIComponent(c.substring(name.length, c.length));
     }
@@ -153,7 +153,7 @@ function getCookie(cname) {
   return "";
 }
 
-function delCookie(cname) {
+function delCookie(cname: string) {
   setCookie(cname, "", -1);
 }
 
