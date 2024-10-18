@@ -2,7 +2,7 @@
 let loginUrl = "/cookie-cutter";
 
 /* called on google login from upper right dialog */
-function googleLogin(cred) {
+function googleLogin(cred: { credential: string }) {
   console.log(cred.credential);
   /* this is sent by cookie sending to verification server */
   setCookie("cred", cred.credential, 1);
@@ -51,7 +51,8 @@ async function replaceMain(url: string, callback: Function) {
   /* do ajax style main template action */
   const response = await fetch(url, { method: "GET" });
   if (response.ok) {
-    const r = DOMParser.parseFromString(response.text(), "text/html");
+    const d = new DOMParser();
+    const r = d.parseFromString(await response.text(), "text/html");
     /* so almost any kind of page to just replace main */
     const error = r.getElementsByTagName("parsererror");
     if (error) {
@@ -77,7 +78,7 @@ async function replaceMain(url: string, callback: Function) {
   }
 }
 
-function getCred(): object {
+function getCred(): any {
   const c = getCookie("cred");
   const a = c.split(".");
   if (a.length != 3) return {};
@@ -89,13 +90,13 @@ function getCred(): object {
 }
 
 /* checks google's expired field */
-function isTokenExpired(token: object) {
+function isTokenExpired(token: { exp?: number }) {
   if (token.exp == undefined) return true;
   return Math.floor(new Date().getTime() / 1000) >= token.exp;
 }
 
 /* checks if a google unique subscriber id is present */
-function isGoogle(token: object) {
+function isGoogle(token: { kid?: string }) {
   /* raw google token has kid field in header not in payload */
   /* sub/jti can be session unique value */
   return token.kid == undefined;
