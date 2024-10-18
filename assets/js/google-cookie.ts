@@ -6,7 +6,9 @@ function googleLogin(cred: { credential: string }) {
   console.log(cred.credential);
   /* this is sent by cookie sending to verification server */
   setCookie("cred", cred.credential, 1);
-  doSiteLogin(() => {}); /* in event of no other page in an hour? */
+  (async () => {
+    await doSiteLogin(() => {}); /* in event of no other page in an hour? */
+  })();
 }
 
 /* optimize one less cookie decode */
@@ -33,7 +35,7 @@ async function doSiteLogin(callback: Function) {
       reprompt();
       return;
     }
-    if (callback != null) callback();
+    if (callback != null) await callback();
   } else if (response.status == 403) {
     alert("Access denied. Logging out.");
     reprompt();
@@ -109,13 +111,13 @@ function reprompt() {
 
 /* replaces <main> sends json as query string GET
  * then calls callback(responeXML, siteCredential) */
-function onRequest(url: string, json: object, callback: Function) {
-  const cb = function () {
+async function onRequest(url: string, json: object, callback: Function) {
+  const cb = async function () {
     const j = JSON.stringify(json);
     if (url == null) url = "";
     url += "?" + encodeURIComponent(j);
     /* so as singular component, as ?=& encoded */
-    replaceMain(url, callback);
+    await replaceMain(url, callback);
   };
   const c = getCred();
   if (isTokenExpired(c)) {
@@ -127,8 +129,8 @@ function onRequest(url: string, json: object, callback: Function) {
   }
   if (isGoogle(c)) {
     /* delay via closure of callback */
-    doSiteLogin(cb);
-  } else cb();
+    await doSiteLogin(cb);
+  } else await cb();
 }
 
 /* simple cookie management */
@@ -165,3 +167,5 @@ function delCookie(cname: string) {
  * (() -> {})(); */
 window.googleLogin = googleLogin;
 window.onRequest = onRequest;
+
+export { googleLogin, onRequest };

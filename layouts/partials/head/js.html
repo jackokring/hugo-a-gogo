@@ -8,7 +8,7 @@ $opts | fingerprint }}
   integrity="{{- .Data.Integrity }}"
   crossorigin="anonymous"
 ></script>
-{{- end }} {{- end }} {{- end }} {{- with resources.Get "js/google-cookie.js" }}
+{{- end }} {{- end }} {{- end }} {{- with resources.Get "js/google-cookie.ts" }}
 {{- if eq hugo.Environment "development" }} {{- with . }}
 <script src="{{ .RelPermalink }}"></script>
 {{- end }} {{- else }} {{- with . | js.Build | fingerprint }}
