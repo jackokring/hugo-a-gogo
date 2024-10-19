@@ -3,6 +3,11 @@
     "target": "esnext",
     "module": "esnext",
     "lib": ["esnext", "dom"],
-    "types": ["@cloudflare/workers-types", "@types/google.accounts"]
+    "types": [
+      "@cloudflare/workers-types",
+      "@types/google.accounts",
+      "@types/underscore",
+      "./index.d.ts"
+    ]
   }
 }

@@ -9,7 +9,8 @@ function jsonError(err: string) {
   };
 }
 
-function putCred(cred: string, json: object) {
+// not sure if the reference to "index.d.ts" for json works
+function putCred(cred: string, json: json) {
   const a = cred.split(".");
   // just the header blank .
   if (a.length != 3) return "." + jsonError("Authentication cookie malformed.");
@@ -27,9 +28,23 @@ async function getVerify(token: string) {
     },
   )
     .then(async (resp) => {
-      return await resp.json().catch((reason) => {
-        jsonError("Verification server parse error. " + reason.toString());
-      });
+      return await resp
+        .json()
+        // express json parse unknown??
+        // the jti is like a unique session issue key
+        // along with the sub key a unique session
+        // can be located
+        // maybe also use the IP number to screen
+        // VPN/botnet share of spam access
+        .then((data: { jti?: string }): json => {
+          if (data.jti != undefined) return data;
+          return jsonError("Wrong JSON object kind.");
+        })
+        .catch((reason) => {
+          return jsonError(
+            "Verification server parse error. " + reason.toString(),
+          );
+        });
     })
     .catch((reason) => {
       return jsonError("Verification network error. " + reason.toString());

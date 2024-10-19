@@ -5,8 +5,10 @@
     console.log(cred.credential);
     setCookie("cred", cred.credential, 1);
     (async () => {
-      await doSiteLogin(() => {
-      });
+      await doSiteLogin(
+        async () => {
+        }
+      );
     })();
   }
   async function doSiteLogin(callback) {
@@ -25,7 +27,7 @@
         reprompt();
         return;
       }
-      if (callback != null) await callback();
+      await callback();
     } else if (response.status == 403) {
       alert("Access denied. Logging out.");
       reprompt();

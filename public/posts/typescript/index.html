@@ -18,8 +18,8 @@
   crossorigin="anonymous"
 ></script>
 <script
-  src="/js/google-cookie.2cf517919510f266807357866c87609930f7e3130dd018e989eb7133e1d80601.js"
-  integrity="sha256-LPUXkZUQ8maAc1eGbIdgmTD34xMN0BjpietxM&#43;HYBgE="
+  src="/js/google-cookie.6c6438e2e114d2c69fa36cb53dafe5552754544600726bcc41191e245158ddd2.js"
+  integrity="sha256-bGQ44uEU0safo2y1Pa/lVSdUVEYAcmvMQRkeJFFY3dI="
   crossorigin="anonymous"
 ></script>
 
@@ -34,7 +34,12 @@
 </script> 
   </head>
   <body>
-    <header data-pagefind-ignore="all"><div class="float">
+    <header data-pagefind-ignore="all"><script
+  src="https://cdn.jsdelivr.net/npm/underscore@1.13.7/underscore-esm-min.js"
+  async
+></script>
+
+<div class="float">
   
   <img
     class="scaled"
@@ -132,6 +137,16 @@ where just a little hint can spot a bug while not overdoing that necessary
 for correct construction. That&rsquo;s the nice thing of Typescript, it doesn&rsquo;t
 need a full type specification, just an occasional tightening from a default
 <code>any</code>. You&rsquo;d think it was <code>rust</code> the way some type definition is done.</p>
+<h2 id="more-typescript">More Typescript</h2>
+<p>Um, the <code>{ [propName: string]: any }</code> construct is good for JSON. So much so
+that I added an interface definition to <code>index.d.ts</code> and hope the CloudFlare
+typescript compiler picks it up. There also does not appear to be any
+definitions for response parsing using <code>.json()</code> as it comes in unknown. The
+strangest error or warning left is the <code>any</code> could be improved to a better
+type. I also included <code>underscore.js</code> as I know if I write more JavaScript or
+Typescript, it will be most useful. The <code>fn: (name: type, ...) =&gt; type</code>
+representation of a function seems to work best as the <code>fn(name: type ...): type</code>
+does not appear to be nestable for callbacks and such in interfaces.</p>
  
 <div>
   <h3>Tags</h3>

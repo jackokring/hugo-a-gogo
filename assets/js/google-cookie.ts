@@ -7,12 +7,14 @@ function googleLogin(cred: { credential: string }) {
   /* this is sent by cookie sending to verification server */
   setCookie("cred", cred.credential, 1);
   (async () => {
-    await doSiteLogin(() => {}); /* in event of no other page in an hour? */
+    await doSiteLogin(
+      async () => {},
+    ); /* in event of no other page in an hour? */
   })();
 }
 
 /* optimize one less cookie decode */
-async function doSiteLogin(callback: Function) {
+async function doSiteLogin(callback: () => Promise<void>) {
   if (loginUrl == "") {
     alert("Set login URL.");
     return;
@@ -35,7 +37,7 @@ async function doSiteLogin(callback: Function) {
       reprompt();
       return;
     }
-    if (callback != null) await callback();
+    await callback();
   } else if (response.status == 403) {
     alert("Access denied. Logging out.");
     reprompt();
@@ -44,7 +46,10 @@ async function doSiteLogin(callback: Function) {
   }
 }
 
-async function replaceMain(url: string, callback: Function) {
+async function replaceMain(
+  url: string,
+  callback: (doc: Document, json: json) => Promise<void>,
+) {
   if (url == "" || url.charAt(0) == "?") {
     /* not configured */
     alert("Set service URL.");
@@ -111,7 +116,11 @@ function reprompt() {
 
 /* replaces <main> sends json as query string GET
  * then calls callback(responeXML, siteCredential) */
-async function onRequest(url: string, json: object, callback: Function) {
+async function onRequest(
+  url: string,
+  json: json,
+  callback: (doc: Document, json: json) => Promise<void>,
+) {
   const cb = async function () {
     const j = JSON.stringify(json);
     if (url == null) url = "";

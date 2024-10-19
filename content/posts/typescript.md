@@ -47,3 +47,15 @@ where just a little hint can spot a bug while not overdoing that necessary
 for correct construction. That's the nice thing of Typescript, it doesn't
 need a full type specification, just an occasional tightening from a default
 `any`. You'd think it was `rust` the way some type definition is done.
+
+## More Typescript
+
+Um, the `{ [propName: string]: any }` construct is good for JSON. So much so
+that I added an interface definition to `index.d.ts` and hope the CloudFlare
+typescript compiler picks it up. There also does not appear to be any
+definitions for response parsing using `.json()` as it comes in unknown. The
+strangest error or warning left is the `any` could be improved to a better
+type. I also included `underscore.js` as I know if I write more JavaScript or
+Typescript, it will be most useful. The `fn: (name: type, ...) => type`
+representation of a function seems to work best as the `fn(name: type ...): type`
+does not appear to be nestable for callbacks and such in interfaces.
