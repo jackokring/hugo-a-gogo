@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Server on K Ring Technologies Ltd</title>
+    <link>https://kring.co.uk/tags/server/</link>
+    <description>Recent content in Server on K Ring Technologies Ltd</description>
+    <generator>Hugo</generator>
+    <language>en-GB</language>
+    <lastBuildDate>Sat, 19 Oct 2024 12:43:30 +0000</lastBuildDate>
+    <atom:link href="https://kring.co.uk/tags/server/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Typescript</title>
+      <link>https://kring.co.uk/posts/typescript/</link>
+      <pubDate>Sat, 19 Oct 2024 12:43:30 +0000</pubDate>
+      <guid>https://kring.co.uk/posts/typescript/</guid>
+      <description>&lt;p&gt;Ah, after a bit of setup, some peace. So renaming the &lt;code&gt;.js&lt;/code&gt; to &lt;code&gt;.ts&lt;/code&gt; and&#xA;changing the include in the header to &lt;code&gt;.ts&lt;/code&gt; too, typescript becomes easy.&#xA;Sure, there&amp;rsquo;s the &lt;code&gt;index.d.ts&lt;/code&gt; to allow &lt;code&gt;window.&amp;lt;name&amp;gt;&lt;/code&gt; assignments,&#xA;and adding in a few type definition files along with the &lt;code&gt;dom&lt;/code&gt; library.&lt;/p&gt;&#xA;&lt;p&gt;Then there&amp;rsquo;s an ease of using &lt;code&gt;Function&lt;/code&gt; as a callable type, or &lt;code&gt;{ prop?: type }&lt;/code&gt;&#xA;for when some functions need particular properties in the JSON. That then&#xA;just left the &lt;code&gt;async&lt;/code&gt;/&lt;code&gt;await&lt;/code&gt; hell, which can be ignored quite a bit, needing&#xA;just &lt;code&gt;(async () =&amp;gt; { await ... })()&lt;/code&gt; as a wrapper when unsure if you should&#xA;allow a &lt;code&gt;Promise&lt;/code&gt; to pass back or not as it gives you back a normal function&#xA;return.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
