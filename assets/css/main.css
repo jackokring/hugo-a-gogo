@@ -78,6 +78,22 @@ a {
   text-decoration: none; */
 }
 
+/* tables */
+.table {
+}
+
+.left {
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
 /* menus horizontal */
 nav > ul > li,
 .tags > li,
