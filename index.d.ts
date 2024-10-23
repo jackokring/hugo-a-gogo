@@ -10,6 +10,8 @@ declare global {
       json: json,
       callback: (doc: Document, json: json) => Promise<void>,
     ) => Promise<void>;
+    reprompt: () => void;
+    onLoad: () => void;
   }
   interface json {
     [propName: string]: any;

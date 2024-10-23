@@ -13,6 +13,16 @@ function googleLogin(cred: { credential: string }) {
   })();
 }
 
+function onLoad() {
+  // on load process
+  let n = document.getElementsByClassName("loginName");
+  let u = getCred().name;
+  if (u == undefined) u = "Anonymous User"; // must be a name?
+  for (let i = 0; i < n.length; i++) {
+    n[i].innerHTML = u; // set name
+  }
+}
+
 /* optimize one less cookie decode */
 async function doSiteLogin(callback: () => Promise<void>) {
   if (loginUrl == "") {
@@ -37,6 +47,7 @@ async function doSiteLogin(callback: () => Promise<void>) {
       reprompt();
       return;
     }
+    onLoad(); // on load expectations redo
     await callback();
   } else if (response.status == 403) {
     alert("Access denied. Logging out.");
@@ -73,8 +84,12 @@ async function replaceMain(
       return;
     }
     /* direct XML save stringify and parse */
-    const h = m[0];
-    document.getElementsByTagName("main")[0] = h;
+    const h = m[0].innerHTML;
+    // check for nil main
+    if (h != undefined) {
+      // assignment direct is apparently ignored
+      document.getElementsByTagName("main")[0].innerHTML = h;
+    }
     /* supply XML and credential */
     callback(r, getCred());
   } else if (response.status == 403) {
@@ -85,7 +100,7 @@ async function replaceMain(
   }
 }
 
-function getCred(): any {
+function getCred(): json {
   const c = getCookie("cred");
   const a = c.split(".");
   if (a.length != 3) return {};
@@ -111,6 +126,7 @@ function isGoogle(token: { kid?: string }) {
 
 function reprompt() {
   delCookie("cred");
+  onLoad(); // redo any loaded expectations
   google.accounts.id.prompt();
 }
 
@@ -174,7 +190,10 @@ function delCookie(cname: string) {
  * window object has to be assigned to
  * to side effect the lambda generated
  * (() -> {})(); */
-window.googleLogin = googleLogin;
-window.onRequest = onRequest;
+window.googleLogin = googleLogin; // clicked login
+window.onRequest = onRequest; // main replace ajax
+window.reprompt = reprompt; // logout
+window.onLoad = onLoad; // set loaded details such as logged in classes
+// e.g. class loginName for the user's name
 
-export { googleLogin, onRequest };
+export { googleLogin, onRequest, reprompt, onLoad };

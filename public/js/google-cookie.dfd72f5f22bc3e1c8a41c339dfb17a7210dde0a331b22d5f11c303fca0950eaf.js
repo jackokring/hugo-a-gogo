@@ -11,6 +11,14 @@
       );
     })();
   }
+  function onLoad() {
+    let n = document.getElementsByClassName("loginName");
+    let u = getCred().name;
+    if (u == void 0) u = "Anonymous User";
+    for (let i = 0; i < n.length; i++) {
+      n[i].innerHTML = u;
+    }
+  }
   async function doSiteLogin(callback) {
     if (loginUrl == "") {
       alert("Set login URL.");
@@ -27,6 +35,7 @@
         reprompt();
         return;
       }
+      onLoad();
       await callback();
     } else if (response.status == 403) {
       alert("Access denied. Logging out.");
@@ -54,8 +63,10 @@
         reprompt();
         return;
       }
-      const h = m[0];
-      document.getElementsByTagName("main")[0] = h;
+      const h = m[0].innerHTML;
+      if (h != void 0) {
+        document.getElementsByTagName("main")[0].innerHTML = h;
+      }
       callback(r, getCred());
     } else if (response.status == 403) {
       alert("Access denied. Logging out.");
@@ -83,6 +94,7 @@
   }
   function reprompt() {
     delCookie("cred");
+    onLoad();
     google.accounts.id.prompt();
   }
   async function onRequest(url, json, callback) {
@@ -125,4 +137,6 @@
   }
   window.googleLogin = googleLogin;
   window.onRequest = onRequest;
+  window.reprompt = reprompt;
+  window.onLoad = onLoad;
 })();

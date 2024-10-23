@@ -6,8 +6,15 @@
     <description>Recent content in Home on K Ring Technologies Ltd</description>
     <generator>Hugo</generator>
     <language>en-GB</language>
-    <lastBuildDate>Sat, 19 Oct 2024 12:43:30 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 23 Oct 2024 17:48:00 +0000</lastBuildDate>
     <atom:link href="https://kring.co.uk/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>User</title>
+      <link>https://kring.co.uk/user/</link>
+      <pubDate>Wed, 23 Oct 2024 17:48:00 +0000</pubDate>
+      <guid>https://kring.co.uk/user/</guid>
+      <description>&lt;h2 id=&#34;my-page&#34;&gt;My Page&lt;/h2&gt;</description>
+    </item>
     <item>
       <title>Typescript</title>
       <link>https://kring.co.uk/posts/typescript/</link>
