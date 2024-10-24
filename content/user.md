@@ -9,12 +9,12 @@ draft = false
 menus = []
 # tag list
 tags = []
+# type
+type = 'undated'
 # param block
 [params]
 # use maths
 maths = true
-# type
-type = 'undated'
 +++
 
 ## My Page

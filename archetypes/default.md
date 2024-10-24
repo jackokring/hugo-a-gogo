@@ -9,10 +9,10 @@ draft = true
 menus = ['main']
 # tag list
 tags = ['untagged']
+# type
+# type = 'undated'
 # param block
 [params]
 # use maths
 maths = true
-# type
-# type = 'undated'
 +++
