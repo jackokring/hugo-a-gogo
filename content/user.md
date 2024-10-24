@@ -13,6 +13,8 @@ tags = []
 [params]
 # use maths
 maths = true
+# type
+type = 'undated'
 +++
 
 ## My Page

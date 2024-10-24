@@ -13,4 +13,6 @@ tags = ['untagged']
 [params]
 # use maths
 maths = true
+# type
+# type = 'undated'
 +++

@@ -2,7 +2,7 @@
   src="https://cdn.jsdelivr.net/npm/underscore@1.13.7/underscore-umd-min.js"
   async
 ></script>
-<!-- import _, { map } from 'underscore'; -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" async></script>
 <div class="float">
   {{ $image := resources.Get "images/header.jpg" }}
   <img
@@ -13,7 +13,7 @@
   />
 </div>
 <script src="https://accounts.google.com/gsi/client" async></script>
-<!-- google-cookie.js included in header not minified -->
+<!-- google-cookie.ts included in header not minified -->
 <!-- use your own data-client_id setup in the cloud console -->
 <div
   id="g_id_onload"
