@@ -1,6 +1,9 @@
 /* login script generate new authentication cookie
  * with all site extras */
 
+// not strictly needed
+import * as _ from "underscore";
+
 const days = 1;
 
 function jsonError(err: string) {
