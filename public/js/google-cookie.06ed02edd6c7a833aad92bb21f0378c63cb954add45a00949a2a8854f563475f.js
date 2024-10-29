@@ -2,7 +2,6 @@
   // <stdin>
   var loginUrl = "/cookie-cutter";
   function googleLogin(cred) {
-    console.log(cred.credential);
     setCookie("cred", cred.credential, 1);
     (async () => {
       await doSiteLogin(
@@ -12,12 +11,9 @@
     })();
   }
   function onLoad() {
-    let n = document.getElementsByClassName("loginName");
     let u = getCred().name;
     if (u == void 0) u = "Anonymous User";
-    for (let i = 0; i < n.length; i++) {
-      n[i].innerHTML = u;
-    }
+    $(".loginName").html(u);
   }
   async function doSiteLogin(callback) {
     if (loginUrl == "") {
@@ -65,7 +61,7 @@
       }
       const h = m[0].innerHTML;
       if (h != void 0) {
-        document.getElementsByTagName("main")[0].innerHTML = h;
+        $("main").html(h);
       }
       callback(r, getCred());
     } else if (response.status == 403) {

@@ -20,7 +20,7 @@
       <link>https://kring.co.uk/user/</link>
       <pubDate>Wed, 23 Oct 2024 17:48:00 +0000</pubDate>
       <guid>https://kring.co.uk/user/</guid>
-      <description>&lt;h2 id=&#34;my-page&#34;&gt;My Page&lt;/h2&gt;</description>
+      <description>&lt;h2 class=&#34;loginUser&#34; id=&#34;username&#34;&gt;Username&lt;/h2&gt;</description>
     </item>
     <item>
       <title>Typescript</title>

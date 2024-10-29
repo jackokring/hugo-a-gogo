@@ -17,4 +17,4 @@ type = 'undated'
 maths = true
 +++
 
-## My Page
+## Username{.loginUser}

@@ -3,7 +3,7 @@ let loginUrl = "/cookie-cutter";
 
 /* called on google login from upper right dialog */
 function googleLogin(cred: { credential: string }) {
-  console.log(cred.credential);
+  // console.log(cred.credential);
   /* this is sent by cookie sending to verification server */
   setCookie("cred", cred.credential, 1);
   (async () => {
@@ -15,12 +15,9 @@ function googleLogin(cred: { credential: string }) {
 
 function onLoad() {
   // on load process
-  let n = document.getElementsByClassName("loginName");
   let u = getCred().name;
   if (u == undefined) u = "Anonymous User"; // must be a name?
-  for (let i = 0; i < n.length; i++) {
-    n[i].innerHTML = u; // set name
-  }
+  $(".loginName").html(u);
 }
 
 /* optimize one less cookie decode */
@@ -69,6 +66,7 @@ async function replaceMain(
   /* do ajax style main template action */
   const response = await fetch(url, { method: "GET" });
   if (response.ok) {
+    // can't use $ as not THE DOM, but another document
     const d = new DOMParser();
     const r = d.parseFromString(await response.text(), "text/html");
     /* so almost any kind of page to just replace main */
@@ -88,7 +86,7 @@ async function replaceMain(
     // check for nil main
     if (h != undefined) {
       // assignment direct is apparently ignored
-      document.getElementsByTagName("main")[0].innerHTML = h;
+      $("main").html(h);
     }
     /* supply XML and credential */
     callback(r, getCred());
