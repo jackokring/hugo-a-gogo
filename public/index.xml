@@ -6,8 +6,15 @@
     <description>Recent content in Home on K Ring Technologies Ltd</description>
     <generator>Hugo</generator>
     <language>en-GB</language>
-    <lastBuildDate>Thu, 24 Oct 2024 22:42:53 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 12 Nov 2024 19:50:19 +0000</lastBuildDate>
     <atom:link href="https://kring.co.uk/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Simple RISC</title>
+      <link>https://kring.co.uk/aladdin/a-simple-risc/</link>
+      <pubDate>Tue, 12 Nov 2024 19:50:19 +0000</pubDate>
+      <guid>https://kring.co.uk/aladdin/a-simple-risc/</guid>
+      <description>&lt;p&gt;Some ideas for a simple RISC processor although unlikely to ever be made, do&#xA;have possible application. To make it easy a 16 bit wide instruction and 16&#xA;general registers 32 bit wide make most sense.&lt;/p&gt;&#xA;&lt;p&gt;Hiding the link register &lt;code&gt;ln&lt;/code&gt; has good security implications so it is always&#xA;implicit. Also the &lt;code&gt;pc&lt;/code&gt; can be implicit too. So here goes. It&amp;rsquo;s not as though&#xA;the return stack isn&amp;rsquo;t heavily cached, and doesn&amp;rsquo;t need writeback of anything&#xA;below the stack pointer line.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>JQuery and Underscore</title>
       <link>https://kring.co.uk/aladdin/jquery-and-underscore/</link>
@@ -20,7 +27,7 @@
       <link>https://kring.co.uk/user/</link>
       <pubDate>Wed, 23 Oct 2024 17:48:00 +0000</pubDate>
       <guid>https://kring.co.uk/user/</guid>
-      <description>&lt;h2 class=&#34;loginUser&#34; id=&#34;username&#34;&gt;Username&lt;/h2&gt;</description>
+      <description>&lt;h2 class=&#34;loginName&#34; id=&#34;username&#34;&gt;Username&lt;/h2&gt;&#xA;&lt;p&gt;Welcome to user services.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Typescript</title>
