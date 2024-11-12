@@ -17,4 +17,6 @@ type = 'undated'
 maths = true
 +++
 
-## Username{.loginUser}
+## Username {.loginName}
+
+Welcome to user services.
