@@ -51,4 +51,14 @@ And a final 4 bit code to handle (with 12 bit for other things):
 - `ln` := +(sp+); pc := (`ln`); (sp-) := `ln`
 - `ln` := (pc+); pc := (`ln`); (sp-) := `ln`
 - `ln` := +(sp+)
+- rd := (pc+) -- (dnh selector)
 - and other things ...
+
+So maybe `r0` is a zero? Maybe write `r0` with `ln` is a `/dev/null`?
+Maybe `r0` write with another source is opcode extend for expansion?
+Maybe `r0` write from `sto` indirect is also a `/dev/null`?
+
+No reason the registers couldn't be 64 bit, or even a more practical 48 bit.
+It would drop 1/4 off the load stress and cover an amazing 281 GB+, especially
+if indexing memory by 16 bit opcode words. It's a basic cosmic ray micron
+issue.

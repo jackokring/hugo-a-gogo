@@ -244,8 +244,16 @@ below the stack pointer line.</p>
 <li><code>ln</code> := +(sp+); pc := (<code>ln</code>); (sp-) := <code>ln</code></li>
 <li><code>ln</code> := (pc+); pc := (<code>ln</code>); (sp-) := <code>ln</code></li>
 <li><code>ln</code> := +(sp+)</li>
+<li>rd := (pc+) &ndash; (dnh selector)</li>
 <li>and other things &hellip;</li>
 </ul>
+<p>So maybe <code>r0</code> is a zero? Maybe write <code>r0</code> with <code>ln</code> is a <code>/dev/null</code>?
+Maybe <code>r0</code> write with another source is opcode extend for expansion?
+Maybe <code>r0</code> write from <code>sto</code> indirect is also a <code>/dev/null</code>?</p>
+<p>No reason the registers couldn&rsquo;t be 64 bit, or even a more practical 48 bit.
+It would drop 1/4 off the load stress and cover an amazing 281 GB+, especially
+if indexing memory by 16 bit opcode words. It&rsquo;s a basic cosmic ray micron
+issue.</p>
  
 <div>
   <h3>Tags</h3>
