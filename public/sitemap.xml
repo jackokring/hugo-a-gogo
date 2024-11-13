@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://kring.co.uk/tags/development/</loc>
+    <lastmod>2024-11-13T18:06:54+00:00</lastmod>
+  </url><url>
+    <loc>https://kring.co.uk/tags/skills/</loc>
+    <lastmod>2024-11-13T18:06:54+00:00</lastmod>
+  </url><url>
+    <loc>https://kring.co.uk/services/toolchain-operator/</loc>
+    <lastmod>2024-11-13T18:06:54+00:00</lastmod>
+  </url><url>
+    <loc>https://kring.co.uk/tags/work/</loc>
+    <lastmod>2024-11-13T18:06:54+00:00</lastmod>
+  </url><url>
     <loc>https://kring.co.uk/tags/cloudflare/</loc>
     <lastmod>2024-11-13T12:36:13+00:00</lastmod>
   </url><url>
@@ -189,9 +201,6 @@
     <lastmod>2024-10-04T19:34:40+00:00</lastmod>
   </url><url>
     <loc>https://kring.co.uk/services/</loc>
-    <lastmod>2024-10-04T19:34:40+00:00</lastmod>
-  </url><url>
-    <loc>https://kring.co.uk/tags/work/</loc>
     <lastmod>2024-10-04T19:34:40+00:00</lastmod>
   </url><url>
     <loc>https://kring.co.uk/tags/goods/</loc>

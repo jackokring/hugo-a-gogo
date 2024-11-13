@@ -6,8 +6,15 @@
     <description>Recent content in Work on K Ring Technologies Ltd</description>
     <generator>Hugo</generator>
     <language>en-GB</language>
-    <lastBuildDate>Fri, 04 Oct 2024 19:34:40 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 13 Nov 2024 18:06:54 +0000</lastBuildDate>
     <atom:link href="https://kring.co.uk/tags/work/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Toolchain Operator</title>
+      <link>https://kring.co.uk/services/toolchain-operator/</link>
+      <pubDate>Wed, 13 Nov 2024 18:06:54 +0000</pubDate>
+      <guid>https://kring.co.uk/services/toolchain-operator/</guid>
+      <description>&lt;h3 id=&#34;custom-server&#34;&gt;Custom Server&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;go&lt;/code&gt; - fast, easy, webserver, good library.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;C/C++&lt;/code&gt; - small optimizations, bare speed.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;python&lt;/code&gt; - extensive, ML/AI, virtual environments.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;light-website&#34;&gt;Light Website&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;Hugo&lt;/code&gt; - lean, easy markdown CMS.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;TypeScript&lt;/code&gt; - dynamic sites, easy serverless/lambda.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;CSS&lt;/code&gt; - lipstick and styling.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;jquery&lt;/code&gt;/&lt;code&gt;underscore&lt;/code&gt; - old but classically useful tools.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;local-machine-generic-development&#34;&gt;Local Machine Generic Development&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;Neovim&lt;/code&gt; - fast editor, good extensibility.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;Lua&lt;/code&gt; - general scripting.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;C&lt;/code&gt; - good for small optimizations, speed.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;python&lt;/code&gt; - extensive, ML/AI, virtual environments.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;background-pervasive-everywhere&#34;&gt;Background Pervasive Everywhere&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;bash&lt;/code&gt; - automation of heterogeneous parts.&lt;/li&gt;&#xA;&lt;li&gt;CLI Tools - stable Linux OS.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;rust&lt;/code&gt; - some nice CLI tools available.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;git&lt;/code&gt; - code management.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;esoteric-investigation&#34;&gt;Esoteric Investigation&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;J&lt;/code&gt; - nice array language, open source.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;forth&lt;/code&gt; - compact small code.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;hardware-realtime-and-firmware&#34;&gt;Hardware, Realtime and Firmware&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;C/C++&lt;/code&gt; - fast, compact.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;VHDL&lt;/code&gt; - silicon compiler.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;galasm&lt;/code&gt; - simple logic array device programming.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;and-anything-else-needed&#34;&gt;And Anything Else Needed&lt;/h2&gt;</description>
+    </item>
     <item>
       <title>Services</title>
       <link>https://kring.co.uk/services/</link>
