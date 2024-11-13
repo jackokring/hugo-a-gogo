@@ -6,7 +6,7 @@ date = 2024-11-13T12:20:47Z
 # is draft to not build
 draft = false
 # place in main menu
-menus = []
+menus = ['main']
 # tag list
 tags = ['index', 'construction', 'website', 'progress']
 # type
