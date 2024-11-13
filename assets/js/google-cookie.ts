@@ -190,6 +190,7 @@ function delCookie(cname: string) {
  * to side effect the lambda generated
  * (() -> {})(); */
 // setup the hidden div sun DOM element for filling
+// triggers load order needing bump of jquery higher on page
 var $$ = $("#subdom");
 window.googleLogin = googleLogin; // clicked login
 window.onRequest = onRequest; // main replace ajax
