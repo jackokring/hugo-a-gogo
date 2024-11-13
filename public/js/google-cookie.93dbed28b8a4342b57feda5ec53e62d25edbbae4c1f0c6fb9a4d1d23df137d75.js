@@ -61,7 +61,7 @@
       }
       const h = m[0].innerHTML;
       if (h != void 0) {
-        $("main").html(h);
+        $$.html(h);
       }
       callback(r, getCred());
     } else if (response.status == 403) {
@@ -131,6 +131,7 @@
   function delCookie(cname) {
     setCookie(cname, "", -1);
   }
+  var $$ = $("#subdom");
   window.googleLogin = googleLogin;
   window.onRequest = onRequest;
   window.reprompt = reprompt;

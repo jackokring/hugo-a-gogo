@@ -2,6 +2,60 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://kring.co.uk/tags/cloudflare/</loc>
+    <lastmod>2024-11-13T12:36:13+00:00</lastmod>
+  </url><url>
+    <loc>https://kring.co.uk/works/cloudflare-changeover/</loc>
+    <lastmod>2024-11-13T12:36:13+00:00</lastmod>
+  </url><url>
+    <loc>https://kring.co.uk/tags/dns/</loc>
+    <lastmod>2024-11-13T12:36:13+00:00</lastmod>
+  </url><url>
+    <loc>https://kring.co.uk/tags/isp/</loc>
+    <lastmod>2024-11-13T12:36:13+00:00</lastmod>
+  </url><url>
+    <loc>https://kring.co.uk/tags/workers/</loc>
+    <lastmod>2024-11-13T12:36:13+00:00</lastmod>
+  </url><url>
+    <loc>https://kring.co.uk/tags/auth/</loc>
+    <lastmod>2024-11-13T12:28:42+00:00</lastmod>
+  </url><url>
+    <loc>https://kring.co.uk/tags/cookie/</loc>
+    <lastmod>2024-11-13T12:28:42+00:00</lastmod>
+  </url><url>
+    <loc>https://kring.co.uk/tags/google/</loc>
+    <lastmod>2024-11-13T12:28:42+00:00</lastmod>
+  </url><url>
+    <loc>https://kring.co.uk/works/google-login/</loc>
+    <lastmod>2024-11-13T12:28:42+00:00</lastmod>
+  </url><url>
+    <loc>https://kring.co.uk/tags/construction/</loc>
+    <lastmod>2024-11-13T12:20:47+00:00</lastmod>
+  </url><url>
+    <loc>https://kring.co.uk/tags/index/</loc>
+    <lastmod>2024-11-13T12:20:47+00:00</lastmod>
+  </url><url>
+    <loc>https://kring.co.uk/tags/progress/</loc>
+    <lastmod>2024-11-13T12:20:47+00:00</lastmod>
+  </url><url>
+    <loc>https://kring.co.uk/tags/website/</loc>
+    <lastmod>2024-11-13T12:20:47+00:00</lastmod>
+  </url><url>
+    <loc>https://kring.co.uk/works/</loc>
+    <lastmod>2024-11-13T12:20:47+00:00</lastmod>
+  </url><url>
+    <loc>https://kring.co.uk/products/doris.nvim/</loc>
+    <lastmod>2024-11-13T12:05:38+00:00</lastmod>
+  </url><url>
+    <loc>https://kring.co.uk/tags/neovim/</loc>
+    <lastmod>2024-11-13T12:05:38+00:00</lastmod>
+  </url><url>
+    <loc>https://kring.co.uk/tags/nvim/</loc>
+    <lastmod>2024-11-13T12:05:38+00:00</lastmod>
+  </url><url>
+    <loc>https://kring.co.uk/tags/plugin/</loc>
+    <lastmod>2024-11-13T12:05:38+00:00</lastmod>
+  </url><url>
     <loc>https://kring.co.uk/aladdin/a-simple-risc/</loc>
     <lastmod>2024-11-12T19:50:19+00:00</lastmod>
   </url><url>
@@ -38,9 +92,6 @@
     <loc>https://kring.co.uk/posts/typescript/</loc>
     <lastmod>2024-10-19T12:43:30+00:00</lastmod>
   </url><url>
-    <loc>https://kring.co.uk/tags/website/</loc>
-    <lastmod>2024-10-19T12:43:30+00:00</lastmod>
-  </url><url>
     <loc>https://kring.co.uk/aladdin/gimp/</loc>
     <lastmod>2024-10-07T20:40:40+00:00</lastmod>
   </url><url>
@@ -67,9 +118,6 @@
   </url><url>
     <loc>https://kring.co.uk/tags/theme/</loc>
     <lastmod>2024-10-07T07:33:09+00:00</lastmod>
-  </url><url>
-    <loc>https://kring.co.uk/tags/index/</loc>
-    <lastmod>2024-10-06T12:23:54+00:00</lastmod>
   </url><url>
     <loc>https://kring.co.uk/tags/tags/</loc>
     <lastmod>2024-10-06T12:23:54+00:00</lastmod>
@@ -129,9 +177,6 @@
     <lastmod>2024-10-05T11:10:32+00:00</lastmod>
   </url><url>
     <loc>https://kring.co.uk/aladdin/nvim/</loc>
-    <lastmod>2024-10-05T11:10:32+00:00</lastmod>
-  </url><url>
-    <loc>https://kring.co.uk/tags/nvim/</loc>
     <lastmod>2024-10-05T11:10:32+00:00</lastmod>
   </url><url>
     <loc>https://kring.co.uk/tags/audio/</loc>

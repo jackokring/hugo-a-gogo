@@ -6,8 +6,29 @@
     <description>Recent content in Home on K Ring Technologies Ltd</description>
     <generator>Hugo</generator>
     <language>en-GB</language>
-    <lastBuildDate>Tue, 12 Nov 2024 19:50:19 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 13 Nov 2024 12:36:13 +0000</lastBuildDate>
     <atom:link href="https://kring.co.uk/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cloudflare Changeover</title>
+      <link>https://kring.co.uk/works/cloudflare-changeover/</link>
+      <pubDate>Wed, 13 Nov 2024 12:36:13 +0000</pubDate>
+      <guid>https://kring.co.uk/works/cloudflare-changeover/</guid>
+      <description>&lt;p&gt;This site is hosted on CloudFlare with workers for lambda style JS server side&#xA;scripting. The login feature uses this. I&amp;rsquo;m moving my DNS to this site soon.&#xA;I can then shutdown the old development server or repurpose it for experimental&#xA;use. I may transfer some of the text articles over, as I have done a &lt;code&gt;wget&lt;/code&gt; of&#xA;the old site. It used &lt;code&gt;WordPress&lt;/code&gt;, and I am over my desire to use PHP, and&#xA;keeping up using a bit of an open-source news bane.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Google Login</title>
+      <link>https://kring.co.uk/works/google-login/</link>
+      <pubDate>Wed, 13 Nov 2024 12:28:42 +0000</pubDate>
+      <guid>https://kring.co.uk/works/google-login/</guid>
+      <description>&lt;p&gt;The google login is in progress and does not yet work. Your email is not on the&#xA;list, so no point in trying yet. Also there is as yet no logout link although&#xA;for testers the logout happens after one day. There is also nothing happening&#xA;in terms of extra features for logging in. This should change.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;A joypad adapter to tunnel through into a container to use with&#xA;&lt;code&gt;doris.nvim&lt;/code&gt;.&lt;/li&gt;&#xA;&lt;li&gt;A reverse proxy to tunnel &lt;code&gt;nvim&lt;/code&gt; out of the container, and use the&#xA;external browser as a &lt;code&gt;https&lt;/code&gt; connection to the internet, so that &lt;code&gt;doris.nvim&lt;/code&gt;&#xA;may run some kind of BBS text service TUI.&lt;/li&gt;&#xA;&lt;li&gt;&amp;hellip;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;There&amp;rsquo;s things to be done.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Doris.nvim [Free]</title>
+      <link>https://kring.co.uk/products/doris.nvim/</link>
+      <pubDate>Wed, 13 Nov 2024 12:05:38 +0000</pubDate>
+      <guid>https://kring.co.uk/products/doris.nvim/</guid>
+      <description>&lt;p&gt;A plugin for &lt;code&gt;nvim&lt;/code&gt; (LazyVim) hosted open-source MIT licence. It&amp;rsquo;s quite a bit&#xA;of a mix. &lt;a href=&#34;https://github.com/jackokring/doris.nvim&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Check here&lt;/a&gt;&#xA; for details.&#xA;I&amp;rsquo;m liking Lua, especially now I&amp;rsquo;m building something to help with my future&#xA;experience with it. The repository also contains some dotfiles for some other&#xA;tools and my &lt;code&gt;nvim&lt;/code&gt; (LazyVim) dotfiles with a &lt;code&gt;cmp&lt;/code&gt; example fetching &lt;code&gt;autojump&lt;/code&gt;&#xA;directories after typing a &lt;code&gt;/&lt;/code&gt;. Easier after combining a few online&#xA;tutorials, and a bit of hacking &lt;code&gt;lua/config/complete.lua&lt;/code&gt;.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>A Simple RISC</title>
       <link>https://kring.co.uk/aladdin/a-simple-risc/</link>

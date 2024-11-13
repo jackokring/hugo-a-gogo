@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dns on K Ring Technologies Ltd</title>
+    <link>https://kring.co.uk/tags/dns/</link>
+    <description>Recent content in Dns on K Ring Technologies Ltd</description>
+    <generator>Hugo</generator>
+    <language>en-GB</language>
+    <lastBuildDate>Wed, 13 Nov 2024 12:36:13 +0000</lastBuildDate>
+    <atom:link href="https://kring.co.uk/tags/dns/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cloudflare Changeover</title>
+      <link>https://kring.co.uk/works/cloudflare-changeover/</link>
+      <pubDate>Wed, 13 Nov 2024 12:36:13 +0000</pubDate>
+      <guid>https://kring.co.uk/works/cloudflare-changeover/</guid>
+      <description>&lt;p&gt;This site is hosted on CloudFlare with workers for lambda style JS server side&#xA;scripting. The login feature uses this. I&amp;rsquo;m moving my DNS to this site soon.&#xA;I can then shutdown the old development server or repurpose it for experimental&#xA;use. I may transfer some of the text articles over, as I have done a &lt;code&gt;wget&lt;/code&gt; of&#xA;the old site. It used &lt;code&gt;WordPress&lt;/code&gt;, and I am over my desire to use PHP, and&#xA;keeping up using a bit of an open-source news bane.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

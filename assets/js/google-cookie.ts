@@ -86,7 +86,8 @@ async function replaceMain(
     // check for nil main
     if (h != undefined) {
       // assignment direct is apparently ignored
-      $("main").html(h);
+      $$.html(h);
+      // hidden div jQuery object, so .find() ...
     }
     /* supply XML and credential */
     callback(r, getCred());
@@ -188,6 +189,8 @@ function delCookie(cname: string) {
  * window object has to be assigned to
  * to side effect the lambda generated
  * (() -> {})(); */
+// setup the hidden div sun DOM element for filling
+var $$ = $("#subdom");
 window.googleLogin = googleLogin; // clicked login
 window.onRequest = onRequest; // main replace ajax
 window.reprompt = reprompt; // logout
