@@ -1,33 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Products on K Ring Technologies Ltd</title>
-    <link>https://kring.co.uk/products/</link>
-    <description>Recent content in Products on K Ring Technologies Ltd</description>
+    <title>Cards on K Ring Technologies Ltd</title>
+    <link>https://kring.co.uk/tags/cards/</link>
+    <description>Recent content in Cards on K Ring Technologies Ltd</description>
     <generator>Hugo</generator>
     <language>en-GB</language>
     <lastBuildDate>Fri, 15 Nov 2024 04:44:48 +0000</lastBuildDate>
-    <atom:link href="https://kring.co.uk/products/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://kring.co.uk/tags/cards/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sixzoot Rummie [Free]</title>
       <link>https://kring.co.uk/products/sixzoot-rummie/</link>
       <pubDate>Fri, 15 Nov 2024 04:44:48 +0000</pubDate>
       <guid>https://kring.co.uk/products/sixzoot-rummie/</guid>
       <description>&lt;p&gt;So with the two jokers we can have the following table for 6 of a kind and upto&#xA;runs of 7, and with the usual minimums of a 3 and a 4.&lt;/p&gt;&#xA;&lt;table class=&#34;table&#34;&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th class=&#34;left&#34;&gt;4 suits&lt;/th&gt;&#xA;          &lt;th class=&#34;left&#34;&gt;blacks/reds&lt;/th&gt;&#xA;          &lt;th class=&#34;left&#34;&gt;suit&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td class=&#34;left&#34;&gt;10&lt;/td&gt;&#xA;          &lt;td class=&#34;left&#34;&gt;jr&lt;/td&gt;&#xA;          &lt;td class=&#34;left&#34;&gt;Black/Red&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td class=&#34;left&#34;&gt;9&lt;/td&gt;&#xA;          &lt;td class=&#34;left&#34;&gt;A&lt;/td&gt;&#xA;          &lt;td class=&#34;left&#34;&gt;Spades/Hearts&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td class=&#34;left&#34;&gt;8&lt;/td&gt;&#xA;          &lt;td class=&#34;left&#34;&gt;K&lt;/td&gt;&#xA;          &lt;td class=&#34;left&#34;&gt;&amp;quot;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td class=&#34;left&#34;&gt;7&lt;/td&gt;&#xA;          &lt;td class=&#34;left&#34;&gt;Q&lt;/td&gt;&#xA;          &lt;td class=&#34;left&#34;&gt;&amp;quot;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td class=&#34;left&#34;&gt;6&lt;/td&gt;&#xA;          &lt;td class=&#34;left&#34;&gt;J&lt;/td&gt;&#xA;          &lt;td class=&#34;left&#34;&gt;&amp;quot;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td class=&#34;left&#34;&gt;5&lt;/td&gt;&#xA;          &lt;td class=&#34;left&#34;&gt;A&lt;/td&gt;&#xA;          &lt;td class=&#34;left&#34;&gt;Clubs/Diamonds&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td class=&#34;left&#34;&gt;4&lt;/td&gt;&#xA;          &lt;td class=&#34;left&#34;&gt;K&lt;/td&gt;&#xA;          &lt;td class=&#34;left&#34;&gt;&amp;quot;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td class=&#34;left&#34;&gt;3&lt;/td&gt;&#xA;          &lt;td class=&#34;left&#34;&gt;Q&lt;/td&gt;&#xA;          &lt;td class=&#34;left&#34;&gt;&amp;quot;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td class=&#34;left&#34;&gt;2&lt;/td&gt;&#xA;          &lt;td class=&#34;left&#34;&gt;J&lt;/td&gt;&#xA;          &lt;td class=&#34;left&#34;&gt;&amp;quot;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;p&gt;Or this website makes a suitable gift template. Happy official December hasn&amp;rsquo;t&#xA;started yet day.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Doris.nvim [Free]</title>
-      <link>https://kring.co.uk/products/doris.nvim/</link>
-      <pubDate>Wed, 13 Nov 2024 12:05:38 +0000</pubDate>
-      <guid>https://kring.co.uk/products/doris.nvim/</guid>
-      <description>&lt;p&gt;A plugin for &lt;code&gt;nvim&lt;/code&gt; (LazyVim) hosted open-source MIT licence. It&amp;rsquo;s quite a bit&#xA;of a mix. &lt;a href=&#34;https://github.com/jackokring/doris.nvim&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Check here&lt;/a&gt;&#xA; for details.&#xA;I&amp;rsquo;m liking Lua, especially now I&amp;rsquo;m building something to help with my future&#xA;experience with it. The repository also contains some dotfiles for some other&#xA;tools and my &lt;code&gt;nvim&lt;/code&gt; (LazyVim) dotfiles with a &lt;code&gt;cmp&lt;/code&gt; example fetching &lt;code&gt;autojump&lt;/code&gt;&#xA;directories after typing a &lt;code&gt;/&lt;/code&gt;. Easier after combining a few online&#xA;tutorials, and a bit of hacking &lt;code&gt;lua/config/complete.lua&lt;/code&gt;.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>VCV Rack Plugin [Free]</title>
-      <link>https://kring.co.uk/products/vcv-plugin/</link>
-      <pubDate>Sat, 05 Oct 2024 10:51:01 +0000</pubDate>
-      <guid>https://kring.co.uk/products/vcv-plugin/</guid>
-      <description>&lt;p&gt;An audio plugin of virtual Eurorack modules. A free download for &lt;strong&gt;VCV Rack&lt;/strong&gt;&#xA;written in C++ under an MIT licence. Downloads are in the tens of thousands&#xA;and as such it&amp;rsquo;s KRT&amp;rsquo;s most popular software.&lt;/p&gt;&#xA;&lt;p&gt;Download &lt;a href=&#34;https://library.vcvrack.com/KRTPluginA&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;&#xA; by subscribing and&#xA;then updating the library from within the VCV application. There is a free&#xA;version of VCV available from the &lt;a href=&#34;https://vcvrack.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;VCV homepage&lt;/a&gt;&#xA; as&#xA;well as a pro version with a VST adapter for integration with your music&#xA;DAW. It&amp;rsquo;s a very nice experimental audio platform with many third party&#xA;plugins.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
