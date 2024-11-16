@@ -13,7 +13,7 @@
   function onLoad() {
     let u = getCred().name;
     if (u == void 0) u = "Anonymous User";
-    $(".loginName").html(u);
+    $(".loginName").text(u);
   }
   async function doSiteLogin(callback) {
     if (loginUrl == "") {

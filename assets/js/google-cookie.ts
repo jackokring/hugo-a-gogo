@@ -17,7 +17,9 @@ function onLoad() {
   // on load process
   let u = getCred().name;
   if (u == undefined) u = "Anonymous User"; // must be a name?
-  $(".loginName").html(u);
+  //html escape little johny drop tables
+  $(".loginName").text(u);
+  //then there's val() for inner things of container sets
 }
 
 /* optimize one less cookie decode */
