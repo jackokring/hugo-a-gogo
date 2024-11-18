@@ -58,7 +58,7 @@ async function doSiteLogin(callback: () => Promise<void>) {
 
 async function replaceMain(
   url: string,
-  callback: (doc: Document, json: json) => Promise<void>,
+  callback: (json: json) => Promise<void>,
 ) {
   if (url == "" || url.charAt(0) == "?") {
     /* not configured */
@@ -89,10 +89,12 @@ async function replaceMain(
     if (h != undefined) {
       // assignment direct is apparently ignored
       $$.html(h);
+      // and set subdom
+      //$$ = $(".subdom");
       // hidden div jQuery object, so .find() ...
     }
     /* supply XML and credential */
-    callback(r, getCred());
+    callback(getCred());
   } else if (response.status == 403) {
     alert("Access denied. Logging out.");
     reprompt();
@@ -132,11 +134,11 @@ function reprompt() {
 }
 
 /* replaces <main> sends json as query string GET
- * then calls callback(responeXML, siteCredential) */
+ * then calls callback(siteCredential) */
 async function onRequest(
   url: string,
   json: json,
-  callback: (doc: Document, json: json) => Promise<void>,
+  callback: (json: json) => Promise<void>,
 ) {
   const cb = async function () {
     const j = JSON.stringify(json);
@@ -193,11 +195,18 @@ function delCookie(cname: string) {
  * (() -> {})(); */
 // setup the hidden div sun DOM element for filling
 // triggers load order needing bump of jquery higher on page
+// might as well name the subdom in a short way
 var $$ = $("#subdom");
+var $_ = $("main");
+// for easy access to the restricted dom elements
+// with .find(selector) for copy
+window.$$ = $$;
+window.$_ = $_;
+
 window.googleLogin = googleLogin; // clicked login
 window.onRequest = onRequest; // main replace ajax
 window.reprompt = reprompt; // logout
 window.onLoad = onLoad; // set loaded details such as logged in classes
 // e.g. class loginName for the user's name
 
-export { googleLogin, onRequest, reprompt, onLoad };
+export { $$, $_, googleLogin, onRequest, reprompt, onLoad };

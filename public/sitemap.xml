@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://kring.co.uk/tags/audio/</loc>
+    <lastmod>2024-11-18T17:42:28+00:00</lastmod>
+  </url><url>
+    <loc>https://kring.co.uk/tags/lua/</loc>
+    <lastmod>2024-11-18T17:42:28+00:00</lastmod>
+  </url><url>
+    <loc>https://kring.co.uk/works/lua-audio/</loc>
+    <lastmod>2024-11-18T17:42:28+00:00</lastmod>
+  </url><url>
     <loc>https://kring.co.uk/tags/cards/</loc>
     <lastmod>2024-11-15T04:44:48+00:00</lastmod>
   </url><url>
@@ -191,14 +200,8 @@
     <loc>https://kring.co.uk/tags/service/</loc>
     <lastmod>2024-10-05T11:43:40+00:00</lastmod>
   </url><url>
-    <loc>https://kring.co.uk/tags/lua/</loc>
-    <lastmod>2024-10-05T11:10:32+00:00</lastmod>
-  </url><url>
     <loc>https://kring.co.uk/aladdin/nvim/</loc>
     <lastmod>2024-10-05T11:10:32+00:00</lastmod>
-  </url><url>
-    <loc>https://kring.co.uk/tags/audio/</loc>
-    <lastmod>2024-10-05T10:51:01+00:00</lastmod>
   </url><url>
     <loc>https://kring.co.uk/products/vcv-plugin/</loc>
     <lastmod>2024-10-05T10:51:01+00:00</lastmod>

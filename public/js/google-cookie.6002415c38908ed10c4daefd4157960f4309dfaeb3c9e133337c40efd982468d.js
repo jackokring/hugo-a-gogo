@@ -63,7 +63,7 @@
       if (h != void 0) {
         $$.html(h);
       }
-      callback(r, getCred());
+      callback(getCred());
     } else if (response.status == 403) {
       alert("Access denied. Logging out.");
       reprompt();
@@ -132,6 +132,9 @@
     setCookie(cname, "", -1);
   }
   var $$ = $("#subdom");
+  var $_ = $("main");
+  window.$$ = $$;
+  window.$_ = $_;
   window.googleLogin = googleLogin;
   window.onRequest = onRequest;
   window.reprompt = reprompt;
