@@ -21,7 +21,7 @@ maths = true
 
 {{< html >}}
 
-<div
+<div class="g_id_signin"
 data-type="standard"
 data-size="large"
 data-theme="outline"
