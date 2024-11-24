@@ -3,7 +3,7 @@
     {{- if $v }}
       {{- printf " %s=%q" $k $v | safeHTMLAttr }}
     {{- end }}
-  {{- end }} class="table">
+  {{- end }}>
   <thead>
     {{- range .THead }}
       <tr>

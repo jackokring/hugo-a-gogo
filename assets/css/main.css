@@ -84,7 +84,19 @@ a {
 }
 
 /* tables */
-.table {
+table,
+table > th,
+table > tr {
+  border: 1px solid;
+}
+
+table {
+  width: 60%;
+  margin-left: 1rem;
+}
+
+tr:hover {
+  background-color: var(--blue);
 }
 
 .left {

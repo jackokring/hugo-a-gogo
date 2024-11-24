@@ -13,7 +13,7 @@
       <link>https://kring.co.uk/works/lua-audio/</link>
       <pubDate>Mon, 18 Nov 2024 17:42:28 +0000</pubDate>
       <guid>https://kring.co.uk/works/lua-audio/</guid>
-      <description>&lt;p&gt;So a library for Lua to do some kind of audio. I don&amp;rsquo;t mean multimedia loading&#xA;as this could be simple &lt;code&gt;os.execute(...)&lt;/code&gt; call wrappers, with perhaps &lt;code&gt;&amp;quot;...&amp;amp;&amp;quot;&lt;/code&gt;,&#xA;but a bit of that is still an idea to add later. It&amp;rsquo;s more sort of chip-tune&#xA;kind of stuff. A likely is &lt;code&gt;os.execute(&amp;quot;&amp;lt;c-program&amp;gt; &amp;lt;arg&amp;gt; ... | pw-play -&amp;amp;&amp;quot;)&lt;/code&gt;&#xA;for a more exciting audio generation experience. As each note would then&#xA;become threaded, which for small sound experimentation would be fine.&lt;/p&gt;</description>
+      <description>&lt;p&gt;So a library for Lua to do some kind of audio. I don&amp;rsquo;t mean multimedia loading&#xA;as this could be simple &lt;code&gt;os.execute(...)&lt;/code&gt; call wrappers, with perhaps &lt;code&gt;&amp;quot;...&amp;amp;&amp;quot;&lt;/code&gt;,&#xA;but a bit of that is still an idea to add later. It&amp;rsquo;s more sort of chip-tune&#xA;kind of stuff. So &lt;code&gt;os.execute(&amp;quot;&amp;lt;c-program&amp;gt; &amp;lt;arg&amp;gt; ... | pw-play --channels=1 -&amp;amp;&amp;quot;)&lt;/code&gt;&#xA;for a more exciting audio generation experience. As each note would then&#xA;become threaded, which for small sound experimentation would be fine.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Neovim</title>

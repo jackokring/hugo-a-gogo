@@ -20,7 +20,7 @@ maths = true
 So a library for Lua to do some kind of audio. I don't mean multimedia loading
 as this could be simple `os.execute(...)` call wrappers, with perhaps `"...&"`,
 but a bit of that is still an idea to add later. It's more sort of chip-tune
-kind of stuff. A likely is `os.execute("<c-program> <arg> ... | pw-play -&")`
+kind of stuff. So `os.execute("<c-program> <arg> ... | pw-play --channels=1 -&")`
 for a more exciting audio generation experience. As each note would then
 become threaded, which for small sound experimentation would be fine.
 
@@ -37,19 +37,26 @@ based on computer history is useful here.
 2. `Volume` between 0 and 1 for the next level of control of stimulation.
 3. `Frequency` with 0 being a 440Hz and +1/-1 going up and down one semitone.
 4. `Filter` also a frequency using the same note scaling.
-5. `Resonance` this one might be more involved.
-6. `Vol.drift` in 6dB per 100% length.
-7. `Freq.drift` in semitones per 100% length.
-8. `Filt.drift` also in semitones per 100% length.
-9. `Res.drift` more involved, yes but of the 100% kind.
-10. `Mod.volume` well parameter 10 kind of starts as parameter 2 of a modulator.
+5. `Vol.drift` in 6dB per 100% length.
+6. `Freq.drift` in semitones per 100% length.
+7. `Filt.drift` also in semitones per 100% length.
+8. `Mod.volume` well parameter 8 kind of starts as parameter 2 of a modulator.
 
 This then makes for an easy as many as needed with a 1 second beep for no
 parameters, and all modulators starting off with parameter clone, but zero
 volume. So the 10th parameter just applies some frequency matched PM modulation,
 with cloned parameters from the carrier oscillation.
 
-It's sounds like an idea.
+It's sounds like an idea. Well, more than an idea. The C code is written.
+The `test.raw` file has been made. So upto 19 parameters, and some sensible
+max length of 16 seconds. Next up is a Lua wrapper.
+
+I decided on just a single pole filter with exponential FM, so that tremolo
+would be easy. It does however cause a detune based on the modulation. This
+could be stopped by using phase modulation, but spectrally that would be
+brighter. I also think the frequency dependence to modulation, while not to
+the filter cut off is more interesting, and more natural instrument baffle
+sounding. Also sightly easier, and what's to stop `audio-too`?
 
 ```text
      _            _                  _
