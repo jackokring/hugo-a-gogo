@@ -27,7 +27,7 @@ header {
 
 /* sign in */
 .g_id_signin {
-  float: right;
+  margin-left: 1rem;
 }
 
 .loginName {
