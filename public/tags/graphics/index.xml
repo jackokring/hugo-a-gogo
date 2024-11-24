@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Graphics on K Ring Technologies Ltd</title>
+    <link>https://kring.co.uk/tags/graphics/</link>
+    <description>Recent content in Graphics on K Ring Technologies Ltd</description>
+    <generator>Hugo</generator>
+    <language>en-GB</language>
+    <lastBuildDate>Mon, 07 Oct 2024 20:40:40 +0000</lastBuildDate>
+    <atom:link href="https://kring.co.uk/tags/graphics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gimp and Inkscape</title>
+      <link>https://kring.co.uk/aladdin/gimp/</link>
+      <pubDate>Mon, 07 Oct 2024 20:40:40 +0000</pubDate>
+      <guid>https://kring.co.uk/aladdin/gimp/</guid>
+      <description>&lt;p&gt;It&amp;rsquo;s a classic free replacement to PhotoShop and does what I need from such a&#xA;tool, along with a nice vector drawing program to make &lt;code&gt;.svg&lt;/code&gt; files. I&amp;rsquo;m&#xA;not into doing a full manual here, but these applications are so good.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

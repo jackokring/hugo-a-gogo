@@ -1,0 +1,159 @@
+<!doctype html>
+<html
+  lang="en-GB"
+  dir="ltr"
+>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Neovim | K Ring Technologies Ltd</title>
+
+      <link rel="stylesheet" href="/css/main.min.f65552190e0a5dcb4c59663a62a160c7f63adf775862d12d4845e6134f7f39ae.css" integrity="sha256-9lVSGQ4KXctMWWY6YqFgx/Y633dYYtEtSEXmE09/Oa4=" crossorigin="anonymous">
+      <link rel="stylesheet" href="/css/syntax.min.64bdb51e7fdc90771f811ca111adb352b42a9c08f983a3c951fa044afc99955f.css" integrity="sha256-ZL21Hn/ckHcfgRyhEa2zUrQqnAj5g6PJUfoESvyZlV8=" crossorigin="anonymous">
+
+<script src="https://cdn.jsdelivr.net/npm/underscore@1.13.7/underscore-umd-min.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
+<script
+  src="/js/main.f2979a93a325fecf9605263bd141398a311c8e23388ed7dcff74f92f7e632866.js"
+  integrity="sha256-8peak6Ml/s&#43;WBSY70UE5ijEcjiM4jtfc/3T5L35jKGY="
+  crossorigin="anonymous"
+></script>
+<script
+  src="/js/google-cookie.6002415c38908ed10c4daefd4157960f4309dfaeb3c9e133337c40efd982468d.js"
+  integrity="sha256-YAJBXDiQjtEMTa79QVeWD0MJ366zyeEzM3xA79mCRo0="
+  crossorigin="anonymous"
+></script>
+
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)']]                  
+    }
+  };
+</script> 
+  </head>
+  <body>
+    <header data-pagefind-ignore="all"><div class="float">
+  
+  <img
+    class="scaled"
+    src="/images/header.jpg"
+    width="200"
+    height="200"
+  />
+</div>
+<script src="https://accounts.google.com/gsi/client" async></script>
+
+
+<div
+  id="g_id_onload"
+  data-client_id="1074137615893-80kru3vjd82mars43fjh8vm20sgbadso.apps.googleusercontent.com"
+  data-context="use"
+  data-ux_mode="popup"
+  data-callback="googleLogin"
+  data-itp_support="true"
+  data-use_fedcm_for_prompt="true"
+  data-skip_prompt_cookie="cred"
+></div>
+<h1><a href="/">K Ring Technologies Ltd</a></h1>
+
+  <nav>
+    <ul>
+    <li>
+      <a href="/">Home</a> |
+    </li>
+    <li>
+      <a href="/posts/">Posts</a> |
+    </li>
+    <li>
+      <a href="/tags/">Tags</a> |
+    </li>
+    <li>
+      <a href="/about/">About</a> |
+    </li>
+    <li>
+      <a aria-current="true" class="ancestor" href="/aladdin/">Aladdin</a> |
+    </li>
+    <li>
+      <a href="/products/">Products</a> |
+    </li>
+    <li>
+      <a href="/services/">Services</a> |
+    </li>
+    <li>
+      <a href="/works/">Works</a> |
+    </li>
+    <li><a class="loginName" href="/user/">[Username]</a></li>
+    </ul>
+  </nav>
+
+
+<script src="/pagefind/pagefind-ui.js"></script>
+<div id="search"></div>
+<script>
+  window.addEventListener("DOMContentLoaded", (event) => {
+    new PagefindUI({
+      element: "#search",
+      showSubResults: true,
+      resetStyles: false,
+    });
+  });
+</script>
+<div hidden id="subdom"></div>
+</header>
+    <main>
+<h1>Neovim</h1>
+
+<h2>
+   
+  <time datetime="2024-10-05T11:10:32&#43;00:00">October 5, 2024</time>
+</h2>
+
+<p>The excellent <a href="https://neovim.io/" target="_blank" rel="noopener">Neovim</a>
+ has improved a lot since the older
+<code>vim</code> and even the original <code>vi</code>. It now includes Lua scripting as well as
+the more obscure Vim Script. It is best using some extra configuration of which
+<a href="https://www.lazyvim.org/" target="_blank" rel="noopener">LazyVim</a>
+ I have found to be very useful.</p>
+<p>As a fast loading editor with treesitter and various LSP servers, it&rsquo;s nice,
+although the way &ldquo;modes&rdquo; work is not your usual editor way. It has the speed
+advantage over <code>VSCode</code> and also will load files over an <code>SSH</code> connection
+whereas <code>VSCode</code> just freezes. I tried <code>Emacs</code> for a while and have used it
+back in the 90s. I found the LISP configuration more annoying than using
+Lua for configuration. Also <code>LazyVim</code> really solves the initial setup problems.</p>
+<p>I&rsquo;m still learning commands and I&rsquo;m finding <code>o</code> to be a useful instead of
+<code>A&lt;cr&gt;</code>. Multi-cursor is not really needed with <code>:%s/ ... / ... /g</code> as a
+classic regular expression find and replace. While <code>q</code> allows recording
+key macros, for easy replay. It&rsquo;s a steep learning curve, but powerful.</p>
+<h3 id="lua">Lua</h3>
+<p>The built in Lua scripting is an improvement on VimScript but that&rsquo;s still
+a keeper. The <code>LazyVim</code> plugin system is very extensible and I&rsquo;ve started
+a plugin called <a href="https://github.com/jackokring/doris.nvim" target="_blank" rel="noopener">Doris</a>
+ to keep it
+all in one place. So far I&rsquo;ve just added a modified multi-class OOP from
+the docs. It&rsquo;s a 1-indexed language with a few peculiarities.</p>
+ 
+<div>
+  <h3>Tags</h3>
+  <ul class="tags">
+    <li><a href="/tags/nvim/">Nvim</a> |</li>
+    <li><a href="/tags/lua/">Lua</a> |</li>
+    <li>[2]</li>
+  </ul>
+</div>
+ </main>
+    <footer data-pagefind-ignore="all"><p>Copyright 2024. All rights reserved.</p>
+<p>
+  This site can be used as a website template under MIT Licence. Personal and
+  company details excepted.
+</p>
+<script language="javascript">
+  window.onload = function (e) {
+    onLoad(); 
+  };
+</script>
+</footer>
+  </body>
+</html>

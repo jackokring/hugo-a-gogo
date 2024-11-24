@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jquery on K Ring Technologies Ltd</title>
+    <link>https://kring.co.uk/tags/jquery/</link>
+    <description>Recent content in Jquery on K Ring Technologies Ltd</description>
+    <generator>Hugo</generator>
+    <language>en-GB</language>
+    <lastBuildDate>Thu, 24 Oct 2024 22:42:53 +0000</lastBuildDate>
+    <atom:link href="https://kring.co.uk/tags/jquery/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JQuery and Underscore</title>
+      <link>https://kring.co.uk/aladdin/jquery-and-underscore/</link>
+      <pubDate>Thu, 24 Oct 2024 22:42:53 +0000</pubDate>
+      <guid>https://kring.co.uk/aladdin/jquery-and-underscore/</guid>
+      <description>&lt;h2 id=&#34;underscorejs&#34;&gt;Underscore.js&lt;/h2&gt;&#xA;&lt;p&gt;A nice functional JavaScript library. I like it, although it might be a bit of&#xA;a challenge to get it working server side with CloudFlare workers. It even&#xA;includes a simple dynamic template system with &lt;code&gt;_.template()&lt;/code&gt;. It can be found&#xA;as an ESM module as well as &amp;ldquo;normal&amp;rdquo; UMD, so that might help some.&lt;/p&gt;&#xA;&lt;h2 id=&#34;jquery&#34;&gt;JQuery&lt;/h2&gt;&#xA;&lt;p&gt;A compact library to do DOM processing based on tags. A similar challenge to&#xA;get it server side, but it would make for more expressive terse code&#xA;if the server had a DOM, but it doesn&amp;rsquo;t. I suppose that&amp;rsquo;s lucky. It&amp;rsquo;s not&#xA;as though all it does can&amp;rsquo;t be done otherways, it&amp;rsquo;s just so compact to write&#xA;without all the boilerplate duplication. I&amp;rsquo;m sure with DOM templates it will&#xA;be efficient to implement things.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

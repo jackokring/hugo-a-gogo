@@ -1,0 +1,188 @@
+<!doctype html>
+<html
+  lang="en-GB"
+  dir="ltr"
+>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Lua Audio | K Ring Technologies Ltd</title>
+
+      <link rel="stylesheet" href="/css/main.min.f65552190e0a5dcb4c59663a62a160c7f63adf775862d12d4845e6134f7f39ae.css" integrity="sha256-9lVSGQ4KXctMWWY6YqFgx/Y633dYYtEtSEXmE09/Oa4=" crossorigin="anonymous">
+      <link rel="stylesheet" href="/css/syntax.min.64bdb51e7fdc90771f811ca111adb352b42a9c08f983a3c951fa044afc99955f.css" integrity="sha256-ZL21Hn/ckHcfgRyhEa2zUrQqnAj5g6PJUfoESvyZlV8=" crossorigin="anonymous">
+
+<script src="https://cdn.jsdelivr.net/npm/underscore@1.13.7/underscore-umd-min.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
+<script
+  src="/js/main.f2979a93a325fecf9605263bd141398a311c8e23388ed7dcff74f92f7e632866.js"
+  integrity="sha256-8peak6Ml/s&#43;WBSY70UE5ijEcjiM4jtfc/3T5L35jKGY="
+  crossorigin="anonymous"
+></script>
+<script
+  src="/js/google-cookie.6002415c38908ed10c4daefd4157960f4309dfaeb3c9e133337c40efd982468d.js"
+  integrity="sha256-YAJBXDiQjtEMTa79QVeWD0MJ366zyeEzM3xA79mCRo0="
+  crossorigin="anonymous"
+></script>
+
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)']]                  
+    }
+  };
+</script> 
+  </head>
+  <body>
+    <header data-pagefind-ignore="all"><div class="float">
+  
+  <img
+    class="scaled"
+    src="/images/header.jpg"
+    width="200"
+    height="200"
+  />
+</div>
+<script src="https://accounts.google.com/gsi/client" async></script>
+
+
+<div
+  id="g_id_onload"
+  data-client_id="1074137615893-80kru3vjd82mars43fjh8vm20sgbadso.apps.googleusercontent.com"
+  data-context="use"
+  data-ux_mode="popup"
+  data-callback="googleLogin"
+  data-itp_support="true"
+  data-use_fedcm_for_prompt="true"
+  data-skip_prompt_cookie="cred"
+></div>
+<h1><a href="/">K Ring Technologies Ltd</a></h1>
+
+  <nav>
+    <ul>
+    <li>
+      <a href="/">Home</a> |
+    </li>
+    <li>
+      <a href="/posts/">Posts</a> |
+    </li>
+    <li>
+      <a href="/tags/">Tags</a> |
+    </li>
+    <li>
+      <a href="/about/">About</a> |
+    </li>
+    <li>
+      <a href="/aladdin/">Aladdin</a> |
+    </li>
+    <li>
+      <a href="/products/">Products</a> |
+    </li>
+    <li>
+      <a href="/services/">Services</a> |
+    </li>
+    <li>
+      <a aria-current="true" class="ancestor" href="/works/">Works</a> |
+    </li>
+    <li><a class="loginName" href="/user/">[Username]</a></li>
+    </ul>
+  </nav>
+
+
+<script src="/pagefind/pagefind-ui.js"></script>
+<div id="search"></div>
+<script>
+  window.addEventListener("DOMContentLoaded", (event) => {
+    new PagefindUI({
+      element: "#search",
+      showSubResults: true,
+      resetStyles: false,
+    });
+  });
+</script>
+<div hidden id="subdom"></div>
+</header>
+    <main>
+<h1>Lua Audio</h1>
+
+<h2>
+   
+  <time datetime="2024-11-18T17:42:28&#43;00:00">November 18, 2024</time>
+</h2>
+
+<p>So a library for Lua to do some kind of audio. I don&rsquo;t mean multimedia loading
+as this could be simple <code>os.execute(...)</code> call wrappers, with perhaps <code>&quot;...&amp;&quot;</code>,
+but a bit of that is still an idea to add later. It&rsquo;s more sort of chip-tune
+kind of stuff. So <code>os.execute(&quot;&lt;c-program&gt; &lt;arg&gt; ... | pw-play --channels=1 -&amp;&quot;)</code>
+for a more exciting audio generation experience. As each note would then
+become threaded, which for small sound experimentation would be fine.</p>
+<p>The sample rate of <code>48000</code> does seem high for chip-tunes, but is a feature of
+<code>pw-play</code> and not and sample generator program. The program just has to emit
+signed 16 bit samples by default for a length and then close the output stream.
+This would then make the thing portable across platforms as standard C code,
+with minor scripting changes for other languages and &ldquo;Windoze&rdquo; in particular.</p>
+<p>It then just becomes setting some standard argument conventions and a heuristic
+based on computer history is useful here.</p>
+<ol>
+<li><code>Length</code> is seconds. A classic it can be controlled 1st step.</li>
+<li><code>Volume</code> between 0 and 1 for the next level of control of stimulation.</li>
+<li><code>Frequency</code> with 0 being a 440Hz and +1/-1 going up and down one semitone.</li>
+<li><code>Filter</code> also a frequency using the same note scaling.</li>
+<li><code>Vol.drift</code> in 6dB per 100% length.</li>
+<li><code>Freq.drift</code> in semitones per 100% length.</li>
+<li><code>Filt.drift</code> also in semitones per 100% length.</li>
+<li><code>Mod.volume</code> well parameter 8 kind of starts as parameter 2 of a modulator.</li>
+</ol>
+<p>This then makes for an easy as many as needed with a 1 second beep for no
+parameters, and all modulators starting off with parameter clone, but zero
+volume. So the 10th parameter just applies some frequency matched PM modulation,
+with cloned parameters from the carrier oscillation.</p>
+<p>It&rsquo;s sounds like an idea. Well, more than an idea. The C code is written.
+The <code>test.raw</code> file has been made. So upto 19 parameters, and some sensible
+max length of 16 seconds. Next up is a Lua wrapper.</p>
+<p>I decided on just a single pole filter with exponential FM, so that tremolo
+would be easy. It does however cause a detune based on the modulation. This
+could be stopped by using phase modulation, but spectrally that would be
+brighter. I also think the frequency dependence to modulation, while not to
+the filter cut off is more interesting, and more natural instrument baffle
+sounding. Also sightly easier, and what&rsquo;s to stop <code>audio-too</code>?</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">     _            _                  _
+</span></span><span class="line"><span class="cl">  __| | ___  _ __(_)___   _ ____   _(_)_ __ ___
+</span></span><span class="line"><span class="cl"> / _` |/ _ \| &#39;__| / __| | &#39;_ \ \ / / | &#39;_ ` _ \
+</span></span><span class="line"><span class="cl">| (_| | (_) | |  | \__ \_| | | \ V /| | | | | | |
+</span></span><span class="line"><span class="cl"> \__,_|\___/|_|  |_|___(_)_| |_|\_/ |_|_| |_| |_|
+</span></span></code></pre></td></tr></table>
+</div>
+</div> 
+<div>
+  <h3>Tags</h3>
+  <ul class="tags">
+    <li><a href="/tags/lua/">Lua</a> |</li>
+    <li><a href="/tags/audio/">Audio</a> |</li>
+    <li>[2]</li>
+  </ul>
+</div>
+ </main>
+    <footer data-pagefind-ignore="all"><p>Copyright 2024. All rights reserved.</p>
+<p>
+  This site can be used as a website template under MIT Licence. Personal and
+  company details excepted.
+</p>
+<script language="javascript">
+  window.onload = function (e) {
+    onLoad(); 
+  };
+</script>
+</footer>
+  </body>
+</html>

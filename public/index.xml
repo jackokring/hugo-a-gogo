@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on K Ring Technologies Ltd</title>
+    <link>https://kring.co.uk/</link>
+    <description>Recent content in Home on K Ring Technologies Ltd</description>
+    <generator>Hugo</generator>
+    <language>en-GB</language>
+    <lastBuildDate>Mon, 18 Nov 2024 17:42:28 +0000</lastBuildDate>
+    <atom:link href="https://kring.co.uk/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lua Audio</title>
+      <link>https://kring.co.uk/works/lua-audio/</link>
+      <pubDate>Mon, 18 Nov 2024 17:42:28 +0000</pubDate>
+      <guid>https://kring.co.uk/works/lua-audio/</guid>
+      <description>&lt;p&gt;So a library for Lua to do some kind of audio. I don&amp;rsquo;t mean multimedia loading&#xA;as this could be simple &lt;code&gt;os.execute(...)&lt;/code&gt; call wrappers, with perhaps &lt;code&gt;&amp;quot;...&amp;amp;&amp;quot;&lt;/code&gt;,&#xA;but a bit of that is still an idea to add later. It&amp;rsquo;s more sort of chip-tune&#xA;kind of stuff. So &lt;code&gt;os.execute(&amp;quot;&amp;lt;c-program&amp;gt; &amp;lt;arg&amp;gt; ... | pw-play --channels=1 -&amp;amp;&amp;quot;)&lt;/code&gt;&#xA;for a more exciting audio generation experience. As each note would then&#xA;become threaded, which for small sound experimentation would be fine.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Sixzoot Rummie [Free]</title>
+      <link>https://kring.co.uk/products/sixzoot-rummie/</link>
+      <pubDate>Fri, 15 Nov 2024 04:44:48 +0000</pubDate>
+      <guid>https://kring.co.uk/products/sixzoot-rummie/</guid>
+      <description>&lt;p&gt;So with the two jokers we can have the following table for 6 of a kind and upto&#xA;runs of 7, and with the usual minimums of a 3 and a 4.&lt;/p&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th class=&#34;left&#34;&gt;4 suits&lt;/th&gt;&#xA;          &lt;th class=&#34;left&#34;&gt;blacks/reds&lt;/th&gt;&#xA;          &lt;th class=&#34;left&#34;&gt;suit&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td class=&#34;left&#34;&gt;10&lt;/td&gt;&#xA;          &lt;td class=&#34;left&#34;&gt;jr&lt;/td&gt;&#xA;          &lt;td class=&#34;left&#34;&gt;Black/Red&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td class=&#34;left&#34;&gt;9&lt;/td&gt;&#xA;          &lt;td class=&#34;left&#34;&gt;A&lt;/td&gt;&#xA;          &lt;td class=&#34;left&#34;&gt;Spades/Hearts&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td class=&#34;left&#34;&gt;8&lt;/td&gt;&#xA;          &lt;td class=&#34;left&#34;&gt;K&lt;/td&gt;&#xA;          &lt;td class=&#34;left&#34;&gt;&amp;quot;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td class=&#34;left&#34;&gt;7&lt;/td&gt;&#xA;          &lt;td class=&#34;left&#34;&gt;Q&lt;/td&gt;&#xA;          &lt;td class=&#34;left&#34;&gt;&amp;quot;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td class=&#34;left&#34;&gt;6&lt;/td&gt;&#xA;          &lt;td class=&#34;left&#34;&gt;J&lt;/td&gt;&#xA;          &lt;td class=&#34;left&#34;&gt;&amp;quot;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td class=&#34;left&#34;&gt;5&lt;/td&gt;&#xA;          &lt;td class=&#34;left&#34;&gt;A&lt;/td&gt;&#xA;          &lt;td class=&#34;left&#34;&gt;Clubs/Diamonds&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td class=&#34;left&#34;&gt;4&lt;/td&gt;&#xA;          &lt;td class=&#34;left&#34;&gt;K&lt;/td&gt;&#xA;          &lt;td class=&#34;left&#34;&gt;&amp;quot;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td class=&#34;left&#34;&gt;3&lt;/td&gt;&#xA;          &lt;td class=&#34;left&#34;&gt;Q&lt;/td&gt;&#xA;          &lt;td class=&#34;left&#34;&gt;&amp;quot;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td class=&#34;left&#34;&gt;2&lt;/td&gt;&#xA;          &lt;td class=&#34;left&#34;&gt;J&lt;/td&gt;&#xA;          &lt;td class=&#34;left&#34;&gt;&amp;quot;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;p&gt;Or this website makes a suitable gift template. Happy official December hasn&amp;rsquo;t&#xA;started yet day.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Toolchain Operator</title>
+      <link>https://kring.co.uk/services/toolchain-operator/</link>
+      <pubDate>Wed, 13 Nov 2024 18:06:54 +0000</pubDate>
+      <guid>https://kring.co.uk/services/toolchain-operator/</guid>
+      <description>&lt;h3 id=&#34;custom-server&#34;&gt;Custom Server&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;go&lt;/code&gt; - fast, easy, webserver, good library.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;C/C++&lt;/code&gt; - small optimizations, bare speed.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;python&lt;/code&gt; - extensive, ML/AI, virtual environments.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;light-website&#34;&gt;Light Website&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;Hugo&lt;/code&gt; - lean, easy markdown CMS.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;TypeScript&lt;/code&gt; - dynamic sites, easy serverless/lambda.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;CSS&lt;/code&gt; - lipstick and styling.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;jquery&lt;/code&gt;/&lt;code&gt;underscore&lt;/code&gt; - old but classically useful tools.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;local-machine-generic-development&#34;&gt;Local Machine Generic Development&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;Neovim&lt;/code&gt; - fast editor, good extensibility.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;Lua&lt;/code&gt; - general scripting.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;C&lt;/code&gt; - good for small optimizations, speed.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;python&lt;/code&gt; - extensive, ML/AI, virtual environments.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;background-pervasive-everywhere&#34;&gt;Background Pervasive Everywhere&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;bash&lt;/code&gt; - automation of heterogeneous parts.&lt;/li&gt;&#xA;&lt;li&gt;CLI Tools - stable Linux OS.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;rust&lt;/code&gt; - some nice CLI tools available.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;git&lt;/code&gt; - code management.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;esoteric-investigation&#34;&gt;Esoteric Investigation&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;J&lt;/code&gt; - nice array language, open source.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;forth&lt;/code&gt; - compact small code.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;hardware-realtime-and-firmware&#34;&gt;Hardware, Realtime and Firmware&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;C/C++&lt;/code&gt; - fast, compact.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;VHDL&lt;/code&gt; - silicon compiler.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;galasm&lt;/code&gt; - simple logic array device programming.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;and-anything-else-needed&#34;&gt;And Anything Else Needed&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title>Cloudflare Changeover</title>
+      <link>https://kring.co.uk/works/cloudflare-changeover/</link>
+      <pubDate>Wed, 13 Nov 2024 12:36:13 +0000</pubDate>
+      <guid>https://kring.co.uk/works/cloudflare-changeover/</guid>
+      <description>&lt;p&gt;This site is hosted on CloudFlare with workers for lambda style JS server side&#xA;scripting. The login feature uses this. I&amp;rsquo;m moving my DNS to this site soon.&#xA;I can then shutdown the old development server or repurpose it for experimental&#xA;use. I may transfer some of the text articles over, as I have done a &lt;code&gt;wget&lt;/code&gt; of&#xA;the old site. It used &lt;code&gt;WordPress&lt;/code&gt;, and I am over my desire to use PHP, and&#xA;keeping up using a bit of an open-source news bane.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Google Login</title>
+      <link>https://kring.co.uk/works/google-login/</link>
+      <pubDate>Wed, 13 Nov 2024 12:28:42 +0000</pubDate>
+      <guid>https://kring.co.uk/works/google-login/</guid>
+      <description>&lt;p&gt;The google login is in progress and does not yet work. Your email is not on the&#xA;list, so no point in trying yet. Also there is as yet no logout link although&#xA;for testers the logout happens after one day. There is also nothing happening&#xA;in terms of extra features for logging in. This should change.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;A joypad adapter to tunnel through into a container to use with&#xA;&lt;code&gt;doris.nvim&lt;/code&gt;.&lt;/li&gt;&#xA;&lt;li&gt;A reverse proxy to tunnel &lt;code&gt;nvim&lt;/code&gt; out of the container, and use the&#xA;external browser as a &lt;code&gt;https&lt;/code&gt; connection to the internet, so that &lt;code&gt;doris.nvim&lt;/code&gt;&#xA;may run some kind of BBS text service TUI.&lt;/li&gt;&#xA;&lt;li&gt;&amp;hellip;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;There&amp;rsquo;s things to be done.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Doris.nvim [Free]</title>
+      <link>https://kring.co.uk/products/doris.nvim/</link>
+      <pubDate>Wed, 13 Nov 2024 12:05:38 +0000</pubDate>
+      <guid>https://kring.co.uk/products/doris.nvim/</guid>
+      <description>&lt;p&gt;A plugin for &lt;code&gt;nvim&lt;/code&gt; (LazyVim) hosted open-source MIT licence. It&amp;rsquo;s quite a bit&#xA;of a mix. &lt;a href=&#34;https://github.com/jackokring/doris.nvim&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Check here&lt;/a&gt;&#xA; for details.&#xA;I&amp;rsquo;m liking Lua, especially now I&amp;rsquo;m building something to help with my future&#xA;experience with it. The repository also contains some dotfiles for some other&#xA;tools and my &lt;code&gt;nvim&lt;/code&gt; (LazyVim) dotfiles with a &lt;code&gt;cmp&lt;/code&gt; example fetching &lt;code&gt;autojump&lt;/code&gt;&#xA;directories after typing a &lt;code&gt;/&lt;/code&gt;. Easier after combining a few online&#xA;tutorials, and a bit of hacking &lt;code&gt;lua/config/complete.lua&lt;/code&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>A Simple RISC</title>
+      <link>https://kring.co.uk/aladdin/a-simple-risc/</link>
+      <pubDate>Tue, 12 Nov 2024 19:50:19 +0000</pubDate>
+      <guid>https://kring.co.uk/aladdin/a-simple-risc/</guid>
+      <description>&lt;p&gt;Some ideas for a simple RISC processor although unlikely to ever be made, do&#xA;have possible application. To make it easy a 16 bit wide instruction and 16&#xA;general registers 32 bit wide make most sense.&lt;/p&gt;&#xA;&lt;p&gt;Hiding the link register &lt;code&gt;ln&lt;/code&gt; has good security implications so it is always&#xA;implicit. Also the &lt;code&gt;pc&lt;/code&gt; can be implicit too. So here goes. It&amp;rsquo;s not as though&#xA;the return stack isn&amp;rsquo;t heavily cached, and doesn&amp;rsquo;t need writeback of anything&#xA;below the stack pointer line.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>JQuery and Underscore</title>
+      <link>https://kring.co.uk/aladdin/jquery-and-underscore/</link>
+      <pubDate>Thu, 24 Oct 2024 22:42:53 +0000</pubDate>
+      <guid>https://kring.co.uk/aladdin/jquery-and-underscore/</guid>
+      <description>&lt;h2 id=&#34;underscorejs&#34;&gt;Underscore.js&lt;/h2&gt;&#xA;&lt;p&gt;A nice functional JavaScript library. I like it, although it might be a bit of&#xA;a challenge to get it working server side with CloudFlare workers. It even&#xA;includes a simple dynamic template system with &lt;code&gt;_.template()&lt;/code&gt;. It can be found&#xA;as an ESM module as well as &amp;ldquo;normal&amp;rdquo; UMD, so that might help some.&lt;/p&gt;&#xA;&lt;h2 id=&#34;jquery&#34;&gt;JQuery&lt;/h2&gt;&#xA;&lt;p&gt;A compact library to do DOM processing based on tags. A similar challenge to&#xA;get it server side, but it would make for more expressive terse code&#xA;if the server had a DOM, but it doesn&amp;rsquo;t. I suppose that&amp;rsquo;s lucky. It&amp;rsquo;s not&#xA;as though all it does can&amp;rsquo;t be done otherways, it&amp;rsquo;s just so compact to write&#xA;without all the boilerplate duplication. I&amp;rsquo;m sure with DOM templates it will&#xA;be efficient to implement things.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>User</title>
+      <link>https://kring.co.uk/user/</link>
+      <pubDate>Wed, 23 Oct 2024 17:48:00 +0000</pubDate>
+      <guid>https://kring.co.uk/user/</guid>
+      <description>&lt;h2 class=&#34;loginName&#34; id=&#34;username&#34;&gt;Username&lt;/h2&gt;&#xA;&lt;p&gt;&#xA;&#xA;&lt;div&#xA;data-type=&#34;standard&#34;&#xA;data-size=&#34;large&#34;&#xA;data-theme=&#34;outline&#34;&#xA;data-text=&#34;sign_in_with&#34;&#xA;data-shape=&#34;rectangular&#34;&#xA;data-logo_alignment=&#34;left&#34;&gt;&#xA;&lt;/p&gt;&#xA;&#xA;&lt;p&gt;Welcome to user services.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Typescript</title>
+      <link>https://kring.co.uk/posts/typescript/</link>
+      <pubDate>Sat, 19 Oct 2024 12:43:30 +0000</pubDate>
+      <guid>https://kring.co.uk/posts/typescript/</guid>
+      <description>&lt;p&gt;Ah, after a bit of setup, some peace. So renaming the &lt;code&gt;.js&lt;/code&gt; to &lt;code&gt;.ts&lt;/code&gt; and&#xA;changing the include in the header to &lt;code&gt;.ts&lt;/code&gt; too, typescript becomes easy.&#xA;Sure, there&amp;rsquo;s the &lt;code&gt;index.d.ts&lt;/code&gt; to allow &lt;code&gt;window.&amp;lt;name&amp;gt;&lt;/code&gt; assignments,&#xA;and adding in a few type definition files along with the &lt;code&gt;dom&lt;/code&gt; library.&lt;/p&gt;&#xA;&lt;p&gt;Then there&amp;rsquo;s an ease of using &lt;code&gt;Function&lt;/code&gt; as a callable type, or &lt;code&gt;{ prop?: type }&lt;/code&gt;&#xA;for when some functions need particular properties in the JSON. That then&#xA;just left the &lt;code&gt;async&lt;/code&gt;/&lt;code&gt;await&lt;/code&gt; hell, which can be ignored quite a bit, needing&#xA;just &lt;code&gt;(async () =&amp;gt; { await ... })()&lt;/code&gt; as a wrapper when unsure if you should&#xA;allow a &lt;code&gt;Promise&lt;/code&gt; to pass back or not as it gives you back a normal function&#xA;return.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Gimp and Inkscape</title>
+      <link>https://kring.co.uk/aladdin/gimp/</link>
+      <pubDate>Mon, 07 Oct 2024 20:40:40 +0000</pubDate>
+      <guid>https://kring.co.uk/aladdin/gimp/</guid>
+      <description>&lt;p&gt;It&amp;rsquo;s a classic free replacement to PhotoShop and does what I need from such a&#xA;tool, along with a nice vector drawing program to make &lt;code&gt;.svg&lt;/code&gt; files. I&amp;rsquo;m&#xA;not into doing a full manual here, but these applications are so good.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>It&#39;s Alive</title>
+      <link>https://kring.co.uk/posts/it-s-alive/</link>
+      <pubDate>Mon, 07 Oct 2024 07:33:09 +0000</pubDate>
+      <guid>https://kring.co.uk/posts/it-s-alive/</guid>
+      <description>&lt;p&gt;So the CSS has been mostly completed making the theme what it is. This first&#xA;post is to check out some of the features.&lt;/p&gt;&#xA; &#xA;&lt;blockquote class=&#34;alert alert-tip&#34;&gt;&#xA;  &lt;div class=&#34;alert-heading&#34;&gt;&#xA;    &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; width=&#34;16&#34; height=&#34;16&#34; viewBox=&#34;0 0 16 16&#34;&gt;&lt;path d=&#34;M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z&#34;/&gt;&lt;/svg&gt;&#xA; Tip&#xA;  &lt;/div&gt;&#xA;  &lt;p&gt;Checkout all the features.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Suckless and Rofi</title>
+      <link>https://kring.co.uk/aladdin/suckless/</link>
+      <pubDate>Sat, 05 Oct 2024 23:43:45 +0000</pubDate>
+      <guid>https://kring.co.uk/aladdin/suckless/</guid>
+      <description>&lt;h2 id=&#34;st&#34;&gt;st&lt;/h2&gt;&#xA;&lt;p&gt;The suckless terminal. It&amp;rsquo;s ideally small to bake in a nerd font, and remove&#xA;non UTF-8 mode, and the alt code Latin code page. On a Chromebook this is&#xA;important as the Crostini terminal doesn&amp;rsquo;t have nerd font abilities. I then&#xA;launch &lt;code&gt;nvim&lt;/code&gt; inside &lt;code&gt;st&lt;/code&gt; to obtain a local and an &lt;code&gt;ssh -X&lt;/code&gt; remote fonted&#xA;edit experience. Nice.&lt;/p&gt;&#xA;&lt;h2 id=&#34;rofi&#34;&gt;rofi&lt;/h2&gt;&#xA;&lt;p&gt;A nice hot keyed quick launch selector. After a bit of setup lots can be&#xA;placed for access by &lt;code&gt;rofi -show combi&lt;/code&gt;, the mix together mode. I also added&#xA;a plugin template called &lt;code&gt;a&lt;/code&gt; as C makes &lt;code&gt;a.out&lt;/code&gt; for adding in more modes.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Hugo</title>
+      <link>https://kring.co.uk/aladdin/hugo/</link>
+      <pubDate>Sat, 05 Oct 2024 14:37:38 +0000</pubDate>
+      <guid>https://kring.co.uk/aladdin/hugo/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://gohugo.io&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo&lt;/a&gt;&#xA; is a static site templating builder used here.&#xA;It works well. It seems similar to how github pages works, but is written in go&#xA;instead of ruby. It does take a little while to scan the documentation and&#xA;setup, as some of the more complex themes don&amp;rsquo;t work with some integration&#xA;solutions such as &lt;strong&gt;CloudFlare&lt;/strong&gt;. Simple truths such as a theme being a fallback&#xA;site make sense, as after some time migrating the templating to the theme&#xA;and just using the site layouts for overrides just makes sense.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Development</title>
+      <link>https://kring.co.uk/services/development/</link>
+      <pubDate>Sat, 05 Oct 2024 11:43:40 +0000</pubDate>
+      <guid>https://kring.co.uk/services/development/</guid>
+      <description>&lt;p&gt;K Ring Technologies can provide computer software coding from simple scripts&#xA;for productivity automation, to complex database driven website features.&#xA;Although there are some preferred technologies for new projects, any previous&#xA;technology is considered for maintenance of product, or even new build.&lt;/p&gt;&#xA;&lt;p&gt;If you need graphical design, maybe it&amp;rsquo;s possible, but there is no artist on&#xA;call. This doesn&amp;rsquo;t mean UI/UX optimization is a skill lacking here. The&#xA;internet has been used here since 1995 from a web build prospective.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Neovim</title>
+      <link>https://kring.co.uk/aladdin/nvim/</link>
+      <pubDate>Sat, 05 Oct 2024 11:10:32 +0000</pubDate>
+      <guid>https://kring.co.uk/aladdin/nvim/</guid>
+      <description>&lt;p&gt;The excellent &lt;a href=&#34;https://neovim.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Neovim&lt;/a&gt;&#xA; has improved a lot since the older&#xA;&lt;code&gt;vim&lt;/code&gt; and even the original &lt;code&gt;vi&lt;/code&gt;. It now includes Lua scripting as well as&#xA;the more obscure Vim Script. It is best using some extra configuration of which&#xA;&lt;a href=&#34;https://www.lazyvim.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;LazyVim&lt;/a&gt;&#xA; I have found to be very useful.&lt;/p&gt;&#xA;&lt;p&gt;As a fast loading editor with treesitter and various LSP servers, it&amp;rsquo;s nice,&#xA;although the way &amp;ldquo;modes&amp;rdquo; work is not your usual editor way. It has the speed&#xA;advantage over &lt;code&gt;VSCode&lt;/code&gt; and also will load files over an &lt;code&gt;SSH&lt;/code&gt; connection&#xA;whereas &lt;code&gt;VSCode&lt;/code&gt; just freezes. I tried &lt;code&gt;Emacs&lt;/code&gt; for a while and have used it&#xA;back in the 90s. I found the LISP configuration more annoying than using&#xA;Lua for configuration. Also &lt;code&gt;LazyVim&lt;/code&gt; really solves the initial setup problems.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>VCV Rack Plugin [Free]</title>
+      <link>https://kring.co.uk/products/vcv-plugin/</link>
+      <pubDate>Sat, 05 Oct 2024 10:51:01 +0000</pubDate>
+      <guid>https://kring.co.uk/products/vcv-plugin/</guid>
+      <description>&lt;p&gt;An audio plugin of virtual Eurorack modules. A free download for &lt;strong&gt;VCV Rack&lt;/strong&gt;&#xA;written in C++ under an MIT licence. Downloads are in the tens of thousands&#xA;and as such it&amp;rsquo;s KRT&amp;rsquo;s most popular software.&lt;/p&gt;&#xA;&lt;p&gt;Download &lt;a href=&#34;https://library.vcvrack.com/KRTPluginA&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;&#xA; by subscribing and&#xA;then updating the library from within the VCV application. There is a free&#xA;version of VCV available from the &lt;a href=&#34;https://vcvrack.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;VCV homepage&lt;/a&gt;&#xA; as&#xA;well as a pro version with a VST adapter for integration with your music&#xA;DAW. It&amp;rsquo;s a very nice experimental audio platform with many third party&#xA;plugins.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>https://kring.co.uk/about/</link>
+      <pubDate>Fri, 04 Oct 2024 17:18:54 +0000</pubDate>
+      <guid>https://kring.co.uk/about/</guid>
+      <description>&lt;h2 id=&#34;circa-2024&#34;&gt;Circa 2024&lt;/h2&gt;&#xA;&lt;p&gt;K Ring Technologies became a Ltd company after a number of years being a&#xA;&amp;ldquo;trading as&amp;rdquo; name for the founder&amp;rsquo;s contracting internet and software work.&#xA;Work became infrequent and declined over the COVID 19 years, and is just an&#xA;R and D shell circa 2024. It has no financial liabilities to creditors, and so&#xA;it was decided to continue the company for the future.&lt;/p&gt;&#xA;&lt;p&gt;The founder Simon Jackson has an interest in computer technology and&#xA;programming, and maintains a deep interest in physics, chemistry and&#xA;mathematics. It is not uncommon for him to watch highly technical presentations&#xA;on many science subjects, and he even has his own theoretical physics theories&#xA;which really started with &lt;strong&gt;Uncertain Geometry&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

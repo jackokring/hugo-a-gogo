@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Auth on K Ring Technologies Ltd</title>
+    <link>https://kring.co.uk/tags/auth/</link>
+    <description>Recent content in Auth on K Ring Technologies Ltd</description>
+    <generator>Hugo</generator>
+    <language>en-GB</language>
+    <lastBuildDate>Wed, 13 Nov 2024 12:28:42 +0000</lastBuildDate>
+    <atom:link href="https://kring.co.uk/tags/auth/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Google Login</title>
+      <link>https://kring.co.uk/works/google-login/</link>
+      <pubDate>Wed, 13 Nov 2024 12:28:42 +0000</pubDate>
+      <guid>https://kring.co.uk/works/google-login/</guid>
+      <description>&lt;p&gt;The google login is in progress and does not yet work. Your email is not on the&#xA;list, so no point in trying yet. Also there is as yet no logout link although&#xA;for testers the logout happens after one day. There is also nothing happening&#xA;in terms of extra features for logging in. This should change.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;A joypad adapter to tunnel through into a container to use with&#xA;&lt;code&gt;doris.nvim&lt;/code&gt;.&lt;/li&gt;&#xA;&lt;li&gt;A reverse proxy to tunnel &lt;code&gt;nvim&lt;/code&gt; out of the container, and use the&#xA;external browser as a &lt;code&gt;https&lt;/code&gt; connection to the internet, so that &lt;code&gt;doris.nvim&lt;/code&gt;&#xA;may run some kind of BBS text service TUI.&lt;/li&gt;&#xA;&lt;li&gt;&amp;hellip;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;There&amp;rsquo;s things to be done.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

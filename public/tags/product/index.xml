@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Product on K Ring Technologies Ltd</title>
+    <link>https://kring.co.uk/tags/product/</link>
+    <description>Recent content in Product on K Ring Technologies Ltd</description>
+    <generator>Hugo</generator>
+    <language>en-GB</language>
+    <lastBuildDate>Fri, 04 Oct 2024 19:34:31 +0000</lastBuildDate>
+    <atom:link href="https://kring.co.uk/tags/product/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Products</title>
+      <link>https://kring.co.uk/products/</link>
+      <pubDate>Fri, 04 Oct 2024 19:34:31 +0000</pubDate>
+      <guid>https://kring.co.uk/products/</guid>
+      <description>&lt;p&gt;A list of products brought to you by K Ring Technologies. Some are free.&#xA;Downloads are not from this site, it&amp;rsquo;s just the links.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
