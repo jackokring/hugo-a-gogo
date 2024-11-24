@@ -1,6 +1,6 @@
 baseURL = 'https://kring.co.uk/'
 languageCode = 'en-GB'
-title = 'K Ring Tech&shy;nologies Ltd'
+title = 'K Ring Technologies Ltd'
 #theme = ['hugo-a-gogo']
 
 # default menu contents
