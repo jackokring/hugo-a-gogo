@@ -8,7 +8,7 @@
   --white: #fff;
   --black: #000;
   /* link colour */
-  --link-ink: #00f;
+  --link-ink: #077;
 }
 
 body {
@@ -110,6 +110,10 @@ nav > ul > li,
 nav > ul,
 .l {
   padding-inline-start: 0px;
+}
+
+/* submenu overrides */
+.submenu {
 }
 
 /* inline code */
