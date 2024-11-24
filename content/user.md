@@ -27,7 +27,7 @@ data-size="large"
 data-theme="outline"
 data-text="sign_in_with"
 data-shape="rectangular"
-data-logo_alignment="left">
+data-logo_alignment="left"></div>
 {{< /html >}}
 
 Welcome to user services.
