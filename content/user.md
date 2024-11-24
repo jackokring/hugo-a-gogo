@@ -19,4 +19,15 @@ maths = true
 
 ## Username {.loginName}
 
+{{< html >}}
+
+<div
+data-type="standard"
+data-size="large"
+data-theme="outline"
+data-text="sign_in_with"
+data-shape="rectangular"
+data-logo_alignment="left">
+{{< /html >}}
+
 Welcome to user services.
