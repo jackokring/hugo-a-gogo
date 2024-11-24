@@ -131,6 +131,9 @@
   function delCookie(cname) {
     setCookie(cname, "", -1);
   }
+  function logOut() {
+    delCookie("cred");
+  }
   var $$ = $("#subdom");
   var $_ = $("main");
   window.$$ = $$;
@@ -139,4 +142,5 @@
   window.onRequest = onRequest;
   window.reprompt = reprompt;
   window.onLoad = onLoad;
+  window.logOut = logOut;
 })();

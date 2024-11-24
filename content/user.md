@@ -28,6 +28,7 @@ data-theme="outline"
 data-text="sign_in_with"
 data-shape="rectangular"
 data-logo_alignment="left"></div>
+<button class="logOut" onclick="logOut()">Sign Out</button>
 {{< /html >}}
 
 Welcome to user services.

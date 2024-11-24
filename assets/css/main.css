@@ -28,6 +28,7 @@ header {
 /* sign in */
 .g_id_signin {
   margin-left: 1rem;
+  display: inline-block;
 }
 
 .loginName {
@@ -48,7 +49,8 @@ header {
   background-color: var(--black);
 }
 
-#search > div > form > button {
+#search > div > form > button,
+.logOut {
   background-color: var(--cyan);
   border: none;
   color: var(--white);

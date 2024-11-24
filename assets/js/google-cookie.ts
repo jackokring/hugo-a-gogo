@@ -188,6 +188,10 @@ function delCookie(cname: string) {
   setCookie(cname, "", -1);
 }
 
+function logOut() {
+  delCookie("cred");
+}
+
 /* exporting context
  * due to the compiler optimizer the global
  * window object has to be assigned to
@@ -207,6 +211,7 @@ window.googleLogin = googleLogin; // clicked login
 window.onRequest = onRequest; // main replace ajax
 window.reprompt = reprompt; // logout
 window.onLoad = onLoad; // set loaded details such as logged in classes
+window.logOut = logOut;
 // e.g. class loginName for the user's name
 
-export { $$, $_, googleLogin, onRequest, reprompt, onLoad };
+export { $$, $_, googleLogin, onRequest, reprompt, onLoad, logOut };

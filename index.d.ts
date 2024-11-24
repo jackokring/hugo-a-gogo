@@ -16,6 +16,7 @@ declare global {
     ) => Promise<void>;
     reprompt: () => void;
     onLoad: () => void;
+    logOut: () => void;
   }
   interface json {
     [propName: string]: any;
