@@ -133,6 +133,7 @@
   }
   function logOut() {
     delCookie("cred");
+    location.reload();
   }
   var $$ = $("#subdom");
   var $_ = $("main");

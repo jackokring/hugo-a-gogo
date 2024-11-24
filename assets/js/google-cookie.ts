@@ -190,6 +190,7 @@ function delCookie(cname: string) {
 
 function logOut() {
   delCookie("cred");
+  location.reload();
 }
 
 /* exporting context

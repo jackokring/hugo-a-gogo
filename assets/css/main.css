@@ -60,6 +60,11 @@ header {
   cursor: pointer;
 }
 
+.logOut {
+  margin: 13px;
+  vertical-align: bottom;
+}
+
 /* header.jpg */
 .float {
   float: right;
