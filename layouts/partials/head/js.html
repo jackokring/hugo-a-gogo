@@ -3,8 +3,8 @@
 {{- with resources.Get "js/main.js" }} {{- if eq hugo.Environment "development"
 }} {{- $opts := dict "format" "cjs" }}{{- with . | js.Build }}
 <script src="{{ .RelPermalink }}"></script>
-{{- end }} {{- else }} {{- $opts := dict "minify" true "format" "cjs" }} {{-
-with . | js.Build $opts | fingerprint }}
+{{- end }} {{- else }} {{- $opts := dict "format" "cjs" }} {{- with . | js.Build
+$opts | fingerprint }}
 <script
   src="{{ .RelPermalink }}"
   integrity="{{- .Data.Integrity }}"
