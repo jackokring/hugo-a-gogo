@@ -10,6 +10,9 @@
   <body>
     <header data-pagefind-ignore="all">{{ partial "header.html" . }}</header>
     <main>{{ block "main" . }}{{ end }}</main>
+    <script>
+      var elm = Elm.Main.init();
+    </script>
     <footer data-pagefind-ignore="all">{{ partial "footer.html" . }}</footer>
   </body>
 </html>

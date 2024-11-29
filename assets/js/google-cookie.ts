@@ -203,7 +203,6 @@ function logOut() {
 // might as well name the subdom in a short way
 var $$ = $("#subdom");
 var $_ = $("main");
-var elm = Elm.Main.init();
 // for easy access to the restricted dom elements
 // with .find(selector) for copy
 window.$$ = $$;
@@ -216,4 +215,4 @@ window.onLoad = onLoad; // set loaded details such as logged in classes
 window.logOut = logOut;
 // e.g. class loginName for the user's name
 
-export { $$, $_, elm, googleLogin, onRequest, reprompt, onLoad, logOut };
+export { $$, $_, googleLogin, onRequest, reprompt, onLoad, logOut };

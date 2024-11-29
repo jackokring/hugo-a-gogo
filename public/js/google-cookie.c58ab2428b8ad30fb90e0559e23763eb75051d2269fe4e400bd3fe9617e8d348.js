@@ -137,7 +137,6 @@
   }
   var $$ = $("#subdom");
   var $_ = $("main");
-  var elm = Elm.Main.init();
   window.$$ = $$;
   window.$_ = $_;
   window.googleLogin = googleLogin;
