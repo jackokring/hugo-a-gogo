@@ -161,8 +161,9 @@
   </ul>
 </div>
  </main>
+    <div id="elm-node"></div>
     <script>
-      var elm = Elm.Main.init();
+      var elm = Elm.Main.init({ node: document.getElementById("elm-node") });
     </script>
     <footer data-pagefind-ignore="all"><p>Copyright 2024. All rights reserved.</p>
 <p>
