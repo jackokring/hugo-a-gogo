@@ -1,5 +1,8 @@
 <script src="https://cdn.jsdelivr.net/npm/underscore@1.13.7/underscore-umd-min.js"></script>
 <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
+<script>
+  var exports = { __esModule: true };
+</script>
 {{- with resources.Get "js/main.js" }} {{- if eq hugo.Environment "development"
 }} {{- $opts := dict "format" "cjs" }}{{- with . | js.Build }}
 <script src="{{ .RelPermalink }}"></script>
