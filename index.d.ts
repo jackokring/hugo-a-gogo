@@ -17,6 +17,7 @@ declare global {
     reprompt: () => void;
     onLoad: () => void;
     logOut: () => void;
+    elm: any;
   }
   interface json {
     [propName: string]: any;
