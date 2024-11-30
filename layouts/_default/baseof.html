@@ -12,7 +12,6 @@
     <main>{{ block "main" . }}{{ end }}</main>
     <div id="elm-node"></div>
     <script>
-      import { Elm } from "./main.js";
       var elm = Elm.Main.init({ node: document.getElementById("elm-node") });
     </script>
     <footer data-pagefind-ignore="all">{{ partial "footer.html" . }}</footer>
