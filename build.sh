@@ -1,5 +1,5 @@
 #!/usr/bin/bash
-elm make assets/elm/Main.elm --output=assets/js/main.js
+elm make assets/elm/Main.elm --output=static/main.js
 # build site
 rm -rf public/
 hugo
