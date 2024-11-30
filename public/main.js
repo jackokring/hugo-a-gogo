@@ -5219,6 +5219,13 @@ var $author$project$Main$view = function (model) {
 		_List_fromArray(
 			[
 				A2(
+				$elm$html$Html$div,
+				_List_Nil,
+				_List_fromArray(
+					[
+						$elm$html$Html$text('Elm test in progress, try up down buttons')
+					])),
+				A2(
 				$elm$html$Html$button,
 				_List_fromArray(
 					[
