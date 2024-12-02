@@ -1,5 +1,8 @@
 #!/usr/bin/bash
-elm make assets/elm/Main.elm --output=static/main.js
+# make elm main.js file if elm installed
+# use elm = true in front matter
+# makes it optional
+elm && elm make assets/elm/Main.elm --output=static/main.js
 # build site
 rm -rf public/
 hugo

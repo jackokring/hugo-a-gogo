@@ -43,5 +43,9 @@ if __name__ == "__main__":
     # Parse arguments
     args = parser.parse_args()
 
+    # Interpret escape sequences
+    search_text = bytes(args.search_text, "utf-8").decode("unicode_escape")
+    replace_text = bytes(args.replace_text, "utf-8").decode("unicode_escape")
+
     # Run the replacement function
     replace_text_in_files(args.directory, args.search_text, args.replace_text)
