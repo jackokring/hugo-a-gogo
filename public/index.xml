@@ -69,7 +69,7 @@
       <link>https://kring.co.uk/user/</link>
       <pubDate>Wed, 23 Oct 2024 17:48:00 +0000</pubDate>
       <guid>https://kring.co.uk/user/</guid>
-      <description>&lt;h2 class=&#34;loginName&#34; id=&#34;username&#34;&gt;Username&lt;/h2&gt;&#xA;&#xA;&#xA;&lt;div class=&#34;g_id_signin&#34;&#xA;data-type=&#34;standard&#34;&#xA;data-size=&#34;large&#34;&#xA;data-theme=&#34;outline&#34;&#xA;data-text=&#34;sign_in_with&#34;&#xA;data-shape=&#34;rectangular&#34;&#xA;data-logo_alignment=&#34;left&#34;&gt;&lt;/div&gt;&#xA;&lt;button class=&#34;logOut&#34; onclick=&#34;logOut()&#34;&gt;Sign Out&lt;/button&gt;&#xA;&#xA;&#xA;&lt;p&gt;Welcome to user services. I&amp;rsquo;m exploring &lt;strong&gt;Elm&lt;/strong&gt; as a language to try within&#xA;user services.&lt;/p&gt;</description>
+      <description>&lt;h2 class=&#34;loginName&#34; id=&#34;username&#34;&gt;Username&lt;/h2&gt;&#xA;&#xA;&#xA;&lt;div class=&#34;g_id_signin&#34;&#xA;data-type=&#34;standard&#34;&#xA;data-size=&#34;large&#34;&#xA;data-theme=&#34;outline&#34;&#xA;data-text=&#34;sign_in_with&#34;&#xA;data-shape=&#34;rectangular&#34;&#xA;data-logo_alignment=&#34;left&#34;&gt;&lt;/div&gt;&#xA;&lt;button class=&#34;logOut&#34; onclick=&#34;logOut()&#34;&gt;Sign Out&lt;/button&gt;&#xA;&#xA;&#xA;&lt;p&gt;Welcome to user services. I&amp;rsquo;m exploring &lt;code&gt;Elm&lt;/code&gt; as a language to try within&#xA;user services.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Typescript</title>

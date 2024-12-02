@@ -32,5 +32,5 @@ data-logo_alignment="left"></div>
 <button class="logOut" onclick="logOut()">Sign Out</button>
 {{< /html >}}
 
-Welcome to user services. I'm exploring **Elm** as a language to try within
+Welcome to user services. I'm exploring `Elm` as a language to try within
 user services.
