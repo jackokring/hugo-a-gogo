@@ -14,7 +14,8 @@ type = 'undated'
 # param block
 [params]
 # use maths
-maths = true
+maths = false
+elm = true
 +++
 
 ## Username {.loginName}
@@ -31,4 +32,5 @@ data-logo_alignment="left"></div>
 <button class="logOut" onclick="logOut()">Sign Out</button>
 {{< /html >}}
 
-Welcome to user services.
+Welcome to user services. I'm exploring **Elm** as a language to try within
+user services.

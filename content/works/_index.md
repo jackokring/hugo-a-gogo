@@ -14,7 +14,8 @@ tags = ['index', 'construction', 'website', 'progress']
 # param block
 [params]
 # use maths
-maths = true
+maths = false
+elm = false
 +++
 
 This page is about the ongoing status of website construction. It's not the

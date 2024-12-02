@@ -12,7 +12,8 @@ tags = ['suckless', 'dwm', 'st', 'slstatus', 'rofi', 'dmenu']
 # param block
 [params]
 # use maths
-maths = true
+maths = false
+elm = false
 +++
 
 ## st

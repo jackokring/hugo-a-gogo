@@ -14,7 +14,8 @@ tags = ['cards', 'website']
 # param block
 [params]
 # use maths
-maths = true
+maths = false
+elm = false
 +++
 
 So with the two jokers we can have the following table for 6 of a kind and upto

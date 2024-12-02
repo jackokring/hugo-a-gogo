@@ -12,7 +12,8 @@ tags = ['service', 'work', 'knowledge']
 # param block
 [params]
 # use maths
-maths = true
+maths = false
+elm = false
 +++
 
 Services available from K Ring Technologies. Email `jackokring@gmail.com` for

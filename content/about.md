@@ -12,7 +12,8 @@ tags = ['about']
 # param block
 [params]
 # use maths
-maths = true
+maths = false
+elm = false
 +++
 
 ## Circa 2024

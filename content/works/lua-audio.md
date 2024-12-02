@@ -14,7 +14,8 @@ tags = ['lua', 'audio']
 # param block
 [params]
 # use maths
-maths = true
+maths = false
+elm = false
 +++
 
 So a library for Lua to do some kind of audio. I don't mean multimedia loading

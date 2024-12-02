@@ -12,7 +12,8 @@ tags = ['index', 'director']
 # param block
 [params]
 # use maths
-maths = true
+maths = false
+elm = false
 +++
 
 This is the director's blog. I could write some more here, but it's just an

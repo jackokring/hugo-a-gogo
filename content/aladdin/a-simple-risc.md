@@ -14,7 +14,8 @@ tags = ['ISA']
 # param block
 [params]
 # use maths
-maths = true
+maths = false
+elm = false
 +++
 
 Some ideas for a simple RISC processor although unlikely to ever be made, do

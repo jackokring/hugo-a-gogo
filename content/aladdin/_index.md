@@ -12,7 +12,8 @@ tags = ['index', 'open', 'tools']
 # param block
 [params]
 # use maths
-maths = true
+maths = false
+elm = false
 +++
 
 A collection of open source tools used by K Ring Technologies. I had to call

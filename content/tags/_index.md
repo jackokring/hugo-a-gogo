@@ -12,7 +12,8 @@ tags = ['tags', 'index']
 # param block
 [params]
 # use maths
-maths = true
+maths = false
+elm = false
 +++
 
 The complete alphabetical tags list, with links to all tagged posts.

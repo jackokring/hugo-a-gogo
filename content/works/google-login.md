@@ -14,7 +14,8 @@ tags = ['google', 'auth', 'cookie']
 # param block
 [params]
 # use maths
-maths = true
+maths = false
+elm = false
 +++
 
 The google login is in progress and does not yet work. Your email is not on the

@@ -14,7 +14,8 @@ tags = ['isp', 'cloudflare', 'dns', 'workers']
 # param block
 [params]
 # use maths
-maths = true
+maths = false
+elm = false
 +++
 
 This site is hosted on CloudFlare with workers for lambda style JS server side

@@ -14,7 +14,8 @@ tags = ['work', 'skills', 'development']
 # param block
 [params]
 # use maths
-maths = true
+maths = false
+elm = false
 +++
 
 ### Custom Server

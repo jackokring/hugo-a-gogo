@@ -12,7 +12,8 @@ tags = ['product', 'goods']
 # param block
 [params]
 # use maths
-maths = true
+maths = false
+elm = false
 +++
 
 A list of products brought to you by K Ring Technologies. Some are free.

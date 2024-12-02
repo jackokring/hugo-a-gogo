@@ -12,7 +12,8 @@ tags = ['service', 'coding', 'design', 'analysis']
 # param block
 [params]
 # use maths
-maths = true
+maths = false
+elm = false
 +++
 
 K Ring Technologies can provide computer software coding from simple scripts

@@ -14,7 +14,8 @@ tags = ['nvim', 'neovim', 'plugin']
 # param block
 [params]
 # use maths
-maths = true
+maths = false
+elm = false
 +++
 
 A plugin for `nvim` (LazyVim) hosted open-source MIT licence. It's quite a bit

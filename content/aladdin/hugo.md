@@ -12,7 +12,8 @@ tags = ['hugo', 'build', 'pagefind']
 # param block
 [params]
 # use maths
-maths = true
+maths = false
+elm = false
 +++
 
 [Hugo](https://gohugo.io) is a static site templating builder used here.

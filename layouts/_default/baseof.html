@@ -10,10 +10,12 @@
   <body>
     <header data-pagefind-ignore="all">{{ partial "header.html" . }}</header>
     <main>{{ block "main" . }}{{ end }}</main>
+    {{ if .Param "elm" }}
     <div id="elm-node"></div>
     <script>
       var elm = Elm.Main.init({ node: document.getElementById("elm-node") });
     </script>
+    {{ end }}
     <footer data-pagefind-ignore="all">{{ partial "footer.html" . }}</footer>
   </body>
 </html>

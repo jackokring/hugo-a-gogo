@@ -12,7 +12,8 @@ tags = ['nvim', 'lua']
 # param block
 [params]
 # use maths
-maths = true
+maths = false
+elm = false
 +++
 
 The excellent [Neovim](https://neovim.io/) has improved a lot since the older

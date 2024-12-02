@@ -12,7 +12,8 @@ tags = ['home', 'index']
 # param block
 [params]
 # use maths
-maths = true
+maths = false
+elm = false
 +++
 
 Beep, beep. Registered number **09861978** bringing you information and wonder

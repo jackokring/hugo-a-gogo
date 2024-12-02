@@ -12,7 +12,8 @@ tags = ['typescript', 'javascript', 'website', 'server']
 # param block
 [params]
 # use maths
-maths = true
+maths = false
+elm = false
 +++
 
 Ah, after a bit of setup, some peace. So renaming the `.js` to `.ts` and

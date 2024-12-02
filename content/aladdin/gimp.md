@@ -12,7 +12,8 @@ tags = ['photo', 'image', 'graphics']
 # param block
 [params]
 # use maths
-maths = true
+maths = false
+elm = false
 +++
 
 It's a classic free replacement to PhotoShop and does what I need from such a

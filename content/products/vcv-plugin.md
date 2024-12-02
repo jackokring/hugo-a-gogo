@@ -12,7 +12,8 @@ tags = ['audio']
 # param block
 [params]
 # use maths
-maths = true
+maths = false
+elm = false
 +++
 
 An audio plugin of virtual Eurorack modules. A free download for **VCV Rack**

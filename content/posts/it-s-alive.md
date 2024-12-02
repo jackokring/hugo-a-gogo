@@ -13,6 +13,7 @@ tags = ['theme', 'site', 'markdown', 'test']
 [params]
 # use maths
 maths = true
+elm = false
 +++
 
 So the CSS has been mostly completed making the theme what it is. This first

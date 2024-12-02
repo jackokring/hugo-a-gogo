@@ -14,7 +14,8 @@ tags = ['jquery', 'underscore', 'js', 'ts']
 # param block
 [params]
 # use maths
-maths = true
+maths = false
+elm = false
 +++
 
 ## Underscore.js
