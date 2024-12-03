@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Plugin on K Ring Technologies Ltd</title>
-    <link>https://kring.co.uk/tags/plugin/</link>
-    <description>Recent content in Plugin on K Ring Technologies Ltd</description>
+    <title>Lv2 on K Ring Technologies Ltd</title>
+    <link>https://kring.co.uk/tags/lv2/</link>
+    <description>Recent content in Lv2 on K Ring Technologies Ltd</description>
     <generator>Hugo</generator>
     <language>en-GB</language>
     <lastBuildDate>Tue, 03 Dec 2024 08:16:27 +0000</lastBuildDate>
-    <atom:link href="https://kring.co.uk/tags/plugin/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://kring.co.uk/tags/lv2/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Audio LV2 from KRT</title>
       <link>https://kring.co.uk/plugins/audio-lv2/</link>
@@ -21,13 +21,6 @@
       <pubDate>Tue, 03 Dec 2024 07:57:55 +0000</pubDate>
       <guid>https://kring.co.uk/plugins/</guid>
       <description>&lt;p&gt;Ah, plugins. So the &lt;a href=&#34;https://vcvrack.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;VCVRack&lt;/a&gt;&#xA; is quite nice and my&#xA;plugins there are &lt;a href=&#34;https://library.vcvrack.com/KRTPluginA&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;KRTPluginA&lt;/a&gt;&#xA;. Nice.&#xA;So on to some newer code making LV2 plugins. The code is not open circa 2024,&#xA;and there are many decisions to make. I&amp;rsquo;m finding &lt;a href=&#34;https://kx.studio/Applications:Carla&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;carla&lt;/a&gt;&#xA;&#xA;for the test host to be OK. The OSC control feature is going to be useful.&lt;/p&gt;&#xA;&lt;p&gt;This section of the website is also for the needed URI that LV2 needs for the&#xA;manifest files. This makes the plugins Linux by design and possibly working&#xA;on Mac by &lt;code&gt;Darwin&lt;/code&gt; compatibility and Windows by &lt;a href=&#34;https://msys2.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MSYS2&lt;/a&gt;&#xA;.&#xA;It seems very similar to VST and VCVRack design, and supports other formats&#xA;which I don&amp;rsquo;t think I&amp;rsquo;ll be using. Hold onto your knobs.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Doris.nvim [Free]</title>
-      <link>https://kring.co.uk/products/doris.nvim/</link>
-      <pubDate>Wed, 13 Nov 2024 12:05:38 +0000</pubDate>
-      <guid>https://kring.co.uk/products/doris.nvim/</guid>
-      <description>&lt;p&gt;A plugin for &lt;code&gt;nvim&lt;/code&gt; (LazyVim) hosted open-source MIT licence. It&amp;rsquo;s quite a bit&#xA;of a mix. &lt;a href=&#34;https://github.com/jackokring/doris.nvim&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Check here&lt;/a&gt;&#xA; for details.&#xA;I&amp;rsquo;m liking Lua, especially now I&amp;rsquo;m building something to help with my future&#xA;experience with it. The repository also contains some dotfiles for some other&#xA;tools and my &lt;code&gt;nvim&lt;/code&gt; (LazyVim) dotfiles with a &lt;code&gt;cmp&lt;/code&gt; example fetching &lt;code&gt;autojump&lt;/code&gt;&#xA;directories after typing a &lt;code&gt;/&lt;/code&gt;. Easier after combining a few online&#xA;tutorials, and a bit of hacking &lt;code&gt;lua/config/complete.lua&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

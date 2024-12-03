@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vcvrack on K Ring Technologies Ltd</title>
+    <link>https://kring.co.uk/tags/vcvrack/</link>
+    <description>Recent content in Vcvrack on K Ring Technologies Ltd</description>
+    <generator>Hugo</generator>
+    <language>en-GB</language>
+    <lastBuildDate>Tue, 03 Dec 2024 07:57:55 +0000</lastBuildDate>
+    <atom:link href="https://kring.co.uk/tags/vcvrack/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Plugins</title>
+      <link>https://kring.co.uk/plugins/</link>
+      <pubDate>Tue, 03 Dec 2024 07:57:55 +0000</pubDate>
+      <guid>https://kring.co.uk/plugins/</guid>
+      <description>&lt;p&gt;Ah, plugins. So the &lt;a href=&#34;https://vcvrack.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;VCVRack&lt;/a&gt;&#xA; is quite nice and my&#xA;plugins there are &lt;a href=&#34;https://library.vcvrack.com/KRTPluginA&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;KRTPluginA&lt;/a&gt;&#xA;. Nice.&#xA;So on to some newer code making LV2 plugins. The code is not open circa 2024,&#xA;and there are many decisions to make. I&amp;rsquo;m finding &lt;a href=&#34;https://kx.studio/Applications:Carla&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;carla&lt;/a&gt;&#xA;&#xA;for the test host to be OK. The OSC control feature is going to be useful.&lt;/p&gt;&#xA;&lt;p&gt;This section of the website is also for the needed URI that LV2 needs for the&#xA;manifest files. This makes the plugins Linux by design and possibly working&#xA;on Mac by &lt;code&gt;Darwin&lt;/code&gt; compatibility and Windows by &lt;a href=&#34;https://msys2.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MSYS2&lt;/a&gt;&#xA;.&#xA;It seems very similar to VST and VCVRack design, and supports other formats&#xA;which I don&amp;rsquo;t think I&amp;rsquo;ll be using. Hold onto your knobs.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

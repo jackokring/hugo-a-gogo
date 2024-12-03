@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Plugins on K Ring Technologies Ltd</title>
+    <link>https://kring.co.uk/plugins/</link>
+    <description>Recent content in Plugins on K Ring Technologies Ltd</description>
+    <generator>Hugo</generator>
+    <language>en-GB</language>
+    <lastBuildDate>Tue, 03 Dec 2024 08:16:27 +0000</lastBuildDate>
+    <atom:link href="https://kring.co.uk/plugins/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Audio LV2 from KRT</title>
+      <link>https://kring.co.uk/plugins/audio-lv2/</link>
+      <pubDate>Tue, 03 Dec 2024 08:16:27 +0000</pubDate>
+      <guid>https://kring.co.uk/plugins/audio-lv2/</guid>
+      <description>&lt;h3 id=&#34;under-construction&#34;&gt;Under Construction&lt;/h3&gt;</description>
+    </item>
+  </channel>
+</rss>

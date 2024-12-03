@@ -3,7 +3,25 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://kring.co.uk/tags/audio/</loc>
-    <lastmod>2024-11-18T17:42:28+00:00</lastmod>
+    <lastmod>2024-12-03T08:16:27+00:00</lastmod>
+  </url><url>
+    <loc>https://kring.co.uk/plugins/audio-lv2/</loc>
+    <lastmod>2024-12-03T08:16:27+00:00</lastmod>
+  </url><url>
+    <loc>https://kring.co.uk/tags/lv2/</loc>
+    <lastmod>2024-12-03T08:16:27+00:00</lastmod>
+  </url><url>
+    <loc>https://kring.co.uk/tags/plugin/</loc>
+    <lastmod>2024-12-03T08:16:27+00:00</lastmod>
+  </url><url>
+    <loc>https://kring.co.uk/plugins/</loc>
+    <lastmod>2024-12-03T07:57:55+00:00</lastmod>
+  </url><url>
+    <loc>https://kring.co.uk/tags/vcv/</loc>
+    <lastmod>2024-12-03T07:57:55+00:00</lastmod>
+  </url><url>
+    <loc>https://kring.co.uk/tags/vcvrack/</loc>
+    <lastmod>2024-12-03T07:57:55+00:00</lastmod>
   </url><url>
     <loc>https://kring.co.uk/tags/lua/</loc>
     <lastmod>2024-11-18T17:42:28+00:00</lastmod>
@@ -78,9 +96,6 @@
     <lastmod>2024-11-13T12:05:38+00:00</lastmod>
   </url><url>
     <loc>https://kring.co.uk/tags/nvim/</loc>
-    <lastmod>2024-11-13T12:05:38+00:00</lastmod>
-  </url><url>
-    <loc>https://kring.co.uk/tags/plugin/</loc>
     <lastmod>2024-11-13T12:05:38+00:00</lastmod>
   </url><url>
     <loc>https://kring.co.uk/aladdin/a-simple-risc/</loc>
