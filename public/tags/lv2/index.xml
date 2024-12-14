@@ -6,8 +6,15 @@
     <description>Recent content in Lv2 on K Ring Technologies Ltd</description>
     <generator>Hugo</generator>
     <language>en-GB</language>
-    <lastBuildDate>Tue, 03 Dec 2024 08:16:27 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 14 Dec 2024 03:16:27 +0000</lastBuildDate>
     <atom:link href="https://kring.co.uk/tags/lv2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Audio LV2 License</title>
+      <link>https://kring.co.uk/plugins/license/</link>
+      <pubDate>Sat, 14 Dec 2024 03:16:27 +0000</pubDate>
+      <guid>https://kring.co.uk/plugins/license/</guid>
+      <description>&lt;h1 id=&#34;audio-lv2-copyright-2024-simon-jackson-k-ring-technologies-ltd&#34;&gt;Audio-LV2, Copyright 2024, Simon Jackson, K Ring Technologies Ltd&lt;/h1&gt;&#xA;&lt;p&gt;The files in the &lt;code&gt;plugins/audio-lv2&lt;/code&gt; (source) directory are mainly copyright&#xA;2024, Simon Jackson, K Ring Technologies Ltd. The build scripts are under&#xA;various copyright covered in the files themselves and/or the LICENSES folder.&lt;/p&gt;&#xA;&lt;p&gt;All commercial and non-commercial rights reserved. Modification of the build&#xA;scripts and the helper shell scripts are for the purpose of making a binary&#xA;distribution &lt;code&gt;build/plugins/audio-lv2.lv2&lt;/code&gt; folder for LV2 plugin hosts. Standard&#xA;LV2 extensions are used.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Audio LV2 from KRT</title>
       <link>https://kring.co.uk/plugins/audio-lv2/</link>
