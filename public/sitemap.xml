@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://kring.co.uk/tags/bio/</loc>
+    <lastmod>2024-12-14T22:49:28+00:00</lastmod>
+  </url><url>
+    <loc>https://kring.co.uk/tags/director/</loc>
+    <lastmod>2024-12-14T22:49:28+00:00</lastmod>
+  </url><url>
+    <loc>https://kring.co.uk/simon-jackson/</loc>
+    <lastmod>2024-12-14T22:49:28+00:00</lastmod>
+  </url><url>
     <loc>https://kring.co.uk/tags/audio/</loc>
     <lastmod>2024-12-14T03:16:27+00:00</lastmod>
   </url><url>
@@ -256,9 +265,6 @@
   </url><url>
     <loc>https://kring.co.uk/about/</loc>
     <lastmod>2024-10-04T17:18:54+00:00</lastmod>
-  </url><url>
-    <loc>https://kring.co.uk/tags/director/</loc>
-    <lastmod>2024-10-04T14:43:37+00:00</lastmod>
   </url><url>
     <loc>https://kring.co.uk/posts/</loc>
     <lastmod>2024-10-04T14:43:37+00:00</lastmod>

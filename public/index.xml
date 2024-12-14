@@ -6,8 +6,15 @@
     <description>Recent content in Home on K Ring Technologies Ltd</description>
     <generator>Hugo</generator>
     <language>en-GB</language>
-    <lastBuildDate>Sat, 14 Dec 2024 03:16:27 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 14 Dec 2024 22:49:28 +0000</lastBuildDate>
     <atom:link href="https://kring.co.uk/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Simon Jackson</title>
+      <link>https://kring.co.uk/simon-jackson/</link>
+      <pubDate>Sat, 14 Dec 2024 22:49:28 +0000</pubDate>
+      <guid>https://kring.co.uk/simon-jackson/</guid>
+      <description>&lt;p&gt;As a director it&amp;rsquo;s quite exciting to direct K Ring Technologies Ltd with all&#xA;the interest in some of my audio virtual machine designs.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Audio LV2 License</title>
       <link>https://kring.co.uk/plugins/license/</link>

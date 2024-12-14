@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Director on K Ring Technologies Ltd</title>
-    <link>https://kring.co.uk/tags/director/</link>
-    <description>Recent content in Director on K Ring Technologies Ltd</description>
+    <title>Bio on K Ring Technologies Ltd</title>
+    <link>https://kring.co.uk/tags/bio/</link>
+    <description>Recent content in Bio on K Ring Technologies Ltd</description>
     <generator>Hugo</generator>
     <language>en-GB</language>
     <lastBuildDate>Sat, 14 Dec 2024 22:49:28 +0000</lastBuildDate>
-    <atom:link href="https://kring.co.uk/tags/director/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://kring.co.uk/tags/bio/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Simon Jackson</title>
       <link>https://kring.co.uk/simon-jackson/</link>
       <pubDate>Sat, 14 Dec 2024 22:49:28 +0000</pubDate>
       <guid>https://kring.co.uk/simon-jackson/</guid>
       <description>&lt;p&gt;As a director it&amp;rsquo;s quite exciting to direct K Ring Technologies Ltd with all&#xA;the interest in some of my audio virtual machine designs.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Posts</title>
-      <link>https://kring.co.uk/posts/</link>
-      <pubDate>Fri, 04 Oct 2024 14:43:37 +0000</pubDate>
-      <guid>https://kring.co.uk/posts/</guid>
-      <description>&lt;p&gt;This is the director&amp;rsquo;s blog. I could write some more here, but it&amp;rsquo;s just an&#xA;introduction paragraph.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
