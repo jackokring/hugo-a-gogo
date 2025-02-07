@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Chromebook on K Ring Technologies Ltd</title>
+    <link>https://kring.co.uk/tags/chromebook/</link>
+    <description>Recent content in Chromebook on K Ring Technologies Ltd</description>
+    <generator>Hugo</generator>
+    <language>en-GB</language>
+    <lastBuildDate>Fri, 07 Feb 2025 22:14:09 +0000</lastBuildDate>
+    <atom:link href="https://kring.co.uk/tags/chromebook/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Termux</title>
+      <link>https://kring.co.uk/aladdin/termux/</link>
+      <pubDate>Fri, 07 Feb 2025 22:14:09 +0000</pubDate>
+      <guid>https://kring.co.uk/aladdin/termux/</guid>
+      <description>&lt;p&gt;So the Debian container on my Chromebook became slow and large. Things needed&#xA;to be done. So I deleted it and went full on with the latest release of&#xA;&lt;strong&gt;Termux&lt;/strong&gt; from the play store and installed some things like Neovim. Then&#xA;I had a little play, and some more things were installed.&lt;/p&gt;&#xA;&lt;p&gt;Excellent. It is much faster, does have a few &amp;ldquo;unique&amp;rdquo; ways of doing things,&#xA;but it does have rust working, and a few strange things to do with lua&#xA;in Neovim due to how the Mason language server has to be installed from&#xA;the package manager and not Mason. Ah, all is well bar a few start up errors&#xA;along with a little more learning needed for clipboard interaction.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
