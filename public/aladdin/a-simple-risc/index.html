@@ -109,118 +109,118 @@ below the stack pointer line.</p>
 <table>
   <thead>
       <tr>
-          <th class="left">15 - 12</th>
-          <th class="left">11 - 8</th>
-          <th class="left">7 - 4</th>
-          <th class="left">3 - 0</th>
-          <th class="left">function</th>
+          <th>15 - 12</th>
+          <th>11 - 8</th>
+          <th>7 - 4</th>
+          <th>3 - 0</th>
+          <th>function</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td class="left">add</td>
-          <td class="left">rd</td>
-          <td class="left">rs1</td>
-          <td class="left">rs2</td>
-          <td class="left">rd := rs1 + rs2 (with <code>ln</code> taking carry in LSB)</td>
+          <td>add</td>
+          <td>rd</td>
+          <td>rs1</td>
+          <td>rs2</td>
+          <td>rd := rs1 + rs2 (with <code>ln</code> taking carry in LSB)</td>
       </tr>
       <tr>
-          <td class="left">mul</td>
-          <td class="left">rd</td>
-          <td class="left">rs1</td>
-          <td class="left">rs2</td>
-          <td class="left">rd := rs1 * rs2 (with <code>ln</code> taking hi-word)</td>
+          <td>mul</td>
+          <td>rd</td>
+          <td>rs1</td>
+          <td>rs2</td>
+          <td>rd := rs1 * rs2 (with <code>ln</code> taking hi-word)</td>
       </tr>
       <tr>
-          <td class="left">adc</td>
-          <td class="left">rd</td>
-          <td class="left">rs1</td>
-          <td class="left">rs2</td>
-          <td class="left">rd := rs1 + rs2 + <code>ln</code> (<code>ln</code> taking carry)</td>
+          <td>adc</td>
+          <td>rd</td>
+          <td>rs1</td>
+          <td>rs2</td>
+          <td>rd := rs1 + rs2 + <code>ln</code> (<code>ln</code> taking carry)</td>
       </tr>
       <tr>
-          <td class="left">mvq</td>
-          <td class="left">rd</td>
-          <td class="left">dnh</td>
-          <td class="left">dnl</td>
-          <td class="left">rd := imm(dnh*8 + dnl)</td>
+          <td>mvq</td>
+          <td>rd</td>
+          <td>dnh</td>
+          <td>dnl</td>
+          <td>rd := imm(dnh*8 + dnl)</td>
       </tr>
       <tr>
-          <td class="left">sub</td>
-          <td class="left">rd</td>
-          <td class="left">rs1</td>
-          <td class="left">rs2</td>
-          <td class="left">rd := rs1 - rs2 (with <code>ln</code> taking borrow)</td>
+          <td>sub</td>
+          <td>rd</td>
+          <td>rs1</td>
+          <td>rs2</td>
+          <td>rd := rs1 - rs2 (with <code>ln</code> taking borrow)</td>
       </tr>
       <tr>
-          <td class="left">sto</td>
-          <td class="left">rd</td>
-          <td class="left">rs1</td>
-          <td class="left">rs2</td>
-          <td class="left">(rs1) = rs2; rd = <code>ln</code></td>
+          <td>sto</td>
+          <td>rd</td>
+          <td>rs1</td>
+          <td>rs2</td>
+          <td>(rs1) = rs2; rd = <code>ln</code></td>
       </tr>
       <tr>
-          <td class="left">sbc</td>
-          <td class="left">rd</td>
-          <td class="left">rs1</td>
-          <td class="left">rs2</td>
-          <td class="left">rd := rs1 - rs2 - <code>ln</code> (<code>ln</code> taking borrow)</td>
+          <td>sbc</td>
+          <td>rd</td>
+          <td>rs1</td>
+          <td>rs2</td>
+          <td>rd := rs1 - rs2 - <code>ln</code> (<code>ln</code> taking borrow)</td>
       </tr>
       <tr>
-          <td class="left">bra</td>
-          <td class="left">cc</td>
-          <td class="left">dnh</td>
-          <td class="left">dnl</td>
-          <td class="left">pc += imm(dnh*8 + dnl) (condition code of <code>ln</code> cc)</td>
+          <td>bra</td>
+          <td>cc</td>
+          <td>dnh</td>
+          <td>dnl</td>
+          <td>pc += imm(dnh*8 + dnl) (condition code of <code>ln</code> cc)</td>
       </tr>
       <tr>
-          <td class="left">xor</td>
-          <td class="left">rd</td>
-          <td class="left">rs1</td>
-          <td class="left">rs2</td>
-          <td class="left">rd := rs1 ^ rs2</td>
+          <td>xor</td>
+          <td>rd</td>
+          <td>rs1</td>
+          <td>rs2</td>
+          <td>rd := rs1 ^ rs2</td>
       </tr>
       <tr>
-          <td class="left">rcl</td>
-          <td class="left">rd</td>
-          <td class="left">rs1</td>
-          <td class="left">rs2</td>
-          <td class="left"><code>ln</code> = rs2; rd := (rs1)</td>
+          <td>rcl</td>
+          <td>rd</td>
+          <td>rs1</td>
+          <td>rs2</td>
+          <td><code>ln</code> = rs2; rd := (rs1)</td>
       </tr>
       <tr>
-          <td class="left">and</td>
-          <td class="left">rd</td>
-          <td class="left">rs1</td>
-          <td class="left">rs2</td>
-          <td class="left">rd := rs1 &amp; rs2</td>
+          <td>and</td>
+          <td>rd</td>
+          <td>rs1</td>
+          <td>rs2</td>
+          <td>rd := rs1 &amp; rs2</td>
       </tr>
       <tr>
-          <td class="left">orr</td>
-          <td class="left">rd</td>
-          <td class="left">rs1</td>
-          <td class="left">rs2</td>
-          <td class="left">rd := rs1 | rs2</td>
+          <td>orr</td>
+          <td>rd</td>
+          <td>rs1</td>
+          <td>rs2</td>
+          <td>rd := rs1 | rs2</td>
       </tr>
       <tr>
-          <td class="left">adq</td>
-          <td class="left">rd</td>
-          <td class="left">rs1</td>
-          <td class="left">dnl</td>
-          <td class="left">rd := rs1 + imm(dnl)</td>
+          <td>adq</td>
+          <td>rd</td>
+          <td>rs1</td>
+          <td>dnl</td>
+          <td>rd := rs1 + imm(dnl)</td>
       </tr>
       <tr>
-          <td class="left">cmp</td>
-          <td class="left">cc</td>
-          <td class="left">rs1</td>
-          <td class="left">rs2</td>
-          <td class="left">_ := rs1 - rs2 (like sub but cc masks <code>ln</code> bit holds)</td>
+          <td>cmp</td>
+          <td>cc</td>
+          <td>rs1</td>
+          <td>rs2</td>
+          <td>_ := rs1 - rs2 (like sub but cc masks <code>ln</code> bit holds)</td>
       </tr>
       <tr>
-          <td class="left">trp</td>
-          <td class="left">dnx</td>
-          <td class="left">dnh</td>
-          <td class="left">dnl</td>
-          <td class="left">supervisor trap / mode set</td>
+          <td>trp</td>
+          <td>dnx</td>
+          <td>dnh</td>
+          <td>dnl</td>
+          <td>supervisor trap / mode set</td>
       </tr>
   </tbody>
 </table>
