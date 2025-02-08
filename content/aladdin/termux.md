@@ -1,6 +1,6 @@
 +++
 # title for page
-title = 'Termux'
+title = 'Termux and MultiVNC'
 # date created
 date = 2025-02-07T22:14:09Z
 # is draft to not build
@@ -35,4 +35,7 @@ of keep things small and manageable. I'm sure there can be dwm in the future
 on an X server. And so many things can be built from source as and when I 
 need them.
 
-So that just leaves compiling Java for Android. Or ...
+So that just leaves compiling Java for Android. Or ... X11 using VNC with dwm?
+Ah, yes. Minor Alt + i and Alt + Shift + c problems of entry with the free
+VNC client I'm using. Customization is also limited due to missing "ft2build.h"
+but that's not too bad. 
