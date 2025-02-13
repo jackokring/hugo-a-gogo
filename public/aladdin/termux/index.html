@@ -117,7 +117,23 @@ need them.</p>
 Ah, yes. Minor Alt + i and Alt + Shift + c problems of entry with the free
 VNC client I&rsquo;m using. Customization is also limited due to missing &ldquo;ft2build.h&rdquo;
 but that&rsquo;s not too bad.</p>
- 
+<h3 id="later-additions">Later Additions</h3>
+<p>Microsoft RDP Client and package <code>xrdp</code> (a slightly involved setup) gives full
+screen desktop and bot vnc and rdp connection options. Apparently Termux uses
+<code>eth5</code> for the <code>traceroute</code> gateway. All the Alt keys work too without bad
+workarounds (should that be reach-arounds). The following is useful in build
+files.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nv">PREFIX</span><span class="o">=</span><span class="si">${</span><span class="nv">PREFIX</span><span class="k">:-</span><span class="p">/usr</span><span class="si">}</span>
+</span></span><span class="line"><span class="cl">gcc -I<span class="nv">$PREFIX</span>/include
+</span></span></code></pre></td></tr></table>
+</div>
+</div> 
 <div>
   <h3>Tags</h3>
   <ul class="tags">

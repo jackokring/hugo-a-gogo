@@ -19,23 +19,36 @@ elm = false
 +++
 
 So the Debian container on my Chromebook became slow and large. Things needed
-to be done. So I deleted it and went full on with the latest release of 
+to be done. So I deleted it and went full on with the latest release of
 **Termux** from the play store and installed some things like Neovim. Then
-I had a little play, and some more things were installed. 
+I had a little play, and some more things were installed.
 
-Excellent. It is much faster, does have a few "unique" ways of doing things, 
+Excellent. It is much faster, does have a few "unique" ways of doing things,
 but it does have rust working, and a few strange things to do with lua
-in Neovim due to how the Mason language server has to be installed from 
+in Neovim due to how the Mason language server has to be installed from
 the package manager and not Mason. Ah, all is well bar a few start up errors
 along with a little more learning needed for clipboard interaction.
 
-I'll likely set up an X11 server later on, with maybe some nice tools. The 
+I'll likely set up an X11 server later on, with maybe some nice tools. The
 miniature nature of the repositories (and ease of setting up more) does kind
 of keep things small and manageable. I'm sure there can be dwm in the future
-on an X server. And so many things can be built from source as and when I 
+on an X server. And so many things can be built from source as and when I
 need them.
 
 So that just leaves compiling Java for Android. Or ... X11 using VNC with dwm?
 Ah, yes. Minor Alt + i and Alt + Shift + c problems of entry with the free
 VNC client I'm using. Customization is also limited due to missing "ft2build.h"
-but that's not too bad. 
+but that's not too bad.
+
+### Later Additions
+
+Microsoft RDP Client and package `xrdp` (a slightly involved setup) gives full
+screen desktop and bot vnc and rdp connection options. Apparently Termux uses
+`eth5` for the `traceroute` gateway. All the Alt keys work too without bad
+workarounds (should that be reach-arounds). The following is useful in build
+files.
+
+```bash
+PREFIX=${PREFIX:-/usr}
+gcc -I$PREFIX/include
+```
