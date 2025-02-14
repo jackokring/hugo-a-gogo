@@ -36,14 +36,14 @@ on an X server. And so many things can be built from source as and when I
 need them.
 
 So that just leaves compiling Java for Android. Or ... X11 using VNC with dwm?
-Ah, yes. Minor Alt + i and Alt + Shift + c problems of entry with the free
-VNC client I'm using. Customization is also limited due to missing "ft2build.h"
+Ah, yes. Minor `Alt + i` and `Alt + Shift + c` problems of entry with the free
+VNC client I'm using. Customization is also limited due to missing `ft2build.h`
 but that's not too bad.
 
 ### Later Additions
 
 Microsoft RDP Client and package `xrdp` (a slightly involved setup) gives full
-screen desktop and bot vnc and rdp connection options. Apparently Termux uses
+screen desktop and both vnc and rdp connection options. Apparently Termux uses
 `eth5` for the `traceroute` gateway. All the Alt keys work too without bad
 workarounds (should that be reach-arounds). The following is useful in build
 files.
@@ -52,3 +52,15 @@ files.
 PREFIX=${PREFIX:-/usr}
 gcc -I$PREFIX/include
 ```
+
+Other things that work `dwm`, `gimp`, `godot` (actually version 4), `hugo`,
+`python`, `go` and all the regular utilities. `xsetroot -name <title>` is available
+too. I found the `ft2build.h` as all builds need the `$PREFIX` hack (not to be
+confused with the installation prefix often used in make files). Embedded `lua`
+compiles into `c` too. Apparently `ardour` should work but it goes segmentation
+fault on shared memory, though `audacity` works. I might have to go `LADSPA`.
+
+I'm pleasantly surprised how much of my Neovim/LazyVim config works. Even the
+two errors on markdown and lua language servers are likely due to them being
+system installs on Termux, and as such they do "work", although I always have
+the loading errors. Ah, Tokyo moon just a Termux:style £1.79.

@@ -114,12 +114,12 @@ of keep things small and manageable. I&rsquo;m sure there can be dwm in the futu
 on an X server. And so many things can be built from source as and when I
 need them.</p>
 <p>So that just leaves compiling Java for Android. Or &hellip; X11 using VNC with dwm?
-Ah, yes. Minor Alt + i and Alt + Shift + c problems of entry with the free
-VNC client I&rsquo;m using. Customization is also limited due to missing &ldquo;ft2build.h&rdquo;
+Ah, yes. Minor <code>Alt + i</code> and <code>Alt + Shift + c</code> problems of entry with the free
+VNC client I&rsquo;m using. Customization is also limited due to missing <code>ft2build.h</code>
 but that&rsquo;s not too bad.</p>
 <h3 id="later-additions">Later Additions</h3>
 <p>Microsoft RDP Client and package <code>xrdp</code> (a slightly involved setup) gives full
-screen desktop and bot vnc and rdp connection options. Apparently Termux uses
+screen desktop and both vnc and rdp connection options. Apparently Termux uses
 <code>eth5</code> for the <code>traceroute</code> gateway. All the Alt keys work too without bad
 workarounds (should that be reach-arounds). The following is useful in build
 files.</p>
@@ -133,7 +133,17 @@ files.</p>
 </span></span><span class="line"><span class="cl">gcc -I<span class="nv">$PREFIX</span>/include
 </span></span></code></pre></td></tr></table>
 </div>
-</div> 
+</div><p>Other things that work <code>dwm</code>, <code>gimp</code>, <code>godot</code> (actually version 4), <code>hugo</code>,
+<code>python</code>, <code>go</code> and all the regular utilities. <code>xsetroot -name &lt;title&gt;</code> is available
+too. I found the <code>ft2build.h</code> as all builds need the <code>$PREFIX</code> hack (not to be
+confused with the installation prefix often used in make files). Embedded <code>lua</code>
+compiles into <code>c</code> too. Apparently <code>ardour</code> should work but it goes segmentation
+fault on shared memory, though <code>audacity</code> works. I might have to go <code>LADSPA</code>.</p>
+<p>I&rsquo;m pleasantly surprised how much of my Neovim/LazyVim config works. Even the
+two errors on markdown and lua language servers are likely due to them being
+system installs on Termux, and as such they do &ldquo;work&rdquo;, although I always have
+the loading errors. Ah, Tokyo moon just a Termux:style £1.79.</p>
+ 
 <div>
   <h3>Tags</h3>
   <ul class="tags">
