@@ -6,7 +6,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<title>Development | K Ring Technologies Ltd</title>
+<title>Godot Game Engine | K Ring Technologies Ltd</title>
 
       <link rel="stylesheet" href="/css/main.min.5255c1ce8fbe13fd0a9188a9f65992d1c48f2dff1449b53b650221d25aba3a08.css" integrity="sha256-UlXBzo&#43;&#43;E/0KkYip9lmS0cSPLf8USbU7ZQIh0lq6Ogg=" crossorigin="anonymous">
       <link rel="stylesheet" href="/css/syntax.min.64bdb51e7fdc90771f811ca111adb352b42a9c08f983a3c951fa044afc99955f.css" integrity="sha256-ZL21Hn/ckHcfgRyhEa2zUrQqnAj5g6PJUfoESvyZlV8=" crossorigin="anonymous">
@@ -62,7 +62,7 @@
       <a href="/about/">About</a> |
     </li>
     <li>
-      <a href="/aladdin/">Aladdin</a> |
+      <a aria-current="true" class="ancestor" href="/aladdin/">Aladdin</a> |
     </li>
     <li>
       <a href="/products/">Products</a> |
@@ -92,74 +92,43 @@
 <div hidden id="subdom"></div>
 </header>
     <main>
-<h1>Development</h1>
- 
+<h1>Godot Game Engine</h1>
+
 <h2>
-  <a href="/aladdin/godot/">Godot Game Engine...</a>  
-  <time datetime="2025-04-10T23:12:57&#43;00:00">[April 10, 2025]</time>
+   
+  <time datetime="2025-04-10T23:12:57&#43;00:00">April 10, 2025</time>
 </h2>
+
 <p>So, developing a game. I picked Godot, as I didn&rsquo;t feel like developing a lot
 of game engine code, as the gameplay code seemed more challenging and of a
 more experimental nature. Circa April &lsquo;25 there is just a basic play field,
 a character movable by keyboard or joypad, a bounce mechanic at the display
 edge, some menu for sound settings, a four note tune with some drums, some
-free graphics and a path generator.</p> 
-<h2>
-  <a href="/aladdin/termux/">Termux and MultiVNC...</a>  
-  <time datetime="2025-02-07T22:14:09&#43;00:00">[February 7, 2025]</time>
-</h2>
-<p>So the Debian container on my Chromebook became slow and large. Things needed
-to be done. So I deleted it and went full on with the latest release of
-<strong>Termux</strong> from the play store and installed some things like Neovim. Then
-I had a little play, and some more things were installed.</p>
-<p>Excellent. It is much faster, does have a few &ldquo;unique&rdquo; ways of doing things,
-but it does have rust working, and a few strange things to do with lua
-in Neovim due to how the Mason language server has to be installed from
-the package manager and not Mason. Ah, all is well bar a few start up errors
-along with a little more learning needed for clipboard interaction.</p> 
-<h2>
-  <a href="/services/toolchain-operator/">Toolchain Operator...</a>  
-  <time datetime="2024-11-13T18:06:54&#43;00:00">[November 13, 2024]</time>
-</h2>
-<h3 id="custom-server">Custom Server</h3>
-<ul>
-<li><code>go</code> - fast, easy, webserver, good library.</li>
-<li><code>C/C++</code> - small optimizations, bare speed.</li>
-<li><code>python</code> - extensive, ML/AI, virtual environments.</li>
-</ul>
-<h3 id="light-website">Light Website</h3>
-<ul>
-<li><code>Hugo</code> - lean, easy markdown CMS.</li>
-<li><code>TypeScript</code> - dynamic sites, easy serverless/lambda.</li>
-<li><code>CSS</code> - lipstick and styling.</li>
-<li><code>jquery</code>/<code>underscore</code> - old but classically useful tools.</li>
-</ul>
-<h3 id="local-machine-generic-development">Local Machine Generic Development</h3>
-<ul>
-<li><code>Neovim</code> - fast editor, good extensibility.</li>
-<li><code>Lua</code> - general scripting.</li>
-<li><code>C</code> - good for small optimizations, speed.</li>
-<li><code>python</code> - extensive, ML/AI, virtual environments.</li>
-</ul>
-<h3 id="background-pervasive-everywhere">Background Pervasive Everywhere</h3>
-<ul>
-<li><code>bash</code> - automation of heterogeneous parts.</li>
-<li>CLI Tools - stable Linux OS.</li>
-<li><code>rust</code> - some nice CLI tools available.</li>
-<li><code>git</code> - code management.</li>
-</ul>
-<h3 id="esoteric-investigation">Esoteric Investigation</h3>
-<ul>
-<li><code>J</code> - nice array language, open source.</li>
-<li><code>forth</code> - compact small code.</li>
-</ul>
-<h3 id="hardware-realtime-and-firmware">Hardware, Realtime and Firmware</h3>
-<ul>
-<li><code>C/C++</code> - fast, compact.</li>
-<li><code>VHDL</code> - silicon compiler.</li>
-<li><code>galasm</code> - simple logic array device programming.</li>
-</ul>
-<h2 id="and-anything-else-needed">And Anything Else Needed</h2>   </main>
+free graphics and a path generator.</p>
+<p>Next is some of the AI, as it is appropriate to merge it with the navigation
+<code>A*</code> system for the simplest of path following AI character. There is a little
+thought about genetic algorithms and verb tenses, to cover &ldquo;thoughts&rdquo; of
+future characters to the mix. &ldquo;Follow an expected future position,&rdquo; for example.</p>
+<p>At some point there may be things like a randomized &ldquo;card&rdquo; (or spin) mechanic
+as this is popular for progression and meta-progression (over a number of plays)
+in popular gaming. Some might say I&rsquo;m over thinking it, but that is why I
+tend to like the coding. For example, I must find a way that the &ldquo;card&rdquo; mechanic
+doesn&rsquo;t stop the real time flow of the chase action.</p>
+<p>I think opening a python AI server port for the game might be going too far.
+I don&rsquo;t think a full SQL massive multiplayer is good for a cheap to free
+game as the server billing dynamics don&rsquo;t favour generosity.</p>
+<p>Um &hellip;</p>
+ 
+<div>
+  <h3>Tags</h3>
+  <ul class="tags">
+    <li><a href="/tags/games/">Games</a> |</li>
+    <li><a href="/tags/development/">Development</a> |</li>
+    <li><a href="/tags/gdscript/">GDScript</a> |</li>
+    <li>[3]</li>
+  </ul>
+</div>
+ </main>
     
     <footer data-pagefind-ignore="all"><p>Copyright 2025. All rights reserved.</p>
 <p>

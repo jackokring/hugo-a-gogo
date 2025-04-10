@@ -2,13 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://kring.co.uk/tags/development/</loc>
+    <lastmod>2025-04-10T23:12:57+00:00</lastmod>
+  </url><url>
+    <loc>https://kring.co.uk/tags/games/</loc>
+    <lastmod>2025-04-10T23:12:57+00:00</lastmod>
+  </url><url>
+    <loc>https://kring.co.uk/tags/gdscript/</loc>
+    <lastmod>2025-04-10T23:12:57+00:00</lastmod>
+  </url><url>
+    <loc>https://kring.co.uk/aladdin/godot/</loc>
+    <lastmod>2025-04-10T23:12:57+00:00</lastmod>
+  </url><url>
     <loc>https://kring.co.uk/tags/android/</loc>
     <lastmod>2025-02-07T22:14:09+00:00</lastmod>
   </url><url>
     <loc>https://kring.co.uk/tags/chromebook/</loc>
-    <lastmod>2025-02-07T22:14:09+00:00</lastmod>
-  </url><url>
-    <loc>https://kring.co.uk/tags/development/</loc>
     <lastmod>2025-02-07T22:14:09+00:00</lastmod>
   </url><url>
     <loc>https://kring.co.uk/aladdin/termux/</loc>
