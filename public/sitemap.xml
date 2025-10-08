@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://kring.co.uk/aladdin/boxes-kvm-and-libadapta/</loc>
+    <lastmod>2025-10-08T18:10:29+00:00</lastmod>
+  </url><url>
+    <loc>https://kring.co.uk/tags/c&#43;&#43;/</loc>
+    <lastmod>2025-10-08T18:10:29+00:00</lastmod>
+  </url><url>
+    <loc>https://kring.co.uk/tags/libadatpta/</loc>
+    <lastmod>2025-10-08T18:10:29+00:00</lastmod>
+  </url><url>
+    <loc>https://kring.co.uk/tags/lua/</loc>
+    <lastmod>2025-10-08T18:10:29+00:00</lastmod>
+  </url><url>
+    <loc>https://kring.co.uk/tags/python/</loc>
+    <lastmod>2025-10-08T18:10:29+00:00</lastmod>
+  </url><url>
+    <loc>https://kring.co.uk/tags/style/</loc>
+    <lastmod>2025-10-08T18:10:29+00:00</lastmod>
+  </url><url>
+    <loc>https://kring.co.uk/tags/virtual/</loc>
+    <lastmod>2025-10-08T18:10:29+00:00</lastmod>
+  </url><url>
     <loc>https://kring.co.uk/tags/development/</loc>
     <lastmod>2025-04-10T23:12:57+00:00</lastmod>
   </url><url>
@@ -67,9 +88,6 @@
   </url><url>
     <loc>https://kring.co.uk/tags/vcvrack/</loc>
     <lastmod>2024-12-03T07:57:55+00:00</lastmod>
-  </url><url>
-    <loc>https://kring.co.uk/tags/lua/</loc>
-    <lastmod>2024-11-18T17:42:28+00:00</lastmod>
   </url><url>
     <loc>https://kring.co.uk/works/lua-audio/</loc>
     <lastmod>2024-11-18T17:42:28+00:00</lastmod>

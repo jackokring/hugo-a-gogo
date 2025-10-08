@@ -98,6 +98,25 @@ the page something. I hope you agree. Kind of reviews and status on the state
 and availability of &ldquo;free&rdquo; open source-ami.</p>
  
 <h2 data-pagefind-ignore="all">
+  <a href="/aladdin/boxes-kvm-and-libadapta/">Boxes, KVM and Libadapta...</a>  
+  <time datetime="2025-10-08T18:10:29&#43;00:00">[October 8, 2025]</time>
+</h2>
+<div data-pagefind-ignore="all"><h2 id="boxes-and-kvm">Boxes and KVM</h2>
+<p>I&rsquo;ve recently removed and converted some VMs from <code>VirtualBox</code> to <code>gnome-boxes</code>
+and the <code>.qcow2</code> format. It went well. The only loss was &ldquo;tiny video&rdquo; as the
+resolution scaling is absent from the boxes version I&rsquo;m on. The fact I
+can keep a <code>podman</code> instance up working (relies on kvm) was a major reason
+for the switch. So really not that much of a change.</p>
+<h2 id="libadapta-and-themes">Libadapta and Themes</h2>
+<p>On the Linux Mint 22.2 upgrade, I tried out the <code>libadapta</code> theming under a
+python program. Using <code>Gtk-4</code> Adwaita is not too bad, but sometimes looks
+limited and unstyled. So I developed the basic demo further, adding in
+<code>C++</code> to a <code>hatch</code> project, and then also added in <code>luaJIT-5.1</code> for preference
+for some things. I don&rsquo;t mind python for its large module range, ML to
+quite a few GUI toolkits. But I do like the simplicity of Lua and such a thing
+is more likely to fit mostly in the I-cache.</p></div>
+
+<h2 data-pagefind-ignore="all">
   <a href="/aladdin/godot/">Godot Game Engine...</a>  
   <time datetime="2025-04-10T23:12:57&#43;00:00">[April 10, 2025]</time>
 </h2>
