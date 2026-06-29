@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>AI on K Ring Technologies Ltd</title>
+		<link>https://kring.co.uk/tags/ai/</link>
+		<description>Recent content in AI on K Ring Technologies Ltd</description>
+		<generator>Hugo</generator>
+		<language>en-GB</language>
+		
+		
+		
+		
+			<lastBuildDate>Mon, 09 Feb 2026 19:52:39 +0000</lastBuildDate>
+		
+			<atom:link href="https://kring.co.uk/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Focus Fibre</title>
+				<link>https://kring.co.uk/aladdin/focus-fibre/</link>
+				<pubDate>Mon, 09 Feb 2026 19:52:39 +0000</pubDate>
+				<guid>https://kring.co.uk/aladdin/focus-fibre/</guid>
+				<description>&lt;p&gt;I&amp;rsquo;ve been forking the &lt;a href=&#34;https://github.com/jackokring/ulisp-cardputer&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ulisp-cardputer&lt;/a&gt;&#xA;&#xA;repository to include somethings I like. A gradual extension of the &lt;strong&gt;uLisp&lt;/strong&gt;&#xA;and some new C/C++ primitives are likely on the audio and GUI front.&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;m also thinking about AI cross attention. So optimizing the transformer&#xA;attention as a &amp;ldquo;bundle&amp;rdquo; aggregate turns an I.M.O matrix problem into a&#xA;I.A.M.B.O problem with M&amp;rsquo;s size reducing to the lower square, and A and B&#xA;mapping from the larger M to a smaller one. Kind of making an attention fibre.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

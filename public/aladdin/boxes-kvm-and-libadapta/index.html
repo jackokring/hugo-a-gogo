@@ -1,0 +1,150 @@
+<!doctype html>
+<html
+  lang="en-GB"
+  dir="ltr"
+>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Boxes, KVM and Libadapta | K Ring Technologies Ltd</title>
+
+      <link rel="stylesheet" href="/css/main.min.1c7949be5d345b2b5479f4799bed7d6f9390a498648e5b77e125a79fc0b6bf37.css" integrity="sha256-HHlJvl00WytUefR5m&#43;19b5OQpJhkjlt34SWnn8C2vzc=" crossorigin="anonymous">
+      <link rel="stylesheet" href="/css/syntax.min.912485d8b228214cf324d82e53536d6730dce4457e14c6f19adc1e94e51ccd8c.css" integrity="sha256-kSSF2LIoIUzzJNguU1NtZzDc5EV&#43;FMbxmtwelOUczYw=" crossorigin="anonymous">
+
+<script src="https://cdn.jsdelivr.net/npm/underscore@1.13.7/underscore-umd-min.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
+<script src="/main.js"></script>
+<script
+  src="/js/google-cookie.c58ab2428b8ad30fb90e0559e23763eb75051d2269fe4e400bd3fe9617e8d348.js"
+  integrity="sha256-xYqyQouK0w&#43;5DgVZ4jdj63UFHSJp/k5AC9P&#43;lhfo00g="
+  crossorigin="anonymous"
+></script>
+
+ 
+  </head>
+  <body>
+    <header data-pagefind-ignore="all"><div class="float">
+  
+  <img
+    class="scaled"
+    src="/images/header.jpg"
+    width="200"
+    height="200"
+  />
+</div>
+<script src="https://accounts.google.com/gsi/client" async></script>
+
+
+<div
+  id="g_id_onload"
+  data-client_id="1074137615893-80kru3vjd82mars43fjh8vm20sgbadso.apps.googleusercontent.com"
+  data-context="use"
+  data-ux_mode="popup"
+  data-callback="googleLogin"
+  data-itp_support="true"
+  data-use_fedcm_for_prompt="true"
+  data-skip_prompt_cookie="cred"
+></div>
+<h1><a href="/">K Ring Technologies Ltd</a></h1>
+
+  <nav>
+    <ul>
+    <li>
+      <a href="/">Home</a> |
+    </li>
+    <li>
+      <a href="/posts/">Posts</a> |
+    </li>
+    <li>
+      <a href="/tags/">Tags</a> |
+    </li>
+    <li>
+      <a href="/about/">About</a> |
+    </li>
+    <li>
+      <a aria-current="true" class="ancestor" href="/aladdin/">Aladdin</a> |
+    </li>
+    <li>
+      <a href="/products/">Products</a> |
+    </li>
+    <li>
+      <a href="/services/">Services</a> |
+    </li>
+    <li>
+      <a href="/works/">Works</a> |
+    </li>
+    <li><a class="loginName" href="/user/">[Username]</a></li>
+    </ul>
+  </nav>
+
+
+<script src="/pagefind/pagefind-ui.js"></script>
+<div id="search"></div>
+<script>
+  window.addEventListener("DOMContentLoaded", (event) => {
+    new PagefindUI({
+      element: "#search",
+      showSubResults: true,
+      resetStyles: false,
+    });
+  });
+</script>
+<div hidden id="subdom"></div>
+</header>
+    <main>
+<h1>Boxes, KVM and Libadapta</h1>
+
+<h2>
+   
+  <time datetime="2025-10-08T18:10:29&#43;00:00">8 October 2025</time>
+</h2>
+
+<h2 id="boxes-and-kvm">Boxes and KVM</h2>
+<p>I&rsquo;ve recently removed and converted some VMs from <code>VirtualBox</code> to <code>gnome-boxes</code>
+and the <code>.qcow2</code> format. It went well. The only loss was &ldquo;tiny video&rdquo; as the
+resolution scaling is absent from the boxes version I&rsquo;m on. The fact I
+can keep a <code>podman</code> instance up working (relies on kvm) was a major reason
+for the switch. So really not that much of a change.</p>
+<h2 id="libadapta-and-themes">Libadapta and Themes</h2>
+<p>On the Linux Mint 22.2 upgrade, I tried out the <code>libadapta</code> theming under a
+python program. Using <code>Gtk-4</code> Adwaita is not too bad, but sometimes looks
+limited and unstyled. So I developed the basic demo further, adding in
+<code>C++</code> to a <code>hatch</code> project, and then also added in <code>luaJIT-5.1</code> for preference
+for some things. I don&rsquo;t mind python for its large module range, ML to
+quite a few GUI toolkits. But I do like the simplicity of Lua and such a thing
+is more likely to fit mostly in the I-cache.</p>
+<p>I&rsquo;ll add to this demo project as I think of good implementation ideas. I
+think I might try some multithreaded audio, as the <code>.lv2</code> plugin spec is in my
+opinion, overly verbose waffle.</p>
+<h2 id="other-project-news">Other Project News</h2>
+<p>I&rsquo;m doing all this as me, myself. If anything gets really good traction I
+suppose it will become a company focus. But my &ldquo;housing&rdquo; has a &ldquo;no working&rdquo;
+clause, and so It&rsquo;s just &ldquo;hobby&rdquo; just like the competition &ldquo;arranged&rdquo;.</p>
+ 
+<div>
+  <h3>Tags</h3>
+  <ul class="tags">
+    <li><a href="/tags/virtual/">Virtual</a> |</li>
+    <li><a href="/tags/style/">Style</a> |</li>
+    <li><a href="/tags/libadatpta/">Libadatpta</a> |</li>
+    <li><a href="/tags/python/">Python</a> |</li>
+    <li><a href="/tags/c&#43;&#43;/">C&#43;&#43;</a> |</li>
+    <li><a href="/tags/lua/">Lua</a> |</li>
+    <li>[6]</li>
+  </ul>
+</div>
+ </main>
+    
+    <footer data-pagefind-ignore="all"><p>Copyright 2026. All rights reserved.</p>
+<p>
+  This site can be used as a website template under MIT Licence. Personal and
+  company details excepted.
+</p>
+<script language="javascript">
+  window.onload = function (e) {
+    onLoad(); 
+  };
+</script>
+</footer>
+  </body>
+</html>

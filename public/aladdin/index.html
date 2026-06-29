@@ -1,0 +1,264 @@
+<!doctype html>
+<html
+  lang="en-GB"
+  dir="ltr"
+>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Aladdin | K Ring Technologies Ltd</title>
+
+      <link rel="stylesheet" href="/css/main.min.1c7949be5d345b2b5479f4799bed7d6f9390a498648e5b77e125a79fc0b6bf37.css" integrity="sha256-HHlJvl00WytUefR5m&#43;19b5OQpJhkjlt34SWnn8C2vzc=" crossorigin="anonymous">
+      <link rel="stylesheet" href="/css/syntax.min.912485d8b228214cf324d82e53536d6730dce4457e14c6f19adc1e94e51ccd8c.css" integrity="sha256-kSSF2LIoIUzzJNguU1NtZzDc5EV&#43;FMbxmtwelOUczYw=" crossorigin="anonymous">
+
+<script src="https://cdn.jsdelivr.net/npm/underscore@1.13.7/underscore-umd-min.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
+<script src="/main.js"></script>
+<script
+  src="/js/google-cookie.c58ab2428b8ad30fb90e0559e23763eb75051d2269fe4e400bd3fe9617e8d348.js"
+  integrity="sha256-xYqyQouK0w&#43;5DgVZ4jdj63UFHSJp/k5AC9P&#43;lhfo00g="
+  crossorigin="anonymous"
+></script>
+
+ 
+  </head>
+  <body>
+    <header data-pagefind-ignore="all"><div class="float">
+  
+  <img
+    class="scaled"
+    src="/images/header.jpg"
+    width="200"
+    height="200"
+  />
+</div>
+<script src="https://accounts.google.com/gsi/client" async></script>
+
+
+<div
+  id="g_id_onload"
+  data-client_id="1074137615893-80kru3vjd82mars43fjh8vm20sgbadso.apps.googleusercontent.com"
+  data-context="use"
+  data-ux_mode="popup"
+  data-callback="googleLogin"
+  data-itp_support="true"
+  data-use_fedcm_for_prompt="true"
+  data-skip_prompt_cookie="cred"
+></div>
+<h1><a href="/">K Ring Technologies Ltd</a></h1>
+
+  <nav>
+    <ul>
+    <li>
+      <a href="/">Home</a> |
+    </li>
+    <li>
+      <a href="/posts/">Posts</a> |
+    </li>
+    <li>
+      <a href="/tags/">Tags</a> |
+    </li>
+    <li>
+      <a href="/about/">About</a> |
+    </li>
+    <li>
+      <a aria-current="page" class="active" href="/aladdin/">Aladdin</a> |
+    </li>
+    <li>
+      <a href="/products/">Products</a> |
+    </li>
+    <li>
+      <a href="/services/">Services</a> |
+    </li>
+    <li>
+      <a href="/works/">Works</a> |
+    </li>
+    <li><a class="loginName" href="/user/">[Username]</a></li>
+    </ul>
+  </nav>
+
+
+<script src="/pagefind/pagefind-ui.js"></script>
+<div id="search"></div>
+<script>
+  window.addEventListener("DOMContentLoaded", (event) => {
+    new PagefindUI({
+      element: "#search",
+      showSubResults: true,
+      resetStyles: false,
+    });
+  });
+</script>
+<div hidden id="subdom"></div>
+</header>
+    <main>
+<h1>Aladdin</h1>
+<p>A collection of open source tools used by K Ring Technologies. I had to call
+the page something. I hope you agree. Kind of reviews and status on the state
+and availability of &ldquo;free&rdquo; open source-ami.</p>
+ 
+<h2 data-pagefind-ignore="all">
+  <a href="/aladdin/focus-fibre/">Focus Fibre...</a>  
+  <time datetime="2026-02-09T19:52:39&#43;00:00">[9 February 2026]</time>
+</h2>
+<div data-pagefind-ignore="all"><p>I&rsquo;ve been forking the <a href="https://github.com/jackokring/ulisp-cardputer" target="_blank" rel="noopener">ulisp-cardputer</a>
+
+repository to include somethings I like. A gradual extension of the <strong>uLisp</strong>
+and some new C/C++ primitives are likely on the audio and GUI front.</p>
+<p>I&rsquo;m also thinking about AI cross attention. So optimizing the transformer
+attention as a &ldquo;bundle&rdquo; aggregate turns an I.M.O matrix problem into a
+I.A.M.B.O problem with M&rsquo;s size reducing to the lower square, and A and B
+mapping from the larger M to a smaller one. Kind of making an attention fibre.</p></div>
+
+<h2 data-pagefind-ignore="all">
+  <a href="/aladdin/minecraft-fabric-modding/">Minecraft Fabric Modding...</a>  
+  <time datetime="2025-11-21T15:30:00&#43;00:00">[21 November 2025]</time>
+</h2>
+<div data-pagefind-ignore="all"><p>Loaded up Minecraft 1.21.10 and it&rsquo;s still nice to mod. I decided on Fabric to
+do the modding. The interface seems nice, and although I&rsquo;ve still to find out
+how to include gradle variables in Java, I&rsquo;m quite happy with the source.</p>
+<p>It&rsquo;s just getting set up with IntelliJ and Fabric, along with some adapting the
+examples to the Mojang mappings. It seems 1.21.11 will be open mappings, and
+make modding easier, although there will be a learning curve from the Yarn
+default symbols for Fabric.</p></div>
+
+<h2 data-pagefind-ignore="all">
+  <a href="/aladdin/boxes-kvm-and-libadapta/">Boxes, KVM and Libadapta...</a>  
+  <time datetime="2025-10-08T18:10:29&#43;00:00">[8 October 2025]</time>
+</h2>
+<div data-pagefind-ignore="all"><h2 id="boxes-and-kvm">Boxes and KVM</h2>
+<p>I&rsquo;ve recently removed and converted some VMs from <code>VirtualBox</code> to <code>gnome-boxes</code>
+and the <code>.qcow2</code> format. It went well. The only loss was &ldquo;tiny video&rdquo; as the
+resolution scaling is absent from the boxes version I&rsquo;m on. The fact I
+can keep a <code>podman</code> instance up working (relies on kvm) was a major reason
+for the switch. So really not that much of a change.</p>
+<h2 id="libadapta-and-themes">Libadapta and Themes</h2>
+<p>On the Linux Mint 22.2 upgrade, I tried out the <code>libadapta</code> theming under a
+python program. Using <code>Gtk-4</code> Adwaita is not too bad, but sometimes looks
+limited and unstyled. So I developed the basic demo further, adding in
+<code>C++</code> to a <code>hatch</code> project, and then also added in <code>luaJIT-5.1</code> for preference
+for some things. I don&rsquo;t mind python for its large module range, ML to
+quite a few GUI toolkits. But I do like the simplicity of Lua and such a thing
+is more likely to fit mostly in the I-cache.</p></div>
+
+<h2 data-pagefind-ignore="all">
+  <a href="/aladdin/godot/">Godot Game Engine...</a>  
+  <time datetime="2025-04-10T23:12:57&#43;00:00">[10 April 2025]</time>
+</h2>
+<div data-pagefind-ignore="all"><p>So, developing a game. I picked Godot, as I didn&rsquo;t feel like developing a lot
+of game engine code, as the gameplay code seemed more challenging and of a
+more experimental nature. Circa April &lsquo;25 there is just a basic play field,
+a character movable by keyboard or joypad, a bounce mechanic at the display
+edge, some menu for sound settings, a four note tune with some drums, some
+free graphics and a path generator.</p></div>
+
+<h2 data-pagefind-ignore="all">
+  <a href="/aladdin/termux/">Termux and MultiVNC...</a>  
+  <time datetime="2025-02-07T22:14:09&#43;00:00">[7 February 2025]</time>
+</h2>
+<div data-pagefind-ignore="all"><p>So the Debian container on my Chromebook became slow and large. Things needed
+to be done. So I deleted it and went full on with the latest release of
+<strong>Termux</strong> from the play store and installed some things like Neovim. Then
+I had a little play, and some more things were installed.</p>
+<p>Excellent. It is much faster, does have a few &ldquo;unique&rdquo; ways of doing things,
+but it does have rust working, and a few strange things to do with lua
+in Neovim due to how the Mason language server has to be installed from
+the package manager and not Mason. Ah, all is well bar a few start up errors
+along with a little more learning needed for clipboard interaction.</p></div>
+
+<h2 data-pagefind-ignore="all">
+  <a href="/aladdin/a-simple-risc/">A Simple RISC...</a>  
+  <time datetime="2024-11-12T19:50:19&#43;00:00">[12 November 2024]</time>
+</h2>
+<div data-pagefind-ignore="all"><p>Some ideas for a simple RISC processor although unlikely to ever be made, do
+have possible application. To make it easy a 16 bit wide instruction and 16
+general registers 32 bit wide make most sense.</p>
+<p>Hiding the link register <code>ln</code> has good security implications so it is always
+implicit. Also the <code>pc</code> can be implicit too. So here goes. It&rsquo;s not as though
+the return stack isn&rsquo;t heavily cached, and doesn&rsquo;t need writeback of anything
+below the stack pointer line.</p></div>
+
+<h2 data-pagefind-ignore="all">
+  <a href="/aladdin/jquery-and-underscore/">JQuery and Underscore...</a>  
+  <time datetime="2024-10-24T22:42:53&#43;00:00">[24 October 2024]</time>
+</h2>
+<div data-pagefind-ignore="all"><h2 id="underscorejs">Underscore.js</h2>
+<p>A nice functional JavaScript library. I like it, although it might be a bit of
+a challenge to get it working server side with CloudFlare workers. It even
+includes a simple dynamic template system with <code>_.template()</code>. It can be found
+as an ESM module as well as &ldquo;normal&rdquo; UMD, so that might help some.</p>
+<h2 id="jquery">JQuery</h2>
+<p>A compact library to do DOM processing based on tags. A similar challenge to
+get it server side, but it would make for more expressive terse code
+if the server had a DOM, but it doesn&rsquo;t. I suppose that&rsquo;s lucky. It&rsquo;s not
+as though all it does can&rsquo;t be done otherways, it&rsquo;s just so compact to write
+without all the boilerplate duplication. I&rsquo;m sure with DOM templates it will
+be efficient to implement things.</p></div>
+
+<h2 data-pagefind-ignore="all">
+  <a href="/aladdin/gimp/">Gimp and Inkscape...</a>  
+  <time datetime="2024-10-07T20:40:40&#43;00:00">[7 October 2024]</time>
+</h2>
+<div data-pagefind-ignore="all"><p>It&rsquo;s a classic free replacement to PhotoShop and does what I need from such a
+tool, along with a nice vector drawing program to make <code>.svg</code> files. I&rsquo;m
+not into doing a full manual here, but these applications are so good.</p></div>
+
+<h2 data-pagefind-ignore="all">
+  <a href="/aladdin/suckless/">Suckless and Rofi...</a>  
+  <time datetime="2024-10-05T23:43:45&#43;00:00">[5 October 2024]</time>
+</h2>
+<div data-pagefind-ignore="all"><h2 id="st">st</h2>
+<p>The suckless terminal. It&rsquo;s ideally small to bake in a nerd font, and remove
+non UTF-8 mode, and the alt code Latin code page. On a Chromebook this is
+important as the Crostini terminal doesn&rsquo;t have nerd font abilities. I then
+launch <code>nvim</code> inside <code>st</code> to obtain a local and an <code>ssh -X</code> remote fonted
+edit experience. Nice.</p>
+<h2 id="rofi">rofi</h2>
+<p>A nice hot keyed quick launch selector. After a bit of setup lots can be
+placed for access by <code>rofi -show combi</code>, the mix together mode. I also added
+a plugin template called <code>a</code> as C makes <code>a.out</code> for adding in more modes.</p></div>
+
+<h2 data-pagefind-ignore="all">
+  <a href="/aladdin/hugo/">Hugo...</a>  
+  <time datetime="2024-10-05T14:37:38&#43;00:00">[5 October 2024]</time>
+</h2>
+<div data-pagefind-ignore="all"><p><a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>
+ is a static site templating builder used here.
+It works well. It seems similar to how github pages works, but is written in go
+instead of ruby. It does take a little while to scan the documentation and
+setup, as some of the more complex themes don&rsquo;t work with some integration
+solutions such as <strong>CloudFlare</strong>. Simple truths such as a theme being a fallback
+site make sense, as after some time migrating the templating to the theme
+and just using the site layouts for overrides just makes sense.</p></div>
+
+<h2 data-pagefind-ignore="all">
+  <a href="/aladdin/nvim/">Neovim...</a>  
+  <time datetime="2024-10-05T11:10:32&#43;00:00">[5 October 2024]</time>
+</h2>
+<div data-pagefind-ignore="all"><p>The excellent <a href="https://neovim.io/" target="_blank" rel="noopener">Neovim</a>
+ has improved a lot since the older
+<code>vim</code> and even the original <code>vi</code>. It now includes Lua scripting as well as
+the more obscure Vim Script. It is best using some extra configuration of which
+<a href="https://www.lazyvim.org/" target="_blank" rel="noopener">LazyVim</a>
+ I have found to be very useful.</p>
+<p>As a fast loading editor with treesitter and various LSP servers, it&rsquo;s nice,
+although the way &ldquo;modes&rdquo; work is not your usual editor way. It has the speed
+advantage over <code>VSCode</code> and also will load files over an <code>SSH</code> connection
+whereas <code>VSCode</code> just freezes. I tried <code>Emacs</code> for a while and have used it
+back in the 90s. I found the LISP configuration more annoying than using
+Lua for configuration. Also <code>LazyVim</code> really solves the initial setup problems.</p></div>
+  </main>
+    
+    <footer data-pagefind-ignore="all"><p>Copyright 2026. All rights reserved.</p>
+<p>
+  This site can be used as a website template under MIT Licence. Personal and
+  company details excepted.
+</p>
+<script language="javascript">
+  window.onload = function (e) {
+    onLoad(); 
+  };
+</script>
+</footer>
+  </body>
+</html>

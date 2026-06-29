@@ -1,0 +1,170 @@
+<!doctype html>
+<html
+  lang="en-GB"
+  dir="ltr"
+>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Termux and MultiVNC | K Ring Technologies Ltd</title>
+
+      <link rel="stylesheet" href="/css/main.min.1c7949be5d345b2b5479f4799bed7d6f9390a498648e5b77e125a79fc0b6bf37.css" integrity="sha256-HHlJvl00WytUefR5m&#43;19b5OQpJhkjlt34SWnn8C2vzc=" crossorigin="anonymous">
+      <link rel="stylesheet" href="/css/syntax.min.912485d8b228214cf324d82e53536d6730dce4457e14c6f19adc1e94e51ccd8c.css" integrity="sha256-kSSF2LIoIUzzJNguU1NtZzDc5EV&#43;FMbxmtwelOUczYw=" crossorigin="anonymous">
+
+<script src="https://cdn.jsdelivr.net/npm/underscore@1.13.7/underscore-umd-min.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
+<script src="/main.js"></script>
+<script
+  src="/js/google-cookie.c58ab2428b8ad30fb90e0559e23763eb75051d2269fe4e400bd3fe9617e8d348.js"
+  integrity="sha256-xYqyQouK0w&#43;5DgVZ4jdj63UFHSJp/k5AC9P&#43;lhfo00g="
+  crossorigin="anonymous"
+></script>
+
+ 
+  </head>
+  <body>
+    <header data-pagefind-ignore="all"><div class="float">
+  
+  <img
+    class="scaled"
+    src="/images/header.jpg"
+    width="200"
+    height="200"
+  />
+</div>
+<script src="https://accounts.google.com/gsi/client" async></script>
+
+
+<div
+  id="g_id_onload"
+  data-client_id="1074137615893-80kru3vjd82mars43fjh8vm20sgbadso.apps.googleusercontent.com"
+  data-context="use"
+  data-ux_mode="popup"
+  data-callback="googleLogin"
+  data-itp_support="true"
+  data-use_fedcm_for_prompt="true"
+  data-skip_prompt_cookie="cred"
+></div>
+<h1><a href="/">K Ring Technologies Ltd</a></h1>
+
+  <nav>
+    <ul>
+    <li>
+      <a href="/">Home</a> |
+    </li>
+    <li>
+      <a href="/posts/">Posts</a> |
+    </li>
+    <li>
+      <a href="/tags/">Tags</a> |
+    </li>
+    <li>
+      <a href="/about/">About</a> |
+    </li>
+    <li>
+      <a aria-current="true" class="ancestor" href="/aladdin/">Aladdin</a> |
+    </li>
+    <li>
+      <a href="/products/">Products</a> |
+    </li>
+    <li>
+      <a href="/services/">Services</a> |
+    </li>
+    <li>
+      <a href="/works/">Works</a> |
+    </li>
+    <li><a class="loginName" href="/user/">[Username]</a></li>
+    </ul>
+  </nav>
+
+
+<script src="/pagefind/pagefind-ui.js"></script>
+<div id="search"></div>
+<script>
+  window.addEventListener("DOMContentLoaded", (event) => {
+    new PagefindUI({
+      element: "#search",
+      showSubResults: true,
+      resetStyles: false,
+    });
+  });
+</script>
+<div hidden id="subdom"></div>
+</header>
+    <main>
+<h1>Termux and MultiVNC</h1>
+
+<h2>
+   
+  <time datetime="2025-02-07T22:14:09&#43;00:00">7 February 2025</time>
+</h2>
+
+<p>So the Debian container on my Chromebook became slow and large. Things needed
+to be done. So I deleted it and went full on with the latest release of
+<strong>Termux</strong> from the play store and installed some things like Neovim. Then
+I had a little play, and some more things were installed.</p>
+<p>Excellent. It is much faster, does have a few &ldquo;unique&rdquo; ways of doing things,
+but it does have rust working, and a few strange things to do with lua
+in Neovim due to how the Mason language server has to be installed from
+the package manager and not Mason. Ah, all is well bar a few start up errors
+along with a little more learning needed for clipboard interaction.</p>
+<p>I&rsquo;ll likely set up an X11 server later on, with maybe some nice tools. The
+miniature nature of the repositories (and ease of setting up more) does kind
+of keep things small and manageable. I&rsquo;m sure there can be dwm in the future
+on an X server. And so many things can be built from source as and when I
+need them.</p>
+<p>So that just leaves compiling Java for Android. Or &hellip; X11 using VNC with dwm?
+Ah, yes. Minor <code>Alt + i</code> and <code>Alt + Shift + c</code> problems of entry with the free
+VNC client I&rsquo;m using. Customization is also limited due to missing <code>ft2build.h</code>
+but that&rsquo;s not too bad.</p>
+<h3 id="later-additions">Later Additions</h3>
+<p>Microsoft RDP Client and package <code>xrdp</code> (a slightly involved setup) gives full
+screen desktop and both vnc and rdp connection options. Apparently Termux uses
+<code>eth5</code> for the <code>traceroute</code> gateway. All the Alt keys work too without bad
+workarounds (should that be reach-arounds). The following is useful in build
+files.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nv">PREFIX</span><span class="o">=</span><span class="si">${</span><span class="nv">PREFIX</span><span class="k">:-</span><span class="p">/usr</span><span class="si">}</span>
+</span></span><span class="line"><span class="cl">gcc -I<span class="nv">$PREFIX</span>/include
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Other things that work <code>dwm</code>, <code>gimp</code>, <code>godot</code> (actually version 4), <code>hugo</code>,
+<code>python</code>, <code>go</code> and all the regular utilities. <code>xsetroot -name &lt;title&gt;</code> is available
+too. I found the <code>ft2build.h</code> as all builds need the <code>$PREFIX</code> hack (not to be
+confused with the installation prefix often used in make files). Embedded <code>lua</code>
+compiles into <code>c</code> too. Apparently <code>ardour</code> should work but it goes segmentation
+fault on shared memory, though <code>audacity</code> works. I might have to go <code>LADSPA</code>.</p>
+<p>I&rsquo;m pleasantly surprised how much of my Neovim/LazyVim config works. Even the
+two errors on markdown and lua language servers are likely due to them being
+system installs on Termux, and as such they do &ldquo;work&rdquo;, although I always have
+the loading errors. Ah, Tokyo moon just a Termux:style £1.79.</p>
+ 
+<div>
+  <h3>Tags</h3>
+  <ul class="tags">
+    <li><a href="/tags/chromebook/">Chromebook</a> |</li>
+    <li><a href="/tags/development/">Development</a> |</li>
+    <li><a href="/tags/android/">Android</a> |</li>
+    <li>[3]</li>
+  </ul>
+</div>
+ </main>
+    
+    <footer data-pagefind-ignore="all"><p>Copyright 2026. All rights reserved.</p>
+<p>
+  This site can be used as a website template under MIT Licence. Personal and
+  company details excepted.
+</p>
+<script language="javascript">
+  window.onload = function (e) {
+    onLoad(); 
+  };
+</script>
+</footer>
+  </body>
+</html>

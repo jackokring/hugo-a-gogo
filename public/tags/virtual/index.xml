@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Virtual on K Ring Technologies Ltd</title>
+		<link>https://kring.co.uk/tags/virtual/</link>
+		<description>Recent content in Virtual on K Ring Technologies Ltd</description>
+		<generator>Hugo</generator>
+		<language>en-GB</language>
+		
+		
+		
+		
+			<lastBuildDate>Wed, 08 Oct 2025 18:10:29 +0000</lastBuildDate>
+		
+			<atom:link href="https://kring.co.uk/tags/virtual/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Boxes, KVM and Libadapta</title>
+				<link>https://kring.co.uk/aladdin/boxes-kvm-and-libadapta/</link>
+				<pubDate>Wed, 08 Oct 2025 18:10:29 +0000</pubDate>
+				<guid>https://kring.co.uk/aladdin/boxes-kvm-and-libadapta/</guid>
+				<description>&lt;h2 id=&#34;boxes-and-kvm&#34;&gt;Boxes and KVM&lt;/h2&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve recently removed and converted some VMs from &lt;code&gt;VirtualBox&lt;/code&gt; to &lt;code&gt;gnome-boxes&lt;/code&gt;&#xA;and the &lt;code&gt;.qcow2&lt;/code&gt; format. It went well. The only loss was &amp;ldquo;tiny video&amp;rdquo; as the&#xA;resolution scaling is absent from the boxes version I&amp;rsquo;m on. The fact I&#xA;can keep a &lt;code&gt;podman&lt;/code&gt; instance up working (relies on kvm) was a major reason&#xA;for the switch. So really not that much of a change.&lt;/p&gt;&#xA;&lt;h2 id=&#34;libadapta-and-themes&#34;&gt;Libadapta and Themes&lt;/h2&gt;&#xA;&lt;p&gt;On the Linux Mint 22.2 upgrade, I tried out the &lt;code&gt;libadapta&lt;/code&gt; theming under a&#xA;python program. Using &lt;code&gt;Gtk-4&lt;/code&gt; Adwaita is not too bad, but sometimes looks&#xA;limited and unstyled. So I developed the basic demo further, adding in&#xA;&lt;code&gt;C++&lt;/code&gt; to a &lt;code&gt;hatch&lt;/code&gt; project, and then also added in &lt;code&gt;luaJIT-5.1&lt;/code&gt; for preference&#xA;for some things. I don&amp;rsquo;t mind python for its large module range, ML to&#xA;quite a few GUI toolkits. But I do like the simplicity of Lua and such a thing&#xA;is more likely to fit mostly in the I-cache.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>
